@@ -541,6 +541,7 @@ section.advantages .advantage p.title{
 	font-size: 1.7rem;
 	color:#cf1141;
 	margin-bottom: 30px;
+	font-weight: 600;
 }
 section.advantages .advantage .description {
 	font-size: 1.6rem;
@@ -617,10 +618,12 @@ section.news h2 {
 .news__slider-wrap .newsBlock .bottomPart a {
 	font-size: 1.3rem;
 	transition: all .1s linear;
+	font-weight: 600;
 }
 .news__slider-wrap .newsBlock .bottomPart a>span i{
 	font-size: 1.3rem;
 	color: #cf1141;
+	font-weight: 600;
 }
 .news__slider-wrap .newsBlock .bottomPart a:hover {
 	color: #cf1141;
@@ -673,11 +676,81 @@ section.news .slick-prev:hover {
 section.news .slick-next:hover {
 	background-image: url(../img/arrow-next-active-popular.png);
 }
-section.news .slick-prev:before, section.popular .slick-next:before {
+section.news .slick-prev:before, section.news .slick-next:before {
 	display: none;
+}
+section.news .archive {
+	margin-left: 20px;
+	font-size: 1.5rem;
+	font-weight: 600;
+	transition: all .1s linear;
+}
+section.news .archive>span>i {
+	font-size: 1.5rem;
+	color: #cf1141;
+	font-weight: 600;
+}
+section.news .archive:hover {
+	color: #cf1141;
 }
 
 
 
+
+/* SIGNUP */
+section.signUp {
+	width: 100%;
+	background-color: #242424;
+	height: 90px;
+}
+section.signUp span {
+	font-size: 2.5rem;
+	color: #fff;
+	float:left;
+	margin-top: 25px;
+}
+section.signUp form {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	float: right;
+	padding-top: 25px;
+}
+section.signUp form button.submit{
+	width: 170px;
+	height: 40px;
+	font-size: 1.4rem;
+	color: #fff;
+	border:none;
+	background-color: #cf1141;
+	outline: none;
+	margin-left: 70px;
+}
+section.signUp form input {
+	height: 40px;
+	width: 25vw;
+	min-width: 150px;
+	max-width: 490px;
+	font-size: 1.4rem;
+	padding-left: 20px;
+}
+
+
+
+/* ADVERTISE */
+section.advertise {
+	width: 100%;
+	background-color: #fff;
+	padding: 70px 0;
+}
+section.advertise .banner{
+	width: 100%;
+	height: 126px;
+	border:2px solid #d5dbdf;
+	font-size: 2rem;
+	color: #d5dbdf;
+	line-height: 120px;
+	text-align: center;
+}
 
 
