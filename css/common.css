@@ -84,6 +84,14 @@ header .menu_wrap{
 	height: 39px;
 	border-bottom: 1px solid #e9ecee;
 }
+header .menu_wrap .city {
+	float:left;
+	height: 39px;
+	line-height:39px;
+	font-size: 1.4rem;
+	font-weight: 600;
+	color:#000;
+}
 header .menu_wrap ul {
 	padding: 0;
 	float: right;
@@ -98,6 +106,7 @@ header .menu_wrap ul li>a{
 	line-height: 38px;
 	font-size: 1.3rem;
 	font-weight: 600;
+	-webkit-transition: all .1s linear;
 	transition: all .1s linear;
 	position: relative;
 }
@@ -109,6 +118,7 @@ header .menu_wrap ul li>a:before {
 	position: absolute;
 	left: -15px;
 	top: 7px;
+	-webkit-transition: all .1s linear;
 	transition: all .1s linear;
 }
 header .menu_wrap ul li:last-child {
@@ -128,6 +138,7 @@ header .menu_wrap ul li>a:hover:before{
 }
 header .menu_wrap ul li>a>i {
 	margin-right: 10px;
+	-webkit-transition: all .2s linear;
 	transition: all .2s linear;
 }
 header .menu_wrap ul li>a:hover>i {
@@ -151,11 +162,17 @@ header .rightPart .middle_row form {
 	display: inline-block;
 }
 header .rightPart .input_wrap {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	width: 305px;
 	height: 100%;
-	align-items: flex-start;
-	justify-content: flex-start;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
 }
 header .rightPart .input_wrap input {
 	border:none;
@@ -194,7 +211,8 @@ header .rightPart .middle_row .phoneBlock {
 header .rightPart .middle_row .phoneBlock .phoneNumber i {
 	font-size: 1.8rem;
 	margin-right: 10px;
-	transform: rotateZ(-90deg);
+	-webkit-transform: rotateZ(-90deg);
+	        transform: rotateZ(-90deg);
 }
 header .rightPart .middle_row .phoneBlock .phoneNumber a{
 	font-size: 1.8rem;
@@ -208,12 +226,14 @@ header .rightPart .middle_row .phoneBlock .callBackOrder {
 	text-align: center;
 	cursor: pointer;
 	border:1px solid #cf1141;
+	-webkit-transition: all .2s linear;
 	transition: all .2s linear;
 }
 header .rightPart .middle_row .phoneBlock .callBackOrder>p{
 	color: #fffefe;
 	line-height: 25px;
 	font-size: 1.3rem;
+	-webkit-transition: all .2s linear;
 	transition: all .2s linear;.
 	padding: 0;
 	margin: 0;
@@ -281,9 +301,15 @@ header .bottom ul {
 	height: 40px;
 	text-align: center;
 	width: auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 header .bottom ul>li {
 	display: inline-block;
@@ -292,6 +318,7 @@ header .bottom ul>li {
 	float: left;
 	border-left:1px solid #3a3a3a;
 	border-right:1px solid #3a3a3a;
+	-webkit-transition: all .1s linear;
 	transition: all .1s linear;
 }
 header .bottom ul>li>a {
@@ -387,7 +414,8 @@ footer .middle .leftPart .phoneNumber a{
 footer .middle .leftPart .phoneNumber a>i {
 	font-size: 2rem;
 	color: #fff;
-	transform: rotateZ(-90deg);
+	-webkit-transform: rotateZ(-90deg);
+	        transform: rotateZ(-90deg);
 	margin-right: 10px;
 }
 footer .middle .leftPart .timeWork p{
@@ -450,9 +478,15 @@ footer .middle .rightPart {
 	font-size: 0;
 }
 footer .rightPart__wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: flex-start;
-	justify-content: center;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 footer .rightPart__wrapper .box{
 	display: inline-block;
@@ -465,6 +499,7 @@ footer .bottom .rightPart__wrapper .box:last-child {
 footer .rightPart__wrapper .box a i{
 	font-size: 5rem;
 	color: #fff;
+	-webkit-transition: all .1s ease;
 	transition: all .1s ease;
 }
 footer .rightPart__wrapper .box a:hover i{
@@ -552,7 +587,8 @@ footer .bottom .copyright a {
 .mobile_menu.active {
 	display: block;
 	right: 0;
-	animation:slideRight .5s linear;
+	-webkit-animation:slideRight .5s linear;
+	        animation:slideRight .5s linear;
 }
 .mobile_menu .mobile_menu-wrapper {
 	margin-top: 60px;
@@ -580,7 +616,8 @@ footer .bottom .copyright a {
 .mobile_menu .wrapper_row .phoneNumber i {
 	display: block;
 	font-size: 1.3rem;
-	transform: rotateZ(-90deg);
+	-webkit-transform: rotateZ(-90deg);
+	        transform: rotateZ(-90deg);
 	margin-bottom: 5px;
 }
 .mobile_menu .wrapper_row .phoneNumber a{
@@ -614,6 +651,14 @@ footer .bottom .copyright a {
 	text-align: center;
 	margin: 0;
 	padding: 0;
+}
+@-webkit-keyframes slideRight {
+	0%{
+		right: -500px;
+	}
+	100%{
+		right: 0;
+	}
 }
 @keyframes slideRight {
 	0%{
@@ -902,7 +947,8 @@ footer .bottom .copyright a {
 	}
 	footer .bottom .leftPart {
 		margin-left:50%;
-		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
 		padding: 20px 0;
 		clear: both;
 		text-align: center;
@@ -945,7 +991,8 @@ footer .bottom .copyright a {
 		display: inline;
 		font-size: 1.4rem;
 		color: inherit;
-		transform: rotateZ(-90deg);
+		-webkit-transform: rotateZ(-90deg);
+		        transform: rotateZ(-90deg);
 		margin-right: 10px;
 	} 
 	header .rightPart .middle_row {
@@ -984,7 +1031,8 @@ footer .bottom .copyright a {
 		position: absolute;
 		top: 30px;
 		left:50%;
-		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
 		font-size: 1.1rem;
 	}
 	header .rightPart .middle_row .personalCab i{
@@ -1003,7 +1051,8 @@ footer .bottom .copyright a {
 		width: 100%;
 		max-width: 440px;
 		left: 50%;
-		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
 		position: relative;
 	}
 	.container {
