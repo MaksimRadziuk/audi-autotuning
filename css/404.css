@@ -1,0 +1,50 @@
+section.page404 {
+	width: 100%;
+	background-color: #fff;
+	padding-bottom: 60px;
+}
+section.page404 .sidePart {
+	display: inline-block;
+	width: 50%;
+	float: left;
+}
+section.page404 .sidePart:first-child {
+	max-width: 400px;
+}
+section.page404 .sidePart>img {
+	width: 100%;
+	height: auto;
+}
+section.page404 .sidePart p:first-child {
+	font-size: 7rem;
+	color: #cf1141;
+	font-weight: 100;
+}
+section.page404 .sidePart p:last-child {
+	font-size: 1.6rem;
+	line-height: 2;
+}
+section.page404 .sidePart p:last-child>a {
+	font-size: 1.6rem;
+	color: #cf1141;
+}
+@media all and (max-width: 715px) {
+	section.page404 .container>.row {
+		margin: 0;
+	}
+	section.page404 .sidePart p:first-child {
+		font-size: 5rem;
+	}
+	section.page404 .sidePart p:last-child {
+		font-size: 1.3rem;
+	}
+	section.page404 .sidePart p:last-child>a {
+		font-size: 1.3rem;
+	}
+}
+@media all and (max-width: 600px) {
+	section.page404 .sidePart {
+		display:block;
+		width: 100%;
+	}
+}

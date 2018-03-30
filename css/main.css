@@ -146,15 +146,7 @@ section.slider .slick-dots li.slick-active button:before {
 
 
 /* CATALOG */
-section h2 {
-	font-size: 2.7rem;
-	font-weight: 300;
-	text-transform: uppercase;
-	text-align: center;
-	margin-bottom: 70px;
-	margin-top: 40px;
-	color: #242424;
-}
+
 section.catalog {
 	background-color: #fff;
 }
@@ -294,7 +286,7 @@ section.catalog .catalog__tile_wrap {
 		width: 450px;
 	}
 }
-@media all and (max-width: 700px) {
+@media all and (max-width: 715px) {
 	.catalog__tile_wrap>.tile.height2 {
 		width: 30vw;
 		height: 63.3vw;
