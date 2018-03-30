@@ -1,0 +1,154 @@
+section.howtobuy h2 {
+	text-align: left;
+	margin-top: 10px;
+	font-weight: 600;
+	margin-bottom: 40px;
+}
+section.howtobuy h3 {
+	font-size: 2.1rem;
+	font-weight: 600;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+section.howtobuy .howtobuy__box {
+	margin-bottom: 50px;
+}
+section.howtobuy .ordering h3 {
+	margin-bottom: 30px;
+}
+section.howtobuy .ordering .options {
+	padding-left: 70px;
+	margin-top: 20px;
+}
+section.howtobuy .title {
+	font-size: 1.6rem;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+section.howtobuy .ordering .options .option {
+	margin-bottom: 30px;
+	position: relative;
+}
+section.howtobuy p {
+	font-size: 1.4rem;
+}
+section.howtobuy .ordering .options .option:before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 45px;
+	height: 43px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	top: 0;
+	left: -70px;
+}
+section.howtobuy .ordering .options .option.chain:before{
+	background-image: url(../img/chain-howtobuy.jpg);
+}
+section.howtobuy .ordering .options .option.phone:before{
+	background-image: url(../img/phone-howtobuy.jpg);
+}
+section.howtobuy .ordering .options .option.headphone:before{
+	background-image: url(../img/headphones-howtobuy.jpg);
+}
+section.howtobuy .paymentOptions .options_wrap{
+	padding-left: 70px;
+}
+section.howtobuy .paymentOptions .options_wrap .paymentOptions__option {
+	margin-bottom: 30px;
+	position: relative;
+}
+section.howtobuy .paymentOptions .options_wrap .paymentOptions__option:before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 45px;
+	height: 43px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	top: 0;
+	left: -70px;
+}
+section.howtobuy .paymentOptions .options_wrap .paymentOptions__option.cash:before{
+	background-image: url(../img/cash-option.jpg);
+}
+section.howtobuy .paymentOptions .options_wrap .paymentOptions__option.bank:before{
+	background-image: url(../img/bank-option.jpg);
+}
+section.howtobuy .paymentOptions .options_wrap .paymentOptions__option.creditCard:before{
+	background-image: url(../img/creditCard-option.jpg);
+}
+section.howtobuy .paymentOptions .options_wrap .paymentOptions__option.webmoney:before{
+	background-image: url(../img/webmoney-option.jpg);
+}
+section.howtobuy .paymentOptions .options_wrap .paymentOptions__option.office:before{
+	background-image: url(../img/officePay-option.jpg);
+}
+
+section.howtobuy .deliveryTerm .option {
+	margin-bottom: 30px;
+}
+section.howtobuy .deliveryTerm .option p.noMargin {
+	margin: 0;
+}
+section.howtobuy .deliveryTerm .option ul {
+	padding: 0;
+	margin: 0;
+}
+section.howtobuy .deliveryTerm .option ul li>span {
+	color:#cf1141;
+}
+
+section.howtobuy .delivery .options_wrap {
+	padding-left: 70px;
+}
+section.howtobuy .delivery .options_wrap .option {
+	margin-bottom: 30px;
+	position: relative;
+}
+section.howtobuy .delivery .options_wrap .option:before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 45px;
+	height: 43px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	left: -70px;
+}
+section.howtobuy .delivery .options_wrap .option.courier:before {
+	background-image: url(../img/courier-option.jpg);
+}
+section.howtobuy .delivery .options_wrap .option.post:before{
+	background-image: url(../img/post-option.jpg);
+}
+section.howtobuy .delivery .options_wrap .option.sdek:before{
+	background-image: url(../img/sdek-option.jpg);
+}
+section.howtobuy .delivery .options_wrap .option.transport:before{
+	background-image: url(../img/transport-option.jpg);
+}
+section.howtobuy .delivery .options_wrap .option.ems:before{
+	background-image: url(../img/EMS-option.jpg);
+}
+section.howtobuy .delivery .options_wrap .option.selfdelivery:before{
+	background-image: url(../img/selfDelivery-option.jpg);
+}
+section.howtobuy .delivery .options_wrap .option .title>span {
+	color:#cf1141;
+}
+@media all and (max-width: 715px) {
+	section.howtobuy .container>.row {
+		margin: 0;
+	}
+}
+
+
+
+
