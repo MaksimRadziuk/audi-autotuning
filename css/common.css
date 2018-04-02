@@ -64,7 +64,7 @@ section h2 {
 header {
 	height: 190px;
 	width: 100%;
-	margin-bottom: 80px;
+	margin-bottom: 90px;
 }
 header>.container>.row>.rightPart {
 	width: 70%;
@@ -725,7 +725,7 @@ footer .bottom .copyright a {
 }
 .breadcrumbs {
 	position: absolute;
-	top: -40px;
+	top: -50px;
 	left: 0;
 	width: 100%;
 }

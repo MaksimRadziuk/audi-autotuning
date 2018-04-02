@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="ru"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="ru"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="ru"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Audi-autotuning</title>
+	<meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="icon" type="image/eps" href="img/favicon-32.png" sizes="32x32" />
+    <link rel="icon" type="image/eps" href="img/favicon-16.png" sizes="16x16" />
+	
+	<link rel="stylesheet" href="libs/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/catalog.css">
+
+
+</head>
+
+<body>
+<!-- POPUP -->
+<div id="popup_background"></div>
+
+<div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
+
+<div class="popup mobile_menu">
+	<div class="mobile_menu-wrapper">
+		<div class="close"><span></span><span></span></div>
+		<div class="wrapper_row first">
+			<ul>
+				<li><a href="howtobuy.html">Как заказать</a></li>
+				<li><a href="#">Оплата</a></li>
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Установка</a></li>
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">Новости</a></li>
+			</ul>
+		</div>
+		<div class="wrapper_row second">
+			<div class="phoneNumber"><a href="tel:+74959737722" class="phone"><i class="fa fa-phone" aria-hidden="true"></i>+7(495)973-77-22</a></div>
+			<a href="mailto:info@autotuning-audi.ru" class="mail"><i class="fa fa-envelope" aria-hidden="true"></i>info@autotuning-audi.ru</a>
+			<div class="adress">
+				<i class="fa fa-map-marker" aria-hidden="true"></i>
+				<p>Москва, Алтуфьевское шоссе, д.27, офис 229</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="logoBox">
+					<div class="logo"><img src="img/logo.jpg" alt="Audi-autotuning logo"></div>
+					<div class="slogan">Оригинальные аксессуары, диски, дооснащение и тюнинг Audi</div>
+				</div>
+				<div class="rightPart">
+					<div class="top">
+						<nav class="menu_wrap">
+							<span class="city">Санкт-Петербург</span>
+							<ul>
+								<li><a href="howtobuy.html">Как заказать</a></li>
+								<li><a href="#">Оплата</a></li>
+								<li><a href="#">Доставка</a></li>
+								<li><a href="#">Установка</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">Новости</a></li>
+								<!-- <li><a href="mailto:info@autotuning-audi.ru"><i class="fa fa-envelope" aria-hidden="true"></i>info@autotuning-audi.ru</a></li> -->
+							</ul>
+						</nav>
+					</div>
+					<div class="middle">
+						<div class="middle_row first">
+							<form action="">
+								<div class="input_wrap">
+									<input type="text" placeholder="Поиск"><button class="search"><i class="fa fa-search" aria-hidden="true"></i></button>
+								</div>
+							</form>
+							<div class="phoneBlock">
+								<span class="phoneNumber"><a href="tel:+74959737722" class="phone"><i class="fa fa-phone" aria-hidden="true"></i>+7(495)973-77-22</a></span>
+								<span class="callBackOrder"><i class="fa fa-phone" aria-hidden="true"></i><p>Обратный звонок</p></span>
+							</div>
+							<div class="personalCab"><i class="fa fa-user" aria-hidden="true"></i>Личный кабинет</div>
+						</div>
+						<div class="middle_row second">
+							<div class="adress">
+								<i class="fa fa-map-marker" aria-hidden="true"></i>
+								<p>Москва, Алтуфьевское шоссе, д.27, офис 229</p>
+							</div>
+							<div class="timeWork"><p>Время работы: с 10:00 до 19:00</p></div>
+							<div class="busketBlock"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Корзина<span id="busketFill">(0)</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="container">
+				<div class="row">
+					<div class="menu_models">
+						<ul class="header__menu-slider">
+							<li><a href="#">A3<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="#">A4<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="#">A5<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="#">A6<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="#">A7<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="#">A8<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="#">Q3<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="#">Q5<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="#">Q7<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="#">R8<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="#">TT<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li class="last"><a href="#">Аксессуары<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</header>
+
+<div class="content">
+
+	<div class="breadcrumbs">
+		<div class="container">
+			<div class="row">
+				<div class="wrapper">
+					<span><a href="index.html">Главная</a></span>
+					<span class="divider"> / </span>
+					<span><a href="">Каталог товаров</a></span>
+					<span class="divider"> / </span>
+					<span><a href="">Оригинальное дооснащение</a></span>
+					<span class="divider"> / </span>
+					<span><a href="">Аэродинамика и дизайн</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="catalog">
+		<div class="container">
+			<div class="row">
+				<aside class="col-sm-3">
+					<div class="sidebar">
+						<div class="sidebar_block">
+							<div class="title">Подбор по автомобилю</div>
+							<div class="innerPart">
+								<div class="select_wrap">
+									<select name="" id="">
+										<option value="" selected>Выберите модель</option>
+										<option value="">A3</option>
+										<option value="">A3</option>
+										<option value="">A4</option>
+										<option value="">A5</option>
+										<option value="">A6</option>
+										<option value="">A7</option>
+										<option value="">A8</option>
+										<option value="">Q3</option>
+										<option value="">Q5</option>
+										<option value="">Q7</option>
+										<option value="">R8</option>
+										<option value="">TT</option>
+									</select>
+								</div>
+								<div class="select_wrap">
+									<select name="" id="">
+										<option value="" selected>Все кузова</option>
+										<option value="">A1 (8X) 2011-н.в.</option>
+										<option value="">A1 Sportback (8X) 2012-н.в.</option>
+										<option value="">A1 (8X) 2011-н.в.</option>
+										<option value="">A1 Sportback (8X) 2012-н.в.</option>
+										<option value="">A1 (8X) 2011-н.в.</option>
+										<option value="">A1 Sportback (8X) 2012-н.в.</option>
+										<option value="">A1 (8X) 2011-н.в.</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="sidebar_block">
+							<div class="title">Категории товаров</div>
+							<div class="innerPart">
+								<ul class="majorList">
+									<li>
+										<div class="title"><i class="fa fa-angle-right"></i></span>Оригинальное дооснащение</div><span>
+										<div class="submenu">
+											<ul>
+												<li>Аэродинамика и дизайн</li>
+												<li>Интерьер и комфорт</li>
+												<li>Элементы защиты</li>
+												<li>Средства транспортировки</li>
+												<li>Оригинальные диски</li>
+												<li>Коммуникации и электрика</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="title"><i class="fa fa-angle-right"></i></span>Внешний тюнинг</div>
+										<div class="submenu">
+											<ul>
+												<li>Аэродинамика и дизайн</li>
+												<li>Интерьер и комфорт</li>
+												<li>Элементы защиты</li>
+												<li>Средства транспортировки</li>
+												<li>Оригинальные диски</li>
+												<li>Коммуникации и электрика</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="title"><i class="fa fa-angle-right"></i></span>Тюнинг выпуска</div>
+										<div class="submenu">
+											<ul>
+												<li>Аэродинамика и дизайн</li>
+												<li>Интерьер и комфорт</li>
+												<li>Элементы защиты</li>
+												<li>Средства транспортировки</li>
+												<li>Оригинальные диски</li>
+												<li>Коммуникации и электрика</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="title"><i class="fa fa-angle-right"></i></span>Колесные диски</div>
+										<div class="submenu">
+											<ul>
+												<li>Аэродинамика и дизайн</li>
+												<li>Интерьер и комфорт</li>
+												<li>Элементы защиты</li>
+												<li>Средства транспортировки</li>
+												<li>Оригинальные диски</li>
+												<li>Коммуникации и электрика</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="title"><i class="fa fa-angle-right"></i></span>Тюнинг салона</div>
+										<div class="submenu">
+											<ul>
+												<li>Аэродинамика и дизайн</li>
+												<li>Интерьер и комфорт</li>
+												<li>Элементы защиты</li>
+												<li>Средства транспортировки</li>
+												<li>Оригинальные диски</li>
+												<li>Коммуникации и электрика</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="title"><i class="fa fa-angle-right"></i></span>Тюнинг подвески</div>
+										<div class="submenu">
+											<ul>
+												<li>Аэродинамика и дизайн</li>
+												<li>Интерьер и комфорт</li>
+												<li>Элементы защиты</li>
+												<li>Средства транспортировки</li>
+												<li>Оригинальные диски</li>
+												<li>Коммуникации и электрика</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="title"><i class="fa fa-angle-right"></i></span>Тюнинг тормозной системы</div>
+										<div class="submenu">
+											<ul>
+												<li>Аэродинамика и дизайн</li>
+												<li>Интерьер и комфорт</li>
+												<li>Элементы защиты</li>
+												<li>Средства транспортировки</li>
+												<li>Оригинальные диски</li>
+												<li>Коммуникации и электрика</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="title"><i class="fa fa-angle-right"></i></span>Тюнинг двигателя</div>
+										<div class="submenu">
+											<ul>
+												<li>Аэродинамика и дизайн</li>
+												<li>Интерьер и комфорт</li>
+												<li>Элементы защиты</li>
+												<li>Средства транспортировки</li>
+												<li>Оригинальные диски</li>
+												<li>Коммуникации и электрика</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="sidebar_block">
+							<div class="title">Производитель</div>
+							<div class="innerPart">
+								<ul>
+									<li>ABT Sportsline (Германия)</li>
+									<li>AEZ (Германия)</li>
+									<li>Barracuda (Германия)</li>
+									<li>Caractere (Бельгия)</li>
+									<li>Corniche (Швейцария)</li>
+									<li>Dectane (Германия)</li>
+									<li>Dotz (Германия)</li>
+									<li>Eibach (Германия)</li>
+									<li>Eisenmann (Германия)</li>
+									<li>ABT Sportsline (Германия)</li>
+									<li>AEZ (Германия)</li>
+									<li>Barracuda (Германия)</li>
+									<li>Caractere (Бельгия)</li>
+									<li>Corniche (Швейцария)</li>
+									<li>Dectane (Германия)</li>
+									<li>Dotz (Германия)</li>
+									<li>Eibach (Германия)</li>
+									<li>Eisenmann (Германия)</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</aside>
+				<div class="contentPart col-sm-9">
+					<div class="title">Аэродинамика и дизайн</div>
+					<div class="tiles_wrap">
+						<div class="popularBlock">
+							<div class="img_wrap">
+								<a href=""><img src="img/slide-1-popular.jpg" alt=""></a>
+							</div>
+							<div class="content_wrap">
+								<a class="title">Бампер передний и решетка радиатора для Audi Q5 (рестайлинг)</a>
+								<div class="code">Артикул: <span>K 00055544</span></div>
+								<div class="warehouse">Со склада в <span>Москве</span></div>
+								<div class="producer">Производитель: <span>ABT Sportsline</span></div>
+							</div>
+							<div class="bottomPart">
+								<div class="addToBusket">
+									<span>+</span><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+								</div>
+								<div class="priceBox">
+									<div class="previous">65 000.00 <span>руб</span></div>
+									<div class="actual">59 580.00 <span>руб</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="popularBlock">
+							<div class="img_wrap">
+								<a href=""><img src="img/slide-3-popular.jpg" alt=""></a>
+							</div>
+							<div class="content_wrap">
+								<a class="title">Диффузор заднего бампера Audi A4 (B8) для автомобилей с одинарным глушителем слева и справа</a>
+								<div class="code">Артикул: <span>K 00055544</span></div>
+								<div class="warehouse">Со склада в <span>Москве</span></div>
+								<div class="producer">Производитель: <span>ABT Sportsline</span></div>
+							</div>
+							<div class="bottomPart">
+								<div class="addToBusket">
+									<span>+</span><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+								</div>
+								<div class="priceBox">
+									<div class="previous">65 000.00 <span>руб</span></div>
+									<div class="actual">59 580.00 <span>руб</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="popularBlock">
+							<div class="img_wrap">
+								<a href=""><img src="img/slide-4-popular.jpg" alt=""></a>
+							</div>
+							<div class="content_wrap">
+								<a class="title">Бампер передний Audi Q3 для автомобилей с системой Einparkhilfe и без системы Parkassistent</a>
+								<div class="code">Артикул: <span>K 00055544</span></div>
+								<div class="warehouse">Со склада в <span>Москве</span></div>
+								<div class="producer">Производитель: <span>ABT Sportsline</span></div>
+							</div>
+							<div class="bottomPart">
+								<div class="addToBusket">
+									<span>+</span><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+								</div>
+								<div class="priceBox">
+									<div class="previous">65 000.00 <span>руб</span></div>
+									<div class="actual">59 580.00 <span>руб</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="popularBlock">
+							<div class="img_wrap">
+								<a href=""><img src="img/slide-2-popular.jpg" alt=""</a>>
+							</div>
+							<div class="content_wrap">
+								<a class="title">Бампер передний Audi Q3 для автомобилей с системой Einparkhilfe и без системы Parkassistent</a>
+								<div class="code">Артикул: <span>K 00055544</span></div>
+								<div class="warehouse">Со склада в <span>Москве</span></div>
+								<div class="producer">Производитель: <span>ABT Sportsline</span></div>
+							</div>
+							<div class="bottomPart">
+								<div class="addToBusket">
+									<span>+</span><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+								</div>
+								<div class="priceBox">
+									<div class="previous">65 000.00 <span>руб</span></div>
+									<div class="actual">59 580.00 <span>руб</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="popularBlock">
+							<div class="img_wrap">
+								<a href=""><img src="img/slide-1-popular.jpg" alt=""></a>
+							</div>
+							<div class="content_wrap">
+								<a class="title">Бампер передний и решетка радиатора для Audi Q5 (рестайлинг)</a>
+								<div class="code">Артикул: <span>K 00055544</span></div>
+								<div class="warehouse">Со склада в <span>Москве</span></div>
+								<div class="producer">Производитель: <span>ABT Sportsline</span></div>
+							</div>
+							<div class="bottomPart">
+								<div class="addToBusket">
+									<span>+</span><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+								</div>
+								<div class="priceBox">
+									<div class="previous">65 000.00 <span>руб</span></div>
+									<div class="actual">59 580.00 <span>руб</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="popularBlock">
+							<div class="img_wrap">
+								<a href=""><img src="img/slide-3-popular.jpg" alt=""></a>
+							</div>
+							<div class="content_wrap">
+								<a class="title">Диффузор заднего бампера Audi A4 (B8) для автомобилей с одинарным глушителем слева и справа</a>
+								<div class="code">Артикул: <span>K 00055544</span></div>
+								<div class="warehouse">Со склада в <span>Москве</span></div>
+								<div class="producer">Производитель: <span>ABT Sportsline</span></div>
+							</div>
+							<div class="bottomPart">
+								<div class="addToBusket">
+									<span>+</span><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+								</div>
+								<div class="priceBox">
+									<div class="previous">65 000.00 <span>руб</span></div>
+									<div class="actual">59 580.00 <span>руб</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="popularBlock">
+							<div class="img_wrap">
+								<a href=""><img src="img/slide-4-popular.jpg" alt=""></a>
+							</div>
+							<div class="content_wrap">
+								<a class="title">Бампер передний Audi Q3 для автомобилей с системой Einparkhilfe и без системы Parkassistent</a>
+								<div class="code">Артикул: <span>K 00055544</span></div>
+								<div class="warehouse">Со склада в <span>Москве</span></div>
+								<div class="producer">Производитель: <span>ABT Sportsline</span></div>
+							</div>
+							<div class="bottomPart">
+								<div class="addToBusket">
+									<span>+</span><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+								</div>
+								<div class="priceBox">
+									<div class="previous">65 000.00 <span>руб</span></div>
+									<div class="actual">59 580.00 <span>руб</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="popularBlock">
+							<div class="img_wrap">
+								<a href=""><img src="img/slide-2-popular.jpg" alt=""</a>>
+							</div>
+							<div class="content_wrap">
+								<a class="title">Бампер передний Audi Q3 для автомобилей с системой Einparkhilfe и без системы Parkassistent</a>
+								<div class="code">Артикул: <span>K 00055544</span></div>
+								<div class="warehouse">Со склада в <span>Москве</span></div>
+								<div class="producer">Производитель: <span>ABT Sportsline</span></div>
+							</div>
+							<div class="bottomPart">
+								<div class="addToBusket">
+									<span>+</span><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+								</div>
+								<div class="priceBox">
+									<div class="previous">65 000.00 <span>руб</span></div>
+									<div class="actual">59 580.00 <span>руб</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="popularBlock">
+							<div class="img_wrap">
+								<a href=""><img src="img/slide-1-popular.jpg" alt=""></a>
+							</div>
+							<div class="content_wrap">
+								<a class="title">Бампер передний и решетка радиатора для Audi Q5 (рестайлинг)</a>
+								<div class="code">Артикул: <span>K 00055544</span></div>
+								<div class="warehouse">Со склада в <span>Москве</span></div>
+								<div class="producer">Производитель: <span>ABT Sportsline</span></div>
+							</div>
+							<div class="bottomPart">
+								<div class="addToBusket">
+									<span>+</span><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+								</div>
+								<div class="priceBox">
+									<div class="previous">65 000.00 <span>руб</span></div>
+									<div class="actual">59 580.00 <span>руб</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="popularBlock">
+							<div class="img_wrap">
+								<a href=""><img src="img/slide-3-popular.jpg" alt=""></a>
+							</div>
+							<div class="content_wrap">
+								<a class="title">Диффузор заднего бампера Audi A4 (B8) для автомобилей с одинарным глушителем слева и справа</a>
+								<div class="code">Артикул: <span>K 00055544</span></div>
+								<div class="warehouse">Со склада в <span>Москве</span></div>
+								<div class="producer">Производитель: <span>ABT Sportsline</span></div>
+							</div>
+							<div class="bottomPart">
+								<div class="addToBusket">
+									<span>+</span><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+								</div>
+								<div class="priceBox">
+									<div class="previous">65 000.00 <span>руб</span></div>
+									<div class="actual">59 580.00 <span>руб</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="popularBlock">
+							<div class="img_wrap">
+								<a href=""><img src="img/slide-4-popular.jpg" alt=""></a>
+							</div>
+							<div class="content_wrap">
+								<a class="title">Бампер передний Audi Q3 для автомобилей с системой Einparkhilfe и без системы Parkassistent</a>
+								<div class="code">Артикул: <span>K 00055544</span></div>
+								<div class="warehouse">Со склада в <span>Москве</span></div>
+								<div class="producer">Производитель: <span>ABT Sportsline</span></div>
+							</div>
+							<div class="bottomPart">
+								<div class="addToBusket">
+									<span>+</span><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+								</div>
+								<div class="priceBox">
+									<div class="previous">65 000.00 <span>руб</span></div>
+									<div class="actual">59 580.00 <span>руб</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="popularBlock">
+							<div class="img_wrap">
+								<a href=""><img src="img/slide-2-popular.jpg" alt=""</a>>
+							</div>
+							<div class="content_wrap">
+								<a class="title">Бампер передний Audi Q3 для автомобилей с системой Einparkhilfe и без системы Parkassistent</a>
+								<div class="code">Артикул: <span>K 00055544</span></div>
+								<div class="warehouse">Со склада в <span>Москве</span></div>
+								<div class="producer">Производитель: <span>ABT Sportsline</span></div>
+							</div>
+							<div class="bottomPart">
+								<div class="addToBusket">
+									<span>+</span><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+								</div>
+								<div class="priceBox">
+									<div class="previous">65 000.00 <span>руб</span></div>
+									<div class="actual">59 580.00 <span>руб</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="pagination">
+						<ul class="pagination">
+							<li><i class="fa fa-angle-left"></i></li>
+							<li class="active">1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>6</li>
+							<li><i class="fa fa-angle-right"></i></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="seo">
+		<div class="container">
+			<div class="row">
+				<article>
+					<h2>SEO текст</h2>
+					<p>Качество немецкое, название Audi. Но совершенству нет предела, поэтому тюнинг автомобилей Audi поражает все новыми и новыми усовершенствованиями и без того презентабельных автомобилей. <br><br>Начинаться он может с внешней доводки или наращивания мощности двигателя. Благородные очертания автомобилей Ауди – это благодатная основа для разработки самых изощренных обвесов. Конечно, автолюбители в первую очередь хотят сделать свою машину уникальной внешне. <br>Именно этой цели служат многочисленные предлагаемые на рынке варианты боди китов и отдельных аэродинамических элементов. К ним относится передний бампер, устанавливаемый вместо стокового, всевозможные накладки на бампер – от исключительно декоративных до вполне функциональных карбоновых передних спойлеров, стилистически выдержанных порогов, или как их еще называют, швеллеров, и много другого. Хотя это "многое другое" и выполняет второстепенную роль, но может выгодно подчеркивать характер автомобиля.</p>
+				</article>
+			</div>
+		</div>
+		
+	</section>
+
+</div>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="top">
+					<ul>
+						<li><a href="#">A3</a></li>
+						<li><a href="#">A4</a></li>
+						<li><a href="#">A5</a></li>
+						<li><a href="#">A6</a></li>
+						<li><a href="#">A7</a></li>
+						<li><a href="#">A8</a></li>
+						<li><a href="#">Q3</a></li>
+						<li><a href="#">Q5</a></li>
+						<li><a href="#">Q7</a></li>
+						<li><a href="#">R8</a></li>
+						<li><a href="#">TT</a></li>
+						<li><a href="#">Аксессуары</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Как заказать</a></li>
+						<li><a href="#">Оплата</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Установка</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Новости</a></li>
+					</ul>
+				</div>
+				<div class="middle">
+					<div class="leftPart">
+						<div class="logoPart">
+							<div class="logo"><img src="img/logo-footer.png" alt="Audi-autotuning logo"></div>
+							<div class="slogan">Оригинальные аксессуары, диски, <br>дооснащение и тюнинг</div>
+						</div>
+						<div class="phonePart">
+							<div class="callBackOrder"><p>Обратный звонок</p></div>
+							<div>
+								<div class="phoneNumber"><a href="tel:+74959737722" class="phone"><i class="fa fa-phone" aria-hidden="true"></i>+7(495)973-77-22</a></div>
+								<div class="timeWork"><p>Время работы: с 10:00 до 19:00</p></div>
+							</div>
+						</div>
+						<div class="adressPart">
+							<div class="adress">
+								<i class="fa fa-map-marker" aria-hidden="true"></i>
+								<p>Москва, Алтуфьевское шоссе, д.27, офис 229</p>
+							</div>
+							<a href="mailto:info@autotuning-audi.ru" class="footerMail"><i class="fa fa-envelope" aria-hidden="true"></i>info@autotuning-audi.ru</a>
+						</div>
+					</div>
+					<div class="rightPart">
+						<div class="rightPart__wrapper">
+							<div class="box vk_box"><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></div>
+							<div class="box insta_box"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+							<div class="box fcb_box"><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></div>
+						</div>
+						<div class="payment_wrapper">
+							<div class="payment_block"><img src="img/qiwi.jpg" alt=""></div>
+							<div class="payment_block"><img src="img/webmoney.jpg" alt=""></div>
+							<div class="payment_block"><img src="img/jandex.jpg" alt=""></div>
+							<div class="payment_block"><img src="img/master.jpg" alt=""></div>
+							<div class="payment_block"><img src="img/visa.jpg" alt=""></div>
+							<div class="payment_block"><img src="img/mir.jpg" alt=""></div>
+						</div>
+					</div>
+				</div>
+				<div class="bottom">
+					<div class="bottom__wrapper">
+						<div class="stat_wrapper"><img src="img/stat-footer.png" alt=""></div>
+						<div class="copyright">
+							<p>&copy Autotuning-Audi.ru 2008 - 2017. Все права защищены.</p>
+							<a href="#">Карта сайта</a>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</footer>
+
+
+<!--[if lt IE 9]>
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<![endif]-->
+
+<script src="libs/jquery/jquery-3.2.1.min.js"></script>
+<script src="libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="libs/slick/slick.js"></script>
+
+<script src="js/common.js"></script>
+<script src="js/catalog.js"></script>
+</body>
+</html>
