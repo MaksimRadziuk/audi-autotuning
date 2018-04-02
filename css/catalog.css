@@ -186,6 +186,7 @@ section.catalog div.pagination ul.pagination li.active:hover {
 section.catalog div.pagination ul.pagination li>i {
 	font-size: 1.9rem;
 }
+
 section.catalog div.pagination ul.pagination li:hover>i {
 	color: #cf1141;
 }
