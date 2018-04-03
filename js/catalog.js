@@ -15,7 +15,13 @@ $(document).ready(function(){
 		$(this).siblings().removeClass('active');
 		$(this).addClass('active');
 	});
-	
+
+	$('section.catalog .sidebar_block.producer .innerPart .submenu').jScrollPane({
+		showArrows:true
+	});
+
+	$(".selectModel").chosen({width: "99%"});
+	$(".selectBody").chosen({width: "99%"});
 
 	if (innerWidth <= 767) {
 		$('section.catalog .sidebar_block>.title').click(function(){

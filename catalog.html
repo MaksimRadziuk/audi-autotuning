@@ -22,6 +22,8 @@
 	<link rel="stylesheet" href="libs/slick/slick-theme.css">
 	<link rel="stylesheet" href="fonts/stylesheet.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/scroll/jquery.jscrollpane.css">
+	<link rel="stylesheet" href="libs/chosen/chosen.min.css">
 	
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/catalog.css">
@@ -159,10 +161,9 @@
 							<div class="title">Подбор по автомобилю<i class="fa fa-angle-down"></i></div>
 							<div class="innerPart">
 								<div class="select_wrap model">
-									<div class="select_wrap-item"><i class="fa fa-angle-down"></i></div>
-									<select name="" id="">
+									<!-- <div class="select_wrap-item"><i class="fa fa-angle-down"></i></div> -->
+									<select name="" id="" class="selectModel">
 										<option value="" selected>Выберите модель</option>
-										<option value="">A3</option>
 										<option value="">A3</option>
 										<option value="">A4</option>
 										<option value="">A5</option>
@@ -176,9 +177,9 @@
 										<option value="">TT</option>
 									</select>
 								</div>
-								<div class="select_wrap">
-									<div class="select_wrap-item"><i class="fa fa-angle-down"></i></div>
-									<select name="" id="">
+								<div class="select_wrap body">
+									<!-- <div class="select_wrap-item"><i class="fa fa-angle-down"></i></div> -->
+									<select name="" id="" class="selectBody">
 										<option value="" selected>Все кузова</option>
 										<option value="">A1 (8X) 2011-н.в.</option>
 										<option value="">A1 Sportback (8X) 2012-н.в.</option>
@@ -690,6 +691,9 @@
 <script src="libs/jquery/jquery-3.2.1.min.js"></script>
 <script src="libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <script src="libs/slick/slick.js"></script>
+<script src="libs/scroll/jquery.jscrollpane.min.js"></script>
+<script src="libs/scroll/jquery.mousewheel.js"></script>
+<script src="libs/chosen/chosen.jquery.min.js"></script>
 
 <script src="js/common.js"></script>
 <script src="js/catalog.js"></script>

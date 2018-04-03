@@ -229,7 +229,7 @@ section.catalog .sidebar_block>.innerPart {
 	border-bottom: 1px solid #e8ecef;
 	padding: 30px;
 }
-section.catalog .sidebar_block>.innerPart>.select_wrap {
+/* section.catalog .sidebar_block>.innerPart>.select_wrap {
 	width: 100%;
 	height: 40px;
 	background-color: #fff;
@@ -269,7 +269,103 @@ section.catalog .sidebar_block>.innerPart>.select_wrap .select_wrap-item i {
 	font-size: 1.8rem;
 	color:#cf1141;
 	line-height: 38px;
+} */
+section.catalog .sidebar_block>.innerPart .select_wrap.model  {
+	margin-bottom: 20px;
 }
+
+section.catalog .select_wrap.model .selectModel {
+	width: 100%;
+	height: 40px;
+	background-color: #fff;
+	border:1px solid #e8ecef;
+	position: relative;
+}
+section.catalog .select_wrap.model .selectBody {
+	width: 100%;
+	height: 40px;
+	background-color: #fff;
+	border:1px solid #e8ecef;
+	position: relative;
+}
+.chosen-container .chosen-single {
+	width: 100%;
+	height: 40px;
+	background-color: #fff;
+	border:1px solid #e8ecef;
+	position: relative;
+	border-radius: 0;!important
+	background-color: #fff;
+	background-image: none;
+	box-shadow: none;!important
+}
+.chosen-container-active .chosen-single {
+	width: 100%;
+	height: 40px;
+	background-color: #fff;
+	border:1px solid #e8ecef;
+	position: relative;
+	border-radius: 0;!important
+	background-color: #fff;
+	background-image: none;
+	box-shadow: none;!important
+}
+.chosen-container-active.chosen-with-drop .chosen-single {
+	width: 100%;
+	height: 40px;
+	background-color: #fff;
+	border:1px solid #e8ecef;
+	position: relative;
+	border-radius: 0;!important
+	background-color: #fff;
+	background-image: none;
+	box-shadow: none;!important
+}
+.chosen-container-single .chosen-single span {
+	line-height: 35px;
+}
+.chosen-container .chosen-results-scroll-down span, 
+.chosen-container .chosen-results-scroll-up span, 
+.chosen-container-multi .chosen-choices .search-choice .search-choice-close, 
+.chosen-container-single .chosen-search input[type=text], 
+.chosen-container-single .chosen-single abbr, 
+.chosen-container-single .chosen-single div b, 
+.chosen-rtl .chosen-search input[type=text] {
+	background-image: url(../libs/chosen/arrow-down-select.jpg);
+	background-position: center left;
+}
+.chosen-container-single .chosen-search {
+	display: none;
+}
+.chosen-container-active.chosen-with-drop .chosen-single div b {
+	background-position: center left;
+}
+.chosen-container-single .chosen-drop {
+	border:1px solid #e8ecef;
+	box-shadow: none;
+	border-radius: 0;
+}
+.chosen-container .chosen-results {
+	max-height: auto;
+}
+section.catalog .select_wrap.model .chosen-container .chosen-results li{
+	width: 49%;
+	float: left;
+	padding-left: 15px;
+}
+.chosen-container .chosen-results li:first-child {
+	display: none;
+}
+section.catalog .select_wrap.model .chosen-container .chosen-results li:nth-child(2n) {
+	border-right:1px solid #e8ecef;
+}
+.chosen-container .chosen-results li.highlighted {
+	background-image: none;
+	background-color:transparent;
+	color: #cf1141;
+}
+
+
 section.catalog .sidebar_block .majorList {
 	padding: 0;
 	margin: 0;
@@ -421,6 +517,62 @@ section.catalog .sidebar_block.producer .submenu::-webkit-scrollbar-thumb {
 	background-image: url(../img/scrollbar-tracker.jpg);
 	background-position: center center;
 	background-size: 100%;
+}
+.jspVerticalBar {
+	width: 18px;
+	background-color: transparent;4
+}
+.jspTrack {
+	background-color: transparent;
+	border:none;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url(../img/scroll-track.png);
+	background-position: center center;
+	box-shadow: none;
+}
+.jspDrag {
+	display: block;
+	width: 19px;
+	min-width: 19px;
+	max-width: 19px;
+	background-repeat: no-repeat;
+	background-image: url(../img/scrollbar-tracker.jpg);
+	background-position: center center;
+	background-size: 100%;
+	background-color: transparent;
+}
+.jspArrow {
+	border:none;
+	background-color: #000;
+	color: #fff;
+}
+.jspArrowUp{
+	background-repeat: no-repeat;
+	background-image: url(../img/button-scroll-Up.jpg);
+	background-position: center center;
+	background-size: 40%;
+}
+.jspArrowDown {
+	background-repeat: no-repeat;
+	background-image: url(../img/button-scroll-Down.jpg);
+	background-position: center center;
+	background-size: 40%;
+}
+.jspArrow.jspDisabled {
+	background-color: #000;
+}
+.jspArrow.jspDisabled.jspArrowUp{
+	background-repeat: no-repeat;
+	background-image: url(../img/button-scroll-Up.jpg);
+	background-position: center center;
+	background-size: 40%;
+}
+.jspArrow.jspDisabled.jspArrowDown {
+	background-repeat: no-repeat;
+	background-image: url(../img/button-scroll-Down.jpg);
+	background-position: center center;
+	background-size: 40%;
 }
 
 @media all and (max-width: 1320px) {
