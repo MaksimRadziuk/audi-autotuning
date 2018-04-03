@@ -689,6 +689,7 @@ button.showMore {
 	}
 	section.seo p {
 		column-count: auto;!important
+		column-width: auto;!important
 		text-align: left;
 		column-gap: none;important
 		display: inline-block;
