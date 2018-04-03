@@ -688,10 +688,10 @@ button.showMore {
 		text-align: center;
 	}
 	section.seo p {
-		column-count: auto;!important
-		column-width: auto;!important
+		column-count: 1;!important
+		column-width: 100%;!important
 		text-align: left;
-		column-gap: none;important
+		column-gap: 0;important
 		display: inline-block;
 	}
 }
