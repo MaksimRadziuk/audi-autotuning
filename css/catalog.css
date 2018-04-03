@@ -698,12 +698,12 @@ button.showMore {
 		text-align: center;
 	}
 	section.seo p {
-		-webkit-column-count: 1;
-		        column-count: 1;!important
-		column-width: 100%;!important
+		-webkit-column-count:auto;
+		        column-count:auto;!important
+		column-width: auto;!important
 		text-align: left;
-		-webkit-column-gap: 0;
-		        column-gap: 0;important
+		-webkit-column-gap:auto;
+		        column-gap:auto;important
 		display: inline-block;
 	}
 }
