@@ -575,6 +575,21 @@ section.catalog .sidebar_block.producer .submenu::-webkit-scrollbar-thumb {
 	background-size: 40%;
 }
 
+
+button.showMore {
+	display: block;
+	width: 170px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 1.4rem;
+	color: #fff;
+	border:none;
+	background-color: #cf1141;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	display: none;
+}
+
 @media all and (max-width: 1320px) {
 	section.catalog .sidebar_block>.innerPart {
 		padding: 10px;
@@ -675,6 +690,7 @@ section.catalog .sidebar_block.producer .submenu::-webkit-scrollbar-thumb {
 	section.seo p {
 		column-count: 1;
 		text-align: left;
+		column-gap: none;
 	}
 }
 @media all and (max-width: 700px) {
@@ -686,6 +702,14 @@ section.catalog .sidebar_block.producer .submenu::-webkit-scrollbar-thumb {
 	}
 	header {
 		margin-bottom: 50px;
+	}
+	button.showMore {
+		display: block;
+		position: relative;
+		margin-top: 40px;
+	}
+	div.pagination {
+		display: none;
 	}
 }
 @media all and (max-width: 510px) {
