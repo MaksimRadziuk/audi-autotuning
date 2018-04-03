@@ -281,7 +281,7 @@ section.catalog .select_wrap.model .selectModel {
 	border:1px solid #e8ecef;
 	position: relative;
 }
-section.catalog .select_wrap.model .selectBody {
+section.catalog .select_wrap.body .selectBody {
 	width: 100%;
 	height: 40px;
 	background-color: #fff;
@@ -644,6 +644,12 @@ section.catalog .sidebar_block.producer .submenu::-webkit-scrollbar-thumb {
 	}
 	section.seo p {
 		font-size: 1.2rem;
+	}
+	section.catalog .select_wrap.model .selectModel {
+		height: 30px;
+	}
+	section.catalog .select_wrap.body .selectBody {
+		height: 30px;
 	}
 }
 @media all and (max-width: 767px) {
