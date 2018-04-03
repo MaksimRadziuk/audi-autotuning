@@ -688,9 +688,9 @@ button.showMore {
 		text-align: center;
 	}
 	section.seo p {
-		column-count: 1;
+		column-count: auto;!important
 		text-align: left;
-		column-gap: none;
+		column-gap: none;important
 		display: inline-block;
 	}
 }
