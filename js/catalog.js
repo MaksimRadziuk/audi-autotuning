@@ -15,5 +15,11 @@ $(document).ready(function(){
 		$(this).siblings().removeClass('active');
 		$(this).addClass('active');
 	});
+	
 
+	if (innerWidth <= 767) {
+		$('section.catalog .sidebar_block>.title').click(function(){
+			$(this).siblings('section.catalog .sidebar_block>.innerPart').slideToggle();
+		});
+	}
 });

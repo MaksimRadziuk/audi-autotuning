@@ -1158,7 +1158,7 @@ footer .bottom .copyright a {
 		display: block;
 	}
 }
-@media all and (max-width: 630px) {
+@media all and (max-width: 645px) {
 	footer .bottom .stat_wrapper {
 		display: none;
 	}
