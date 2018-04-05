@@ -738,7 +738,10 @@ section.product .contentPart>.slider_wrap .description .description__inner .coun
 section.product .contentPart>.slider_wrap .description .buyNow {
 	width: 175px;
 	height: 40px;
-	background-color: #cf1141;
+	background-image: url(../img/buy-bcg-product.jpg);
+	background-position: right center;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
 	float: left;
 	margin-bottom: 20px;
 }
@@ -751,6 +754,22 @@ section.product .contentPart>.slider_wrap .description .buyNow>a {
 	font-size: 1.6rem;
 	color:#fff;
 	margin-bottom: 20px;
+}
+section.product .contentPart>.slider_wrap .description .buyNow:hover {
+	animation: buyMe 1s linear alternate infinite;
+}
+@keyframes buyMe {
+	0% {
+		transform:scale(1);
+		background-position: right center;
+	}
+	50%{
+		transform:scale(0.95);
+	}
+	100% {
+		transform:scale(1);
+		background-position: left center;
+	}
 }
 section.product .contentPart>.slider_wrap .description .addToBusket {
 	width: 175px;
@@ -837,7 +856,10 @@ section.product .contentPart>.slider_wrap .description .addToFavoriate>a {
 .ug-thumb-wrapper.ug-thumb-generated .ug-thumb-error {
 	background-image: none;
 }
-
+.ug-button-fullscreen.ug-skin-default {
+	width: 90%;
+	height: 90%;
+}
 
 /* TABS WRAP */
 
