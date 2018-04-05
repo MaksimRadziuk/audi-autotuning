@@ -756,7 +756,7 @@ section.product .contentPart>.slider_wrap .description .buyNow>a {
 	margin-bottom: 20px;
 }
 section.product .contentPart>.slider_wrap .description .buyNow:hover {
-	animation: buyMe 1s linear alternate infinite;
+	animation: buyMe .7s linear alternate infinite;
 }
 @keyframes buyMe {
 	0% {
