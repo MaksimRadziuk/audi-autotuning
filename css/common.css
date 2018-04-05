@@ -35,15 +35,25 @@ input:focus, button:focus {
 	outline: none;
 }
 
-input::-webkit-input-placeholder {color: inherit; font-style: italic;}
-input::-moz-placeholder          {color: inherit; font-style: italic;}
-input:-moz-placeholder           {color: inherit; font-style: italic;}
-input:-ms-input-placeholder      {color: inherit; font-style: italic;}
+input::-webkit-input-placeholder {color: #929292; font-style: italic;}
+input::-moz-placeholder          {color: #929292; font-style: italic;}
+input:-moz-placeholder           {color: #929292; font-style: italic;}
+input:-ms-input-placeholder      {color: #929292; font-style: italic;}
+
+textarea::-webkit-input-placeholder {color: #929292; font-style: italic;}
+textarea::-moz-placeholder          {color: #929292; font-style: italic;}
+textarea:-moz-placeholder           {color: #929292; font-style: italic;}
+textarea:-ms-input-placeholder      {color: #929292; font-style: italic;}
 
 input:focus::-webkit-input-placeholder {color: transparent}
 input:focus::-moz-placeholder          {color: transparent}
 input:focus:-moz-placeholder           {color: transparent}
 input:focus:-ms-input-placeholder      {color: transparent}
+
+textarea:focus::-webkit-input-placeholder {color: transparent}
+textarea:focus::-moz-placeholder          {color: transparent}
+textarea:focus:-moz-placeholder           {color: transparent}
+textarea:focus:-ms-input-placeholder      {color: transparent}
 
 .container {
 	width: 1280px;
