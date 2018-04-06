@@ -1038,6 +1038,9 @@ footer .bottom .copyright a {
 }
 
 @media all and (max-width: 715px) {
+	body>.content {
+		overflow-x: hidden;
+	}
 
 	footer .top, footer .middle, footer .bottom .leftPart .stat_wrapper,
 	footer .bottom .rightPart, footer .bottom .leftPart .copyright a, 
