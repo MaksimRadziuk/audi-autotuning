@@ -1317,11 +1317,50 @@ section.product .contentPart>.tabs_wrap #feedback .form_wrap form button {
 	section.product .contentPart>.tabs_wrap #feedback .form_wrap form .rating,
 	section.product .offer_wrap>.title {
 		text-align: center;
+		padding-left: 0;
 	}
 	section.product .contentPart>.slider_wrap {
 		margin-bottom: 80px;
 	}
+	section.product .contentPart>.slider_wrap .sliderPart {
+		height: 400px;
+	}
 }
-
+@media all and (max-width: 420px) {
+	section.product .popular__slider-wrap {
+		width: 260px;
+	}
+	section.product .offer_wrap .popular__slider-wrap .popularBlock .img_wrap {
+		height: 140px;
+	}
+	section.product .offer_wrap .popular__slider-wrap .popularBlock .bottomPart>.addToBusket {
+		width: 55px;
+	}
+	section.product .contentPart>.tabs_wrap {
+		padding: 15px;
+	}
+	section.product .contentPart>.tabs_wrap #description>a {
+		width: 220px;
+		font-size: 1rem;
+	}
+	section.product .contentPart>.tabs_wrap .tabs .tab {
+		width: 95px;
+	}
+	section.product .contentPart>.slider_wrap .description .buyNow {
+		margin-left: 10%;
+	}
+	section.product .contentPart>.slider_wrap .description .addToFavoriate {
+		width: 120px;
+	}
+}
+@media all and (max-width: 390px) {
+	section.product .contentPart>.slider_wrap .description .buyNow {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	section.product .contentPart>.slider_wrap .description .addToBusket {
+		float: right;
+	}
+}
 
 

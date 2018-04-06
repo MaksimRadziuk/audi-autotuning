@@ -1200,4 +1200,7 @@ footer .bottom .copyright a {
 	.header__menu-slider li i {
 		margin-left: 5px;
 	}
+	header {
+		margin-bottom: 50px;
+	}
 }
