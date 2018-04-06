@@ -738,10 +738,7 @@ section.product .contentPart>.slider_wrap .description .description__inner .coun
 section.product .contentPart>.slider_wrap .description .buyNow {
 	width: 175px;
 	height: 40px;
-	background-image: url(../img/buy-bcg-product.jpg);
-	background-position: right center;
-	background-size: auto 100%;
-	background-repeat: no-repeat;
+	background-color:#cf1141;
 	float: left;
 	margin-bottom: 20px;
 }
@@ -760,15 +757,13 @@ section.product .contentPart>.slider_wrap .description .buyNow:hover {
 }
 @keyframes buyMe {
 	0% {
-		transform:scale(1);
-		background-position: right center;
+		background-color: #cf1141;
 	}
 	50%{
-		transform:scale(0.95);
+		background-color: red;
 	}
 	100% {
-		transform:scale(1);
-		background-position: left center;
+		background-color: yellow;
 	}
 }
 section.product .contentPart>.slider_wrap .description .addToBusket {
