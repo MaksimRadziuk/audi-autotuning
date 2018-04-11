@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="ru"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="ru"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="ru"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Audi-autotuning</title>
+	<meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="icon" type="image/eps" href="img/favicon-32.png" sizes="32x32" />
+    <link rel="icon" type="image/eps" href="img/favicon-16.png" sizes="16x16" />
+	
+	<link rel="stylesheet" href="libs/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/scroll/jquery.jscrollpane.css">
+	<link rel="stylesheet" href="libs/chosen/chosen.min.css">
+	<link rel="stylesheet" href="libs/unite-gallery/css/unite-gallery.css">
+	<link rel="stylesheet" href="libs/simple-calendar/tcal.css">
+
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/myorders.css">
+
+
+</head>
+
+<body>
+<!-- POPUP -->
+<div id="popup_background"></div>
+
+<div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
+
+<div class="popup mobile_menu">
+	<div class="mobile_menu-wrapper">
+		<div class="close"><span></span><span></span></div>
+		<div class="wrapper_row first">
+			<ul>
+				<li><a href="howtobuy.html">Как заказать</a></li>
+				<li><a href="#">Оплата</a></li>
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Установка</a></li>
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">Новости</a></li>
+			</ul>
+		</div>
+		<div class="wrapper_row second">
+			<div class="phoneNumber"><a href="tel:+74959737722" class="phone"><i class="fa fa-phone" aria-hidden="true"></i>+7(495)973-77-22</a></div>
+			<a href="mailto:info@autotuning-audi.ru" class="mail"><i class="fa fa-envelope" aria-hidden="true"></i>info@autotuning-audi.ru</a>
+			<div class="adress">
+				<i class="fa fa-map-marker" aria-hidden="true"></i>
+				<p>Москва, Алтуфьевское шоссе, д.27, офис 229</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="logoBox">
+					<div class="logo"><img src="img/logo.jpg" alt="Audi-autotuning logo"></div>
+					<div class="slogan">Оригинальные аксессуары, диски, дооснащение и тюнинг Audi</div>
+				</div>
+				<div class="rightPart">
+					<div class="top">
+						<nav class="menu_wrap">
+							<span class="city">Санкт-Петербург</span>
+							<ul>
+								<li><a href="howtobuy.html">Как заказать</a></li>
+								<li><a href="howtobuy.html">Оплата</a></li>
+								<li><a href="howtobuy.html">Доставка</a></li>
+								<li><a href="#">Установка</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">Новости</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="middle">
+						<div class="middle_row first">
+							<form>
+								<div class="input_wrap">
+									<input type="text" placeholder="Поиск"><button class="search"><i class="fa fa-search" aria-hidden="true"></i></button>
+								</div>
+							</form>
+							<div class="phoneBlock">
+								<span class="phoneNumber"><a href="tel:+74959737722" class="phone"><i class="fa fa-phone" aria-hidden="true"></i>+7(495)973-77-22</a></span>
+								<span class="callBackOrder"><i class="fa fa-phone" aria-hidden="true"></i><span>Обратный звонок</span></span>
+							</div>
+							<div class="personalCab"><i class="fa fa-user" aria-hidden="true"></i>Личный кабинет</div>
+						</div>
+						<div class="middle_row second">
+							<div class="adress">
+								<i class="fa fa-map-marker" aria-hidden="true"></i>
+								<p>Москва, Алтуфьевское шоссе, д.27, офис 229</p>
+							</div>
+							<div class="timeWork"><p>Время работы: с 10:00 до 19:00</p></div>
+							<div class="busketBlock"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Корзина<span id="busketFill">(0)</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="container">
+				<div class="row">
+					<div class="menu_models">
+						<ul class="header__menu-slider">
+							<li><a href="#">A3<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="#">A4<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="#">A5<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="#">A6<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="#">A7<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="#">A8<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="#">Q3<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="#">Q5<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="#">Q7<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="#">R8<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="#">TT<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li class="last"><a href="#">Аксессуары<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</header>
+
+<div class="content">
+
+	<div class="breadcrumbs">
+		<div class="container">
+			<div class="row">
+				<div class="wrapper">
+					<span><a href="index.html">Главная</a></span>
+					<span class="divider"> / </span>
+					<span><a href="">Личный кабинет</a></span>
+					<span class="divider"> / </span>
+					<span><a href="">Мои Заказы</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<section class="myorders">
+		<div class="container">
+			<div class="row">
+				<h2>Мои заказы</h2>
+				<div class="myorders__wrap">
+					<div class="selection_wrap">
+						<form>
+							<div class="date">
+								<p>Показать заказы с </p>
+								<input type="text" name="dateStart" class="tcal">
+								<p> по </p>
+								<input type="text" name="date End" class="tcal">
+							</div>
+							<div class="status">
+								<p>Статус</p>
+								<div class="select_wrap">
+									<select class="statusSelect">
+										<option value="">Все статусы</option>
+										<option value="">Ожидается поступление на склад</option>
+										<option value="">Можно забирать</option>
+										<option value="">Уже вот-вот</option>
+										<option value="">Встречайте у двери</option>
+									</select>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="table_wrap">
+						<table class="main desktop">
+							<tr>
+								<th class="number_main">№ и дата заказа</th>
+								<th class="cost_main">Стоимость</th>
+								<th class="payment_main">Способ оплаты</th>
+								<th class="adress_main">Адрес и дата доставки</th>
+								<th class="delivery_main">Способ доставки</th>
+								<th class="status_main">Статус</th>
+								<th class="repeat_main">Повторить</th>
+							</tr>
+							<tr>
+								<td class="number_main">A 00322097 <div>24.02.2017</div></td>
+								<td class="cost_main">136 890.00</td>
+								<td class="payment_main">Оплата Переводом на электронный кошелек</td>
+								<td class="adress_main">г. Москва, ул. Железнодорожная, д. 45, кв. 12 <div>24.02.2017</div></td>
+								<td class="delivery_main">Курьером по Москве и Мск. области <span>(400р.)</span></td>
+								<td class="status_main">Ожидается поступление на склад</td>
+								<td class="repeat_main"><button><i class="fa fa-undo" aria-hidden="true"></i></button></td>
+							</tr>
+						</table>
+						<table class="main mobile">
+							<tr>
+								<td class="main_title">№ и дата заказа</td>
+								<td class="data number_main">A 00322097 <div>24.02.2017</div></td>
+							</tr>
+							<tr>
+								<td class="main_title">Стоимость</td>
+								<td class="data cost_main">136 890.00</td>
+							</tr>
+							<tr>
+								<td class="main_title">Способ оплаты</td>
+								<td class="data payment_main">Оплата Переводом на электронный кошелек</td>
+							</tr>
+							<tr>
+								<td class="main_title">Адрес и дата доставки</td>
+								<td class="data adress_main">г. Москва, ул. Железнодорожная, д. 45, кв. 12 </td>
+							</tr>
+							<tr>
+								<td class="main_title">Способ доставки</td>
+								<td class="data delivery_main">Курьером по Москве и Мск. области <span>(400р.)</td>
+							</tr>
+							<tr>
+								<td class="main_title">Статус</td>
+								<td class="data status_main">Ожидается поступление на склад</td>
+							</tr>
+							<tr>
+								<td class="main_title">Повторить</td>
+								<td class="data repeat_main"><button><i class="fa fa-undo" aria-hidden="true"></i></button></td>
+							</tr>
+						</table>
+						<div class="innerTable">
+							<div class="innerTable__head">
+								<span>Состав заказа</span>
+								<span><i class="fa fa-angle-down"></i></span>
+							</div>
+							<div class="innerTable__body">
+								<table class="desktop">
+									<thead>
+										<tr>
+											<th>Артикул</th>
+											<th>Товар</th>
+											<th>Кол-во, шт</th>
+											<th class="status">Статус</th>
+											<th class="price">Цена, руб.</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="code">A 00322097</td>
+											<td class="description">
+												<div class="img_wrap"><img src="img/slide-1-popular.jpg" alt=""></div>
+												<span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span>
+											</td>
+											<td class="amount">
+												1
+											</td>
+											<td class="status"><span class="avaliable">Со склада в Москве</span></td>
+											<td class="cost">45 630.00</td>
+										</tr>
+										<tr>
+											<td class="code">A 00322097</td>
+											<td class="description">
+												<div class="img_wrap"><img src="img/slide-1-popular.jpg" alt=""></div>
+												<span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span>
+											</td>
+											<td class="amount">
+												1
+											</td>
+											<td class="status"><span class="avaliable">Со склада в Москве</span></td>
+											<td class="cost">45 630.00</td>
+										</tr>
+										<tr>
+											<td class="code">A 00322097</td>
+											<td class="description">
+												<div class="img_wrap"><img src="img/slide-1-popular.jpg" alt=""></div>
+												<span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span>
+											</td>
+											<td class="amount">
+												1
+											</td>
+											<td class="status"><span class="avaliable">Со склада в Москве</span></td>
+											<td class="cost">45 630.00</td>
+										</tr>
+										<tr class="footer">
+											<td colspan="4" class="sum">Итого:</td>
+											<td class="cost">136 890.00</td>
+										</tr>
+									</tbody>
+								</table>
+								<table class="mobile">
+									<tbody class="item">
+										<tr>
+											<th colspan="2">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</th>
+										</tr>
+										<tr>
+											<td>Артикул</td>
+											<td>A 00322097</td>
+										</tr>
+										<tr>
+											<td>Кол-во, шт</td>
+											<td>
+												1
+											</td>
+										</tr>
+										<tr>
+											<td>Статус</td>
+											<td><span class="avaliable">Со склада в Москве</span></td>
+										</tr>
+										<tr>
+											<td>Цена, руб.</td>
+											<td>45 630.00</td>
+										</tr>
+									</tbody>
+									<tbody class="divider">
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</tbody>
+									<tbody class="item">
+										<tr>
+											<th colspan="2">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</th>
+										</tr>
+										<tr>
+											<td>Артикул</td>
+											<td>A 00322097</td>
+										</tr>
+										<tr>
+											<td>Кол-во, шт</td>
+											<td>
+												1
+											</td>
+										</tr>
+										<tr>
+											<td>Статус</td>
+											<td><span class="avaliable">Со склада в Москве</span></td>
+										</tr>
+										<tr>
+											<td>Цена, руб.</td>
+											<td>45 630.00</td>
+										</tr>
+									</tbody>
+									<tbody class="divider">
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</tbody>
+									<tbody class="item">
+										<tr>
+											<th colspan="2">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</th>
+										</tr>
+										<tr>
+											<td>Артикул</td>
+											<td>A 00322097</td>
+										</tr>
+										<tr>
+											<td>Кол-во, шт</td>
+											<td>
+												1
+											</td>
+										</tr>
+										<tr>
+											<td>Статус</td>
+											<td><span class="avaliable">Со склада в Москве</span></td>
+										</tr>
+										<tr>
+											<td>Цена, руб.</td>
+											<td>45 630.00</td>
+										</tr>
+									</tbody>
+									<tbody>
+										<tr>
+											<td class="sum">Итого:</td>
+											<td class="cost">136 890.00</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<table class="desktop">
+							<tr>
+								<td class="number_main">A 00322097 <div>24.02.2017</div></td>
+								<td class="cost_main">136 890.00</td>
+								<td class="payment_main">Оплата Переводом на электронный кошелек</td>
+								<td class="adress_main">г. Москва, ул. Железнодорожная, д. 45, кв. 12 <div>24.02.2017</div></td>
+								<td class="delivery_main">Курьером по Москве и Мск. области <span>(400р.)</span></td>
+								<td class="status_main">Ожидается поступление на склад</td>
+								<td class="repeat_main"><button><i class="fa fa-undo" aria-hidden="true"></i></button></td>
+							</tr>
+						</table>
+						<table class="main mobile">
+							<tr>
+								<td class="main_title">№ и дата заказа</td>
+								<td class="data number_main">A 00322097 <div>24.02.2017</div></td>
+							</tr>
+							<tr>
+								<td class="main_title">Стоимость</td>
+								<td class="data cost_main">136 890.00</td>
+							</tr>
+							<tr>
+								<td class="main_title">Способ оплаты</td>
+								<td class="data payment_main">Оплата Переводом на электронный кошелек</td>
+							</tr>
+							<tr>
+								<td class="main_title">Адрес и дата доставки</td>
+								<td class="data adress_main">г. Москва, ул. Железнодорожная, д. 45, кв. 12 </td>
+							</tr>
+							<tr>
+								<td class="main_title">Способ доставки</td>
+								<td class="data delivery_main">Курьером по Москве и Мск. области <span>(400р.)</td>
+							</tr>
+							<tr>
+								<td class="main_title">Статус</td>
+								<td class="data status_main">Ожидается поступление на склад</td>
+							</tr>
+							<tr>
+								<td class="main_title">Повторить</td>
+								<td class="data repeat_main"><button><i class="fa fa-undo" aria-hidden="true"></i></button></td>
+							</tr>
+						</table>
+						<div class="innerTable">
+							<div class="innerTable__head">
+								<span>Состав заказа</span>
+								<span><i class="fa fa-angle-down"></i></span>
+							</div>
+							<div class="innerTable__body">
+								<table class="desktop">
+									<thead>
+										<tr>
+											<th>Артикул</th>
+											<th>Товар</th>
+											<th>Кол-во, шт</th>
+											<th class="status">Статус</th>
+											<th class="price">Цена, руб.</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="code">A 00322097</td>
+											<td class="description">
+												<div class="img_wrap"><img src="img/slide-1-popular.jpg" alt=""></div>
+												<span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span>
+											</td>
+											<td class="amount">
+												1
+											</td>
+											<td class="status"><span class="avaliable">Со склада в Москве</span></td>
+											<td class="cost">45 630.00</td>
+										</tr>
+										<tr>
+											<td class="code">A 00322097</td>
+											<td class="description">
+												<div class="img_wrap"><img src="img/slide-1-popular.jpg" alt=""></div>
+												<span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span>
+											</td>
+											<td class="amount">
+												1
+											</td>
+											<td class="status"><span class="avaliable">Со склада в Москве</span></td>
+											<td class="cost">45 630.00</td>
+										</tr>
+										<tr>
+											<td class="code">A 00322097</td>
+											<td class="description">
+												<div class="img_wrap"><img src="img/slide-1-popular.jpg" alt=""></div>
+												<span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span>
+											</td>
+											<td class="amount">
+												1
+											</td>
+											<td class="status"><span class="avaliable">Со склада в Москве</span></td>
+											<td class="cost">45 630.00</td>
+										</tr>
+										<tr class="footer">
+											<td colspan="4" class="sum">Итого:</td>
+											<td class="cost">136 890.00</td>
+										</tr>
+									</tbody>
+								</table>
+								<table class="mobile">
+									<tbody class="item">
+										<tr>
+											<th colspan="2">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</th>
+										</tr>
+										<tr>
+											<td>Артикул</td>
+											<td>A 00322097</td>
+										</tr>
+										<tr>
+											<td>Кол-во, шт</td>
+											<td>
+												1
+											</td>
+										</tr>
+										<tr>
+											<td>Статус</td>
+											<td><span class="avaliable">Со склада в Москве</span></td>
+										</tr>
+										<tr>
+											<td>Цена, руб.</td>
+											<td>45 630.00</td>
+										</tr>
+									</tbody>
+									<tbody class="divider">
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</tbody>
+									<tbody class="item">
+										<tr>
+											<th colspan="2">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</th>
+										</tr>
+										<tr>
+											<td>Артикул</td>
+											<td>A 00322097</td>
+										</tr>
+										<tr>
+											<td>Кол-во, шт</td>
+											<td>
+												1
+											</td>
+										</tr>
+										<tr>
+											<td>Статус</td>
+											<td><span class="avaliable">Со склада в Москве</span></td>
+										</tr>
+										<tr>
+											<td>Цена, руб.</td>
+											<td>45 630.00</td>
+										</tr>
+									</tbody>
+									<tbody class="divider">
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</tbody>
+									<tbody class="item">
+										<tr>
+											<th colspan="2">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</th>
+										</tr>
+										<tr>
+											<td>Артикул</td>
+											<td>A 00322097</td>
+										</tr>
+										<tr>
+											<td>Кол-во, шт</td>
+											<td>
+												1
+											</td>
+										</tr>
+										<tr>
+											<td>Статус</td>
+											<td><span class="avaliable">Со склада в Москве</span></td>
+										</tr>
+										<tr>
+											<td>Цена, руб.</td>
+											<td>45 630.00</td>
+										</tr>
+									</tbody>
+									<tbody>
+										<tr>
+											<td class="sum">Итого:</td>
+											<td class="cost">136 890.00</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<table class="desktop">
+							<tr>
+								<td class="number_main">A 00322097 <div>24.02.2017</div></td>
+								<td class="cost_main">136 890.00</td>
+								<td class="payment_main">Оплата Переводом на электронный кошелек</td>
+								<td class="adress_main">г. Москва, ул. Железнодорожная, д. 45, кв. 12 <div>24.02.2017</div></td>
+								<td class="delivery_main">Курьером по Москве и Мск. области <span>(400р.)</span></td>
+								<td class="status_main">Ожидается поступление на склад</td>
+								<td class="repeat_main"><button><i class="fa fa-undo" aria-hidden="true"></i></button></td>
+							</tr>
+						</table>
+						<table class="main mobile">
+							<tr>
+								<td class="main_title">№ и дата заказа</td>
+								<td class="data number_main">A 00322097 <div>24.02.2017</div></td>
+							</tr>
+							<tr>
+								<td class="main_title">Стоимость</td>
+								<td class="data cost_main">136 890.00</td>
+							</tr>
+							<tr>
+								<td class="main_title">Способ оплаты</td>
+								<td class="data payment_main">Оплата Переводом на электронный кошелек</td>
+							</tr>
+							<tr>
+								<td class="main_title">Адрес и дата доставки</td>
+								<td class="data adress_main">г. Москва, ул. Железнодорожная, д. 45, кв. 12 </td>
+							</tr>
+							<tr>
+								<td class="main_title">Способ доставки</td>
+								<td class="data delivery_main">Курьером по Москве и Мск. области <span>(400р.)</td>
+							</tr>
+							<tr>
+								<td class="main_title">Статус</td>
+								<td class="data status_main">Ожидается поступление на склад</td>
+							</tr>
+							<tr>
+								<td class="main_title">Повторить</td>
+								<td class="data repeat_main"><button><i class="fa fa-undo" aria-hidden="true"></i></button></td>
+							</tr>
+						</table>
+						<div class="innerTable">
+							<div class="innerTable__head">
+								<span>Состав заказа</span>
+								<span><i class="fa fa-angle-down"></i></span>
+							</div>
+							<div class="innerTable__body">
+								<table class="desktop">
+									<thead>
+										<tr>
+											<th>Артикул</th>
+											<th>Товар</th>
+											<th>Кол-во, шт</th>
+											<th class="status">Статус</th>
+											<th class="price">Цена, руб.</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="code">A 00322097</td>
+											<td class="description">
+												<div class="img_wrap"><img src="img/slide-1-popular.jpg" alt=""></div>
+												<span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span>
+											</td>
+											<td class="amount">
+												1
+											</td>
+											<td class="status"><span class="avaliable">Со склада в Москве</span></td>
+											<td class="cost">45 630.00</td>
+										</tr>
+										<tr>
+											<td class="code">A 00322097</td>
+											<td class="description">
+												<div class="img_wrap"><img src="img/slide-1-popular.jpg" alt=""></div>
+												<span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span>
+											</td>
+											<td class="amount">
+												1
+											</td>
+											<td class="status"><span class="avaliable">Со склада в Москве</span></td>
+											<td class="cost">45 630.00</td>
+										</tr>
+										<tr>
+											<td class="code">A 00322097</td>
+											<td class="description">
+												<div class="img_wrap"><img src="img/slide-1-popular.jpg" alt=""></div>
+												<span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span>
+											</td>
+											<td class="amount">
+												1
+											</td>
+											<td class="status"><span class="avaliable">Со склада в Москве</span></td>
+											<td class="cost">45 630.00</td>
+										</tr>
+										<tr class="footer">
+											<td colspan="4" class="sum">Итого:</td>
+											<td class="cost">136 890.00</td>
+										</tr>
+									</tbody>
+								</table>
+								<table class="mobile">
+									<tbody class="item">
+										<tr>
+											<th colspan="2">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</th>
+										</tr>
+										<tr>
+											<td>Артикул</td>
+											<td>A 00322097</td>
+										</tr>
+										<tr>
+											<td>Кол-во, шт</td>
+											<td>
+												1
+											</td>
+										</tr>
+										<tr>
+											<td>Статус</td>
+											<td><span class="avaliable">Со склада в Москве</span></td>
+										</tr>
+										<tr>
+											<td>Цена, руб.</td>
+											<td>45 630.00</td>
+										</tr>
+									</tbody>
+									<tbody class="divider">
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</tbody>
+									<tbody class="item">
+										<tr>
+											<th colspan="2">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</th>
+										</tr>
+										<tr>
+											<td>Артикул</td>
+											<td>A 00322097</td>
+										</tr>
+										<tr>
+											<td>Кол-во, шт</td>
+											<td>
+												1
+											</td>
+										</tr>
+										<tr>
+											<td>Статус</td>
+											<td><span class="avaliable">Со склада в Москве</span></td>
+										</tr>
+										<tr>
+											<td>Цена, руб.</td>
+											<td>45 630.00</td>
+										</tr>
+									</tbody>
+									<tbody class="divider">
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</tbody>
+									<tbody class="item">
+										<tr>
+											<th colspan="2">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</th>
+										</tr>
+										<tr>
+											<td>Артикул</td>
+											<td>A 00322097</td>
+										</tr>
+										<tr>
+											<td>Кол-во, шт</td>
+											<td>
+												1
+											</td>
+										</tr>
+										<tr>
+											<td>Статус</td>
+											<td><span class="avaliable">Со склада в Москве</span></td>
+										</tr>
+										<tr>
+											<td>Цена, руб.</td>
+											<td>45 630.00</td>
+										</tr>
+									</tbody>
+									<tbody>
+										<tr>
+											<td class="sum">Итого:</td>
+											<td class="cost">136 890.00</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<table class="desktop">
+							<tr>
+								<td class="number_main">A 00322097 <div>24.02.2017</div></td>
+								<td class="cost_main">136 890.00</td>
+								<td class="payment_main">Оплата Переводом на электронный кошелек</td>
+								<td class="adress_main">г. Москва, ул. Железнодорожная, д. 45, кв. 12 <div>24.02.2017</div></td>
+								<td class="delivery_main">Курьером по Москве и Мск. области <span>(400р.)</span></td>
+								<td class="status_main">Ожидается поступление на склад</td>
+								<td class="repeat_main"><button><i class="fa fa-undo" aria-hidden="true"></i></button></td>
+							</tr>
+						</table>
+						<table class="main mobile">
+							<tr>
+								<td class="main_title">№ и дата заказа</td>
+								<td class="data number_main">A 00322097 <div>24.02.2017</div></td>
+							</tr>
+							<tr>
+								<td class="main_title">Стоимость</td>
+								<td class="data cost_main">136 890.00</td>
+							</tr>
+							<tr>
+								<td class="main_title">Способ оплаты</td>
+								<td class="data payment_main">Оплата Переводом на электронный кошелек</td>
+							</tr>
+							<tr>
+								<td class="main_title">Адрес и дата доставки</td>
+								<td class="data adress_main">г. Москва, ул. Железнодорожная, д. 45, кв. 12 </td>
+							</tr>
+							<tr>
+								<td class="main_title">Способ доставки</td>
+								<td class="data delivery_main">Курьером по Москве и Мск. области <span>(400р.)</td>
+							</tr>
+							<tr>
+								<td class="main_title">Статус</td>
+								<td class="data status_main">Ожидается поступление на склад</td>
+							</tr>
+							<tr>
+								<td class="main_title">Повторить</td>
+								<td class="data repeat_main"><button><i class="fa fa-undo" aria-hidden="true"></i></button></td>
+							</tr>
+						</table>
+						<div class="innerTable">
+							<div class="innerTable__head">
+								<span>Состав заказа</span>
+								<span><i class="fa fa-angle-down"></i></span>
+							</div>
+							<div class="innerTable__body">
+								<table class="desktop">
+									<thead>
+										<tr>
+											<th>Артикул</th>
+											<th>Товар</th>
+											<th>Кол-во, шт</th>
+											<th class="status">Статус</th>
+											<th class="price">Цена, руб.</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="code">A 00322097</td>
+											<td class="description">
+												<div class="img_wrap"><img src="img/slide-1-popular.jpg" alt=""></div>
+												<span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span>
+											</td>
+											<td class="amount">
+												1
+											</td>
+											<td class="status"><span class="avaliable">Со склада в Москве</span></td>
+											<td class="cost">45 630.00</td>
+										</tr>
+										<tr>
+											<td class="code">A 00322097</td>
+											<td class="description">
+												<div class="img_wrap"><img src="img/slide-1-popular.jpg" alt=""></div>
+												<span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span>
+											</td>
+											<td class="amount">
+												1
+											</td>
+											<td class="status"><span class="avaliable">Со склада в Москве</span></td>
+											<td class="cost">45 630.00</td>
+										</tr>
+										<tr>
+											<td class="code">A 00322097</td>
+											<td class="description">
+												<div class="img_wrap"><img src="img/slide-1-popular.jpg" alt=""></div>
+												<span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span>
+											</td>
+											<td class="amount">
+												1
+											</td>
+											<td class="status"><span class="avaliable">Со склада в Москве</span></td>
+											<td class="cost">45 630.00</td>
+										</tr>
+										<tr class="footer">
+											<td colspan="4" class="sum">Итого:</td>
+											<td class="cost">136 890.00</td>
+										</tr>
+									</tbody>
+								</table>
+								<table class="mobile">
+									<tbody class="item">
+										<tr>
+											<th colspan="2">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</th>
+										</tr>
+										<tr>
+											<td>Артикул</td>
+											<td>A 00322097</td>
+										</tr>
+										<tr>
+											<td>Кол-во, шт</td>
+											<td>
+												1
+											</td>
+										</tr>
+										<tr>
+											<td>Статус</td>
+											<td><span class="avaliable">Со склада в Москве</span></td>
+										</tr>
+										<tr>
+											<td>Цена, руб.</td>
+											<td>45 630.00</td>
+										</tr>
+									</tbody>
+									<tbody class="divider">
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</tbody>
+									<tbody class="item">
+										<tr>
+											<th colspan="2">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</th>
+										</tr>
+										<tr>
+											<td>Артикул</td>
+											<td>A 00322097</td>
+										</tr>
+										<tr>
+											<td>Кол-во, шт</td>
+											<td>
+												1
+											</td>
+										</tr>
+										<tr>
+											<td>Статус</td>
+											<td><span class="avaliable">Со склада в Москве</span></td>
+										</tr>
+										<tr>
+											<td>Цена, руб.</td>
+											<td>45 630.00</td>
+										</tr>
+									</tbody>
+									<tbody class="divider">
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</tbody>
+									<tbody class="item">
+										<tr>
+											<th colspan="2">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</th>
+										</tr>
+										<tr>
+											<td>Артикул</td>
+											<td>A 00322097</td>
+										</tr>
+										<tr>
+											<td>Кол-во, шт</td>
+											<td>
+												1
+											</td>
+										</tr>
+										<tr>
+											<td>Статус</td>
+											<td><span class="avaliable">Со склада в Москве</span></td>
+										</tr>
+										<tr>
+											<td>Цена, руб.</td>
+											<td>45 630.00</td>
+										</tr>
+									</tbody>
+									<tbody>
+										<tr>
+											<td class="sum">Итого:</td>
+											<td class="cost">136 890.00</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</div>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="top">
+					<ul>
+						<li><a href="#">A3</a></li>
+						<li><a href="#">A4</a></li>
+						<li><a href="#">A5</a></li>
+						<li><a href="#">A6</a></li>
+						<li><a href="#">A7</a></li>
+						<li><a href="#">A8</a></li>
+						<li><a href="#">Q3</a></li>
+						<li><a href="#">Q5</a></li>
+						<li><a href="#">Q7</a></li>
+						<li><a href="#">R8</a></li>
+						<li><a href="#">TT</a></li>
+						<li><a href="#">Аксессуары</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Как заказать</a></li>
+						<li><a href="#">Оплата</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Установка</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Новости</a></li>
+					</ul>
+				</div>
+				<div class="middle">
+					<div class="leftPart">
+						<div class="logoPart">
+							<div class="logo"><img src="img/logo-footer.png" alt="Audi-autotuning logo"></div>
+							<div class="slogan">Оригинальные аксессуары, диски, <br>дооснащение и тюнинг</div>
+						</div>
+						<div class="phonePart">
+							<div class="callBackOrder"><p>Обратный звонок</p></div>
+							<div>
+								<div class="phoneNumber"><a href="tel:+74959737722" class="phone"><i class="fa fa-phone" aria-hidden="true"></i>+7(495)973-77-22</a></div>
+								<div class="timeWork"><p>Время работы: с 10:00 до 19:00</p></div>
+							</div>
+						</div>
+						<div class="adressPart">
+							<div class="adress">
+								<i class="fa fa-map-marker" aria-hidden="true"></i>
+								<p>Москва, Алтуфьевское шоссе, д.27, офис 229</p>
+							</div>
+							<a href="mailto:info@autotuning-audi.ru" class="footerMail"><i class="fa fa-envelope" aria-hidden="true"></i>info@autotuning-audi.ru</a>
+						</div>
+					</div>
+					<div class="rightPart">
+						<div class="rightPart__wrapper">
+							<div class="box vk_box"><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></div>
+							<div class="box insta_box"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+							<div class="box fcb_box"><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></div>
+						</div>
+						<div class="payment_wrapper">
+							<div class="payment_block"><img src="img/qiwi.jpg" alt=""></div>
+							<div class="payment_block"><img src="img/webmoney.jpg" alt=""></div>
+							<div class="payment_block"><img src="img/jandex.jpg" alt=""></div>
+							<div class="payment_block"><img src="img/master.jpg" alt=""></div>
+							<div class="payment_block"><img src="img/visa.jpg" alt=""></div>
+							<div class="payment_block"><img src="img/mir.jpg" alt=""></div>
+						</div>
+					</div>
+				</div>
+				<div class="bottom">
+					<div class="bottom__wrapper">
+						<div class="stat_wrapper"><img src="img/stat-footer.png" alt=""></div>
+						<div class="copyright">
+							<p>&copy; Autotuning-Audi.ru 2008 - 2017. Все права защищены.</p>
+							<a href="#">Карта сайта</a>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</footer>
+
+
+<!--[if lt IE 9]>
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<![endif]-->
+
+<script src="libs/jquery/jquery-3.2.1.min.js"></script>
+<script src="libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="libs/slick/slick.js"></script>
+<script src="libs/scroll/jquery.jscrollpane.min.js"></script>
+<script src="libs/scroll/jquery.mousewheel.js"></script>
+<script src="libs/chosen/chosen.jquery.min.js"></script>
+<script src="libs/unite-gallery/js/unitegallery.min.js"></script>
+<script src="libs/unite-gallery/js/ug-theme-compact.js"></script>
+<script src="libs/simple-calendar/tcal.js"></script>
+
+<script src="js/common.js"></script>
+<script src="js/myorders.js"></script>
+</body>
+</html>

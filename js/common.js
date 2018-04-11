@@ -21,13 +21,20 @@ $(document).ready(function(){
 	else{}
 	
 	$('.hamburger').click(function(){
-		$('#popup_background').fadeIn();
+		$('#popup_background').show();
 		$('.mobile_menu').fadeIn().addClass('active');
 	});
 	$('.close').click(function(){
 		$('#popup_background').fadeOut();
-		$('.popup').fadeOut();
+		$('.popup').hide();
+	});
+	$('#popup_background').click(function(){
+		$('#popup_background').fadeOut();
+		$('.popup').hide();
 	});
 
+	var height = $('html').height();
+	$('#popup_background').css('height', height);
+	$('.mobile_menu').css('height', height);
 
 });

@@ -1,0 +1,549 @@
+
+
+
+
+/* TABLE */
+
+
+section.busket_table h2{
+	text-align: left;
+	font-weight: 600;
+}
+section.busket_table table {
+	width: 100%;
+	empty-cells:hide;
+	margin-bottom: 70px;
+}
+section.busket_table table thead th {
+	border-right: 1px solid #fff;
+	background-color: #e8ecef;
+	color: #242424;
+	font-size: 1.4rem;
+	height: 50px;
+	padding-left: 25px;
+}
+section.busket_table table thead th.price {
+	border-right: 1px solid #e8ecef;
+}
+section.busket_table table thead th.empty {
+	display: none;
+}
+section.busket_table table tbody td {
+	padding:25px;
+	border-right:1px solid #e8ecef;
+	border-bottom:1px solid #e8ecef;
+}
+section.busket_table table tbody td.code {
+	white-space: nowrap;
+}
+section.busket_table table tbody td .img_wrap {
+	display: inline-block;
+	overflow:hidden;
+	height: 100px;
+	width: 25%;
+	margin-right: 25px;
+}
+section.busket_table table tbody td .title {
+	display: inline-block;
+	width: 69%;
+	vertical-align: top;
+	font-size: 1.4rem;
+}
+section.busket_table table tbody td.description {
+	vertical-align: top;
+}
+section.busket_table table tbody td .input_wrap>* {
+	display: inline-block;
+}
+section.busket_table table tbody td .input_wrap>input {
+	width: 65px;
+	height: 40px;
+	border:1px solid #e8ecef;
+	text-align: center;
+	padding-left: 0;
+}
+section.busket_table table tbody td .input_wrap>button {
+	height: 40px;
+	background-color: transparent;
+	border:none;
+	font-size: 1.2rem;
+	font-weight: 100;
+}
+section.busket_table table tbody td.amount {
+	min-width: 170px;
+}
+section.busket_table table tbody td.status,
+section.busket_table table tbody td.cost {
+	white-space: nowrap;
+}
+section.busket_table table tbody td.status>span {
+	white-space: nowrap;
+}
+section.busket_table table tbody td>span.avaliable {
+	font-size: 1.2rem;
+	color: #7ca500;
+}
+section.busket_table table tbody td>span.unavaliable {
+	font-size: 1.2rem;
+	color: #cf1141;
+}
+section.busket_table table tbody td.cost {
+	font-size: 2rem;
+}
+section.busket_table table tbody td .deleteItem i{
+	color: #c0c6ca;
+	font-size: 1.6rem;
+	cursor: pointer;
+}
+section.busket_table table tbody td .deleteItem i:hover {
+	color: #cf1141;
+}
+section.busket_table table tbody td:last-child {
+	border-right: none;
+}
+section.busket_table table tbody tr.footer td{
+	padding: 15px 25px;
+	border-bottom: none;
+}
+section.busket_table table tbody tr.footer td:last-child {
+	border-right: none;
+}
+section.busket_table table tbody tr.footer td:first-child {
+	border-right: none;
+	padding-left: 0;
+}
+section.busket_table table tbody tr.footer td:first-child>a {
+	color: #cf1141; 
+}
+section.busket_table table tbody tr.footer td:first-child>a>i {
+	color: #cf1141; 
+}
+section.busket_table table tbody tr.footer td.cost {
+	background-color: #e8ecef;
+	color: #cf1141;
+}
+section.busket_table table tbody tr.footer td.sum {
+	text-align: right;
+	font-weight: 600;
+}
+section.busket_table table tbody td .img_wrap>img {
+	width: 100%;
+}
+section.busket_table table.mobile {
+	display: none;
+}
+@media all and (max-width: 1320px) {
+	section.busket_table table tbody td .img_wrap {
+		height: 60px;
+		margin-right: 10px;
+		width: 33%;
+	}
+	section.busket_table table tbody td .title {
+		width: 60%;
+	}
+}
+@media all and (max-width: 1140px) {
+	section.busket_table table tbody td {
+		padding: 10px;
+	}
+}
+@media all and (max-width: 1000px) {
+	section.busket_table h2 {
+		margin-top: 0;
+		margin-bottom: 50px;
+		font-size: 2.2rem;
+	}
+	section.busket_table table tbody td .img_wrap {
+		margin-right: 15px;
+	}
+	section.busket_table table tbody td .title {
+		font-size: 1.2rem;
+	}
+	section.busket_table table tbody td.amount {
+		min-width: 140px;
+	}
+	section.busket_table table tbody td.cost {
+		font-size: 1.5rem;
+	}
+	section.busket_table table tbody tr.footer td {
+		padding: 15px;
+	}
+	section.busket_table table thead th {
+		padding-left: 15px;
+	}
+	section.busket_table table tbody td .img_wrap {
+		display: block;
+		margin-right: 0;
+		margin-bottom: 10px;
+		width: 100px;
+	}
+	section.busket_table table tbody td .title {
+		display: block;
+		width: 100%;
+	}
+	section.busket_table table {
+		max-width: 100%;
+	}
+	section.busket_table table tbody td .input_wrap>input {
+		width: 40px;
+	}
+	section.busket_table table tbody td.amount {
+		text-align: center;
+	}
+}
+@media all and (max-width: 700px) {
+	.container>.row {
+		margin: 0;
+	}
+	section.busket_table table.mobile {
+		display: block;
+	}
+	section.busket_table table tbody td.code {
+		-webkit-transform:rotateZ(-90deg);
+		        transform:rotateZ(-90deg);
+		max-width: 40px;
+	}
+	section.busket_table table tbody {
+		width: 100%;
+	}
+	section.busket_table table tbody th {
+		padding-left: 5px;
+		font-size: 1.4rem;
+		border:1px solid #e8ecef;
+	}
+	section.busket_table table tbody td .input_wrap>* {
+		display: block;
+	}
+	section.busket_table table tbody td .input_wrap>button {
+		width: 40px;
+	}
+	section.busket_table table tbody td.amount {
+		min-width: 60px;
+	}
+	table.desktop {
+		display: none;
+	}
+	table.mobile {
+		display: block;
+	}
+	table.mobile tbody td {
+		border:1px solid #e8ecef;
+	}
+	section.busket_table table tbody td:last-child {
+		border-right: 1px solid #e8ecef;
+	}
+	table.mobile tbody th {
+		vertical-align: bottom;
+		font-size: 1.6rem;
+		font-weight: 600;
+		line-height: 1.4;
+		padding: 10px;
+		text-align: center;
+		background-color:#e8ecef;
+	}
+	table.mobile tbody.divider td, 
+	section.busket_table table tbody.divider td:last-child{
+		border:none;
+		padding:20px;
+	}
+	section.busket_table table tbody td .input_wrap>* {
+		display: inline-block;
+	}
+	section.busket_table table tbody td.delete {
+		text-align: center;
+		border-left: none;
+		border-right: none;
+	}
+	section.busket_table table tbody td .deleteItem i {
+		font-size: 2rem;
+	}
+	section.busket_table table tbody td.sum {
+		text-align: right;
+		font-size: 1.4rem;
+		font-weight: 600;
+		border:none;
+	}
+	section.busket_table table tbody td.cost {
+		background-color: #e8ecef;
+		color: #cf1141;
+		font-size: 1.6rem;
+		font-weight: 600;
+	}
+	section.busket_table table tbody td.shopping {
+		border:none;
+		vertical-align: bottom;
+	}
+	section.busket_table table tbody td>a {
+		color:#cf1141;
+		font-size: 1.4rem;
+	}
+	section.busket_table table tbody td>a>i {
+		color:#cf1141;
+	}
+}
+
+
+/* FORMS */
+section.busket_forms {
+	padding-top: 50px;
+	padding-bottom: 90px;
+}
+
+/* REGISTERED PERSON FORM */
+
+section.busket_forms .wrap .delivery_wrap {
+	float: left;
+	width: 49%;
+	margin-bottom: 30px;
+}
+section.busket_forms .wrap .payment_wrap {
+	float: left;
+	width: 49%;
+	padding-bottom: 115px;
+	margin-bottom: 30px;
+}
+section.busket_forms .wrap .delivery_wrap>.title,
+section.busket_forms .wrap .payment_wrap>.title{
+	font-size: 2.2rem;
+	font-weight: 600;
+	margin-bottom: 40px;
+}
+section.busket_forms .wrap form label>.title>span{
+	color: #cf1141;
+}
+section.busket_forms .wrap form input[type="radio"] {
+	display: none;
+}
+section.busket_forms .wrap form input[type="radio"] + label {
+	display: block;
+	width: 95%;
+	border:1px solid #e8ecef;
+	height: 75px;
+	margin-bottom: 40px;
+	padding: 0 30px;
+	cursor: pointer;
+	margin-left: 15px;
+}
+section.busket_forms .wrap form input[type="radio"]:checked + label {
+	border:1px solid #cf1141;
+}
+section.busket_forms .wrap form input[type="radio"]:checked + label>.checkBox {
+	background-color: transparent;
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-image: url(../img/radio-checked.png);
+}
+section.busket_forms .wrap form label>.checkBox {
+	width: 20px;
+	height: 20px;
+	border:1px solid #adb5bc;
+	border-radius: 50%;
+	margin-right: 20px;
+	margin-top: 26px;
+}
+section.busket_forms .wrap form label>div {
+	display: inline-block;
+	float: left;
+}
+section.busket_forms .wrap form label>.img_wrap {
+	width: 50px;
+	margin-right: 20px;
+	margin-top: 15px;
+}
+section.busket_forms .wrap form label>.img_wrap>img {
+	width: 100%;
+}
+section.busket_forms .wrap form label>.title {
+	font-size: 1.4rem;
+	margin-top: 27px;
+}
+section.busket_forms .wrap form label>.note {
+	width: 25px;
+	height: 25px;
+	border:1px solid #adb5bc;
+	border-radius: 50%;
+	position: relative;
+	text-align: center;
+	float: right;
+	margin-top: 23px;
+}
+section.busket_forms .wrap form label>.note>span:first-child {
+	line-height:25px;
+	font-size: 1.7rem;
+	color: #adb5bc;
+}
+section.busket_forms .wrap form label>.note>span.noteContent {
+	position: absolute;
+	top: 35px;
+	left: -45px;
+	width: 300px;
+	padding: 20px;
+	color: #8d949a;
+	text-align: justify;
+	font-size: 1.2rem;
+	border:1px solid #e8ecef;
+	background-color: #f8fafc;
+	z-index: 2;
+	display: none;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(153,153,153,0.3);
+	box-shadow: 0px 0px 20px 0px rgba(153,153,153,0.3);
+}
+section.busket_forms .wrap form label>.note>span.noteContent:before {
+	content: '';
+	border-right:1px solid #e8ecef;
+	border-bottom:1px solid #e8ecef;
+	background-color: #f8fafc;
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	top: -8px;
+	left: 50px;
+	-webkit-transform:rotateZ(-135deg);
+	        transform:rotateZ(-135deg);
+}
+section.busket_forms .wrap form label>.note:hover>span.noteContent {
+	display: block;
+}
+section.busket_forms .wrap form .payment_wrap label>.note>span.noteContent {
+	top: 35px;
+	right: -10px;
+	left: auto;
+}
+section.busket_forms .wrap form .payment_wrap label>.note>span.noteContent:before {
+	right: 10px;
+	left: auto;
+}
+section.busket_forms .wrap form button {
+	display: block;
+	width: 190px;
+	height: 40px;
+	background-color: #cf1141;
+	border:none;
+	color: #fff;
+	margin-left: 50%;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+}
+
+@media all and (max-width: 1320px) {
+	section.busket_forms .wrap form label>.checkBox {
+		margin-right: 10px;
+	}
+	section.busket_forms .wrap form label>.img_wrap {
+		margin-right: 10px;
+	}
+	section.busket_forms .wrap form label>.title {
+		width: 265px;
+	}
+	section.busket_forms .wrap form input#curier + label>.title,
+	section.busket_forms .wrap form input#ems + label>.title,
+	section.busket_forms .wrap form input#card + label>.title,
+	section.busket_forms .wrap form input#elTransfer + label>.title {
+		margin-top: 21px;
+	}
+}
+@media all and (max-width: 1000px) {
+	section.busket_forms .wrap form input[type="radio"] + label {
+		padding: 0 10px;
+		margin-left: 10px;
+	}
+	section.busket_forms .wrap form label>.title {
+		width: 180px;
+	}
+	section.busket_forms .wrap .delivery_wrap>.title, 
+	section.busket_forms .wrap .payment_wrap>.title {
+		text-align: center;
+	}
+	section.busket_forms .wrap form input#curier + label>.title {
+		margin-top: 11px;
+	}
+	section.busket_forms .wrap form input#post + label>.title,
+	section.busket_forms .wrap form input#sdek + label>.title,
+	section.busket_forms .wrap form input#transport + label>.title,
+	section.busket_forms .wrap form input#cash + label>.title,
+	section.busket_forms .wrap form input#bankAcount + label>.title	 {
+		margin-top: 21px;
+	}
+}
+@media all and (max-width: 700px) {
+	section.busket_forms .wrap .delivery_wrap {
+		clear: both;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	section.busket_forms .wrap .payment_wrap {
+		clear: both;
+		width: 100%;
+		padding-bottom:0px;
+	}
+	section.busket_forms .wrap form label>.title {
+		width: 63%;
+	}
+	section.busket_forms .wrap form .delivery_wrap label>.note>span.noteContent {
+		top: 35px;
+		right: -10px;
+		left: auto;
+	}
+	section.busket_forms .wrap form .delivery_wrap label>.note>span.noteContent:before {
+		right: 10px;
+		left: auto;
+	}
+	section.busket_forms .wrap form input#curier + label>.title,
+	section.busket_forms .wrap form input#post + label>.title, 
+	section.busket_forms .wrap form input#sdek + label>.title, 
+	section.busket_forms .wrap form input#transport + label>.title, 
+	section.busket_forms .wrap form input#cash + label>.title, 
+	section.busket_forms .wrap form input#bankAcount + label>.title,
+	section.busket_forms .wrap form input#ems + label>.title, 
+	section.busket_forms .wrap form input#card + label>.title, 
+	section.busket_forms .wrap form input#elTransfer + label>.title {
+		margin-top: 27px;
+	}
+}
+@media all and (max-width: 460px) {
+	section.busket_forms .wrap form input#curier + label>.title,
+	section.busket_forms .wrap form input#sdek + label>.title, 
+	section.busket_forms .wrap form input#transport + label>.title,
+	section.busket_forms .wrap form input#ems + label>.title, 
+	section.busket_forms .wrap form input#card + label>.title,
+	section.busket_forms .wrap form input#cash + label>.title,
+	section.busket_forms .wrap form input#elTransfer + label>.title {
+		margin-top: 21px;
+	}
+}
+@media all and (max-width: 412px) {
+	section.busket_forms .wrap form input#post + label>.title, 
+	section.busket_forms .wrap form input#bankAcount + label>.title {
+		margin-top: 21px;
+	}
+}
+@media all and (max-width: 405px) {
+	section.busket_forms .wrap form input#curier + label>.title {
+		margin-top: 11px;
+	}
+}
+@media all and (max-width: 380px) {
+	section.busket_forms .wrap form label>.title {
+		width: 55%;
+	}
+	section.busket_forms .wrap form input#office + label>.title {
+		margin-top: 21px;
+	}
+}
+@media all and (max-width: 346px) {
+	section.busket_forms .wrap form input#elTransfer + label>.title {
+		margin-top: 11px;
+	}
+}
+@media all and (max-width: 326px) {
+	section.busket_forms .wrap form label>.img_wrap,
+	section.busket_forms .wrap form label>.checkBox {
+		margin-right: 5px;
+	}
+	section.busket_forms .wrap form label>.title {
+		width: 58%;
+	}
+}
+
+

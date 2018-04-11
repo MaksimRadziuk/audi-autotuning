@@ -11,7 +11,7 @@
 	<title>Audi-autotuning</title>
 	<meta name="keywords" content="">
     <meta name="description" content="">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <link rel="icon" type="image/eps" href="img/favicon-32.png" sizes="32x32" />
@@ -22,9 +22,12 @@
 	<link rel="stylesheet" href="libs/slick/slick-theme.css">
 	<link rel="stylesheet" href="fonts/stylesheet.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/scroll/jquery.jscrollpane.css">
+	<link rel="stylesheet" href="libs/chosen/chosen.min.css">
+	<link rel="stylesheet" href="libs/unite-gallery/css/unite-gallery.css">
 	
 	<link rel="stylesheet" href="css/common.css">
-	<link rel="stylesheet" href="css/404.css">
+	<link rel="stylesheet" href="css/profile.css">
 
 
 </head>
@@ -59,6 +62,25 @@
 	</div>
 </div>
 
+<div class="popup adressInput">
+	<div class="addAdress_wrapper">
+		<div class="title">Заполните форму</div>
+		<form>
+			<select class="selectStreet" required>
+				<option value="ул.">Улица</option>
+				<option value="пр-т">Проспект</option>
+				<option value="бул.">Бульвар</option>
+				<option value="пер.">Переулок</option>
+			</select>
+			<input type="text" placeholder="Название улицы" required>
+			<input type="number" placeholder="Номер дома" required>
+			<input type="number" placeholder="Номер квартиры">
+			<button type="submit">Сохранить</button>
+		</form>
+		<div class="closePopup"><i class="fa fa-times" aria-hidden="true"></i></div>
+	</div>
+</div>
+
 
 
 
@@ -75,8 +97,8 @@
 							<span class="city">Санкт-Петербург</span>
 							<ul>
 								<li><a href="howtobuy.html">Как заказать</a></li>
-								<li><a href="#">Оплата</a></li>
-								<li><a href="#">Доставка</a></li>
+								<li><a href="howtobuy.html">Оплата</a></li>
+								<li><a href="howtobuy.html">Доставка</a></li>
 								<li><a href="#">Установка</a></li>
 								<li><a href="#">Контакты</a></li>
 								<li><a href="#">Новости</a></li>
@@ -85,7 +107,7 @@
 					</div>
 					<div class="middle">
 						<div class="middle_row first">
-							<form action="">
+							<form>
 								<div class="input_wrap">
 									<input type="text" placeholder="Поиск"><button class="search"><i class="fa fa-search" aria-hidden="true"></i></button>
 								</div>
@@ -133,20 +155,139 @@
 	</header>
 
 <div class="content">
-	<section class="page404">
+
+	<div class="breadcrumbs">
 		<div class="container">
 			<div class="row">
-				<div class="sidePart">
-					<p>Упс!</p>
-					<p>Страницы с таким адресом не существует. <br> Попробуйте начать с <a href="index.html">Главной страницы</a></p>
-				</div>
-				<div class="sidePart">
-					<img src="img/404-img.jpg" alt="">
+				<div class="wrapper">
+					<span><a href="index.html">Главная</a></span>
+					<span class="divider"> / </span>
+					<span><a href="">Личный кабинет</a></span>
+					<span class="divider"> / </span>
+					<span><a href="">Профиль</a></span>
 				</div>
 			</div>
 		</div>
-		
+	</div>
+	
+	<section class="profile">
+		<div class="container">
+			<div class="row">
+				<h2>Профиль</h2>
+				<div class="form_wrap">
+					<form>
+						<div class="form_row_wrap">
+							<div class="form_row">
+								<div class="left_column">Фамилия:</div>
+								<div class="data">
+									<p class="data_placehoder">Евдокимов</p>
+									<input type="text">
+								</div>
+								<div class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+							</div>
+						</div>
+						<div class="form_row_wrap">
+							<div class="form_row">
+								<div class="left_column">Имя <span>*</span>:</div>
+								<div class="data">
+									<p class="data_placehoder">Иван</p>
+									<input type="text">
+								</div>
+								<div class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+							</div>
+						</div>
+						<div class="form_row_wrap">
+							<div class="form_row">
+								<div class="left_column">Отчество</div>
+								<div class="data">
+									<p class="data_placehoder">Иванович</p>
+									<input type="text">
+								</div>
+								<div class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+							</div>
+						</div>
+						<div class="form_row_wrap">
+							<div class="form_row">
+								<div class="left_column">Номер телефона <span>*</span>:</div>
+								<div class="data">
+									<p class="data_placehoder">+7 (495) 452-54-89</p>
+									<input type="text">
+								</div>
+								<div class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+							</div>
+						</div>
+						<div class="form_row_wrap">
+							<div class="form_row">
+								<div class="left_column">E-mail <span>*</span>:</div>
+								<div class="data">
+									<p class="data_placehoder">afonia1980@gmail.com</p>
+									<input type="text">
+								</div>
+								<div class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+							</div>
+						</div>
+						<div class="form_row_wrap">
+							<div class="form_row">
+								<div class="left_column">Аккаунт ВКонтакте:</div>
+								<div class="data social">
+									<p class="data_placehoder">https://www.vkontakte.ru/skjfnjnsolnrbl/ljsboubwov/profile.php</p>
+									<input type="text">
+								</div>
+								<div class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+							</div>
+						</div>
+						<div class="form_row_wrap">
+							<div class="form_row">
+								<div class="left_column">Аккаунт Facebook:</div>
+								<div class="data social">
+									<p class="data_placehoder">https://www.facebook.com/slfkjnuosnf/ljdsivaubsyivbjwr/profile.php</p>
+									<input type="text">
+								</div>
+								<div class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+							</div>
+						</div>
+						<div class="form_row_wrap">
+							<div class="form_row adap">
+								<div class="left_column">Адрес доставки:</div>
+								<div class="data delivery">
+									<div class="address_wrap">
+										<span class="delete"><i class="fa fa-times" aria-hidden="true"></i></span>
+										<span class="adress">г.Москва, ул. Железнодорожная, д. 24, кв. 12</span>
+									</div>
+									<div class="address_wrap">
+										<span class="delete"><i class="fa fa-times" aria-hidden="true"></i></span>
+										<span class="adress">г.Москва, ул. Строителей, д. 74, кв. 14</span>
+									</div>
+									<div class="addAdress">
+										<span>+</span>
+										Добавить адрес
+									</div>
+									
+								</div>
+								<div class="edit"></div>
+							</div>
+						</div>
+						<div class="form_row_wrap subscription">
+							<div class="form_row adap">
+								<div class="left_column">Подписка на:</div>
+								<div class="data delivery">
+									<input type="checkbox" id="news" checked>
+									<label for="news">Новости</label>
+									<input type="checkbox" id="action" checked>
+									<label for="action">Акции</label>
+									<input type="checkbox" id="orderInfo" checked>
+									<label for="orderInfo">Инфромация по заказам</label>
+								</div>
+								<div class="edit"></div>
+							</div>
+						</div>
+						<button type="submit">Сохранить</button>
+					</form>
+				</div>
+			</div>
+		</div>
 	</section>
+
 </div>
 
 	<footer>
@@ -217,7 +358,7 @@
 					<div class="bottom__wrapper">
 						<div class="stat_wrapper"><img src="img/stat-footer.png" alt=""></div>
 						<div class="copyright">
-							<p>&copy Autotuning-Audi.ru 2008 - 2017. Все права защищены.</p>
+							<p>&copy; Autotuning-Audi.ru 2008 - 2017. Все права защищены.</p>
 							<a href="#">Карта сайта</a>
 						</div>
 					</div>
@@ -236,8 +377,13 @@
 <script src="libs/jquery/jquery-3.2.1.min.js"></script>
 <script src="libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <script src="libs/slick/slick.js"></script>
+<script src="libs/scroll/jquery.jscrollpane.min.js"></script>
+<script src="libs/scroll/jquery.mousewheel.js"></script>
+<script src="libs/chosen/chosen.jquery.min.js"></script>
+<script src="libs/unite-gallery/js/unitegallery.min.js"></script>
+<script src="libs/unite-gallery/js/ug-theme-compact.js"></script>
 
 <script src="js/common.js"></script>
-<script src="js/main.js"></script>
+<script src="js/profile.js"></script>
 </body>
 </html>

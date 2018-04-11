@@ -11,7 +11,7 @@
 	<title>Audi-autotuning</title>
 	<meta name="keywords" content="">
     <meta name="description" content="">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <link rel="icon" type="image/eps" href="img/favicon-32.png" sizes="32x32" />
@@ -22,9 +22,12 @@
 	<link rel="stylesheet" href="libs/slick/slick-theme.css">
 	<link rel="stylesheet" href="fonts/stylesheet.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/scroll/jquery.jscrollpane.css">
+	<link rel="stylesheet" href="libs/chosen/chosen.min.css">
+	<link rel="stylesheet" href="libs/unite-gallery/css/unite-gallery.css">
 	
 	<link rel="stylesheet" href="css/common.css">
-	<link rel="stylesheet" href="css/404.css">
+	<link rel="stylesheet" href="css/single.css">
 
 
 </head>
@@ -75,8 +78,8 @@
 							<span class="city">Санкт-Петербург</span>
 							<ul>
 								<li><a href="howtobuy.html">Как заказать</a></li>
-								<li><a href="#">Оплата</a></li>
-								<li><a href="#">Доставка</a></li>
+								<li><a href="howtobuy.html">Оплата</a></li>
+								<li><a href="howtobuy.html">Доставка</a></li>
 								<li><a href="#">Установка</a></li>
 								<li><a href="#">Контакты</a></li>
 								<li><a href="#">Новости</a></li>
@@ -85,7 +88,7 @@
 					</div>
 					<div class="middle">
 						<div class="middle_row first">
-							<form action="">
+							<form>
 								<div class="input_wrap">
 									<input type="text" placeholder="Поиск"><button class="search"><i class="fa fa-search" aria-hidden="true"></i></button>
 								</div>
@@ -133,20 +136,39 @@
 	</header>
 
 <div class="content">
-	<section class="page404">
+
+	<div class="breadcrumbs">
 		<div class="container">
 			<div class="row">
-				<div class="sidePart">
-					<p>Упс!</p>
-					<p>Страницы с таким адресом не существует. <br> Попробуйте начать с <a href="index.html">Главной страницы</a></p>
-				</div>
-				<div class="sidePart">
-					<img src="img/404-img.jpg" alt="">
+				<div class="wrapper">
+					<span><a href="index.html">Главная</a></span>
+					<span class="divider"> / </span>
+					<span><a href="">Новости</a></span>
+					<span class="divider"> / </span>
+					<span><a href="">Элементы тюнинга от ABT к A3 (8V)</a></span>
 				</div>
 			</div>
 		</div>
-		
+	</div>
+
+	<section class="singleNews">
+		<div class="container">
+			<div class="row">
+				<h2>Элементы тюнинга от ABT к A3 (8V)</h2>
+				<div class="date">29.07.2014</div>
+				<p class="text">Новинки ABT для A3 (8V) на складе и под заказ. В комплект обвеса входят накладка на бампер передний, решетка радиатора, воздухозаборники, пороги, спойлер крыши, накладка на бампер задний с глушителем на две стороны. <br><br>Тюнинг стоит дополнить литыми дисками 18 или 19-го радиуса в дизайне ER-C silverbullet-Optik. <br><br>Завершением тюнинга могут быть салонные коврики с логотипом ABT и подсветка дверных порогов. <br><br>Все детали можно приобрести как комплектом, так и по отдельности. Детали доступны и для 3-дверной вресии, и для Sportback.</p>
+				<div class="photo_wrap">
+					<div class="img_wrap"><img src="img/news-photo-1.jpg" alt=""></div>
+					<div class="img_wrap"><img src="img/news-photo-2.jpg" alt=""></div>
+					<div class="img_wrap"><img src="img/news-photo-3.jpg" alt=""></div>
+					<div class="img_wrap"><img src="img/news-photo-4.jpg" alt=""></div>
+				</div>
+				<a href="news.html" class="back"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Вернуться к новостям</a>
+			</div>
+		</div>
 	</section>
+
+
 </div>
 
 	<footer>
@@ -217,7 +239,7 @@
 					<div class="bottom__wrapper">
 						<div class="stat_wrapper"><img src="img/stat-footer.png" alt=""></div>
 						<div class="copyright">
-							<p>&copy Autotuning-Audi.ru 2008 - 2017. Все права защищены.</p>
+							<p>&copy; Autotuning-Audi.ru 2008 - 2017. Все права защищены.</p>
 							<a href="#">Карта сайта</a>
 						</div>
 					</div>
@@ -236,8 +258,12 @@
 <script src="libs/jquery/jquery-3.2.1.min.js"></script>
 <script src="libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <script src="libs/slick/slick.js"></script>
+<script src="libs/scroll/jquery.jscrollpane.min.js"></script>
+<script src="libs/scroll/jquery.mousewheel.js"></script>
+<script src="libs/chosen/chosen.jquery.min.js"></script>
+<script src="libs/unite-gallery/js/unitegallery.min.js"></script>
+<script src="libs/unite-gallery/js/ug-theme-compact.js"></script>
 
 <script src="js/common.js"></script>
-<script src="js/main.js"></script>
 </body>
 </html>

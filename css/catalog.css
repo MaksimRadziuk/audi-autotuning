@@ -427,8 +427,10 @@ section.catalog .contentPart>article>.title {
 }
 section.catalog .contentPart>article>.description {
 	width: 100%;
-	column-gap: 80px;
-	column-count: 2;
+	-webkit-column-gap: 80px;
+	        column-gap: 80px;
+	-webkit-column-count: 2;
+	        column-count: 2;
 	font-size: 1.4rem;
 	text-align: justify;
 	margin-bottom: 50px;

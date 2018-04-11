@@ -145,13 +145,7 @@ header .menu_wrap ul li>a:before {
 }
 header .menu_wrap ul li:last-child {
 	padding-right: 0;
-}/* 
-header .menu_wrap ul li:last-child>a {
-	font-size: 1.2rem;
 }
-header .menu_wrap ul li:last-child>a:before{
-	display: none;
-} */
 header .menu_wrap ul li>a:hover {
 	color:#cf1141;
 }
@@ -251,7 +245,7 @@ header .rightPart .middle_row .phoneBlock .callBackOrder {
 	-webkit-transition: all .2s linear;
 	transition: all .2s linear;
 }
-header .rightPart .middle_row .phoneBlock .callBackOrder>p{
+header .rightPart .middle_row .phoneBlock .callBackOrder>span{
 	color: #fffefe;
 	line-height: 25px;
 	font-size: 1.3rem;
@@ -608,7 +602,7 @@ footer .bottom .copyright a {
 #popup_background {
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0,0,0,.6);
+	background-color: rgba(0,0,0,.7);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -790,7 +784,7 @@ footer .bottom .copyright a {
 	header .rightPart .middle_row .phoneBlock .phoneNumber a {
 		font-size: 1.5rem;
 	}
-	header .rightPart .middle_row .phoneBlock .callBackOrder>p {
+	header .rightPart .middle_row .phoneBlock .callBackOrder>span{
 		font-size: 1rem;
 	}
 	header .rightPart .middle_row .phoneBlock .callBackOrder {
@@ -1071,7 +1065,7 @@ footer .bottom .copyright a {
 		top: 30px;
 		left: 10px;
 	}
-	header .rightPart .middle_row .phoneBlock .callBackOrder>p {
+	header .rightPart .middle_row .phoneBlock .callBackOrder>span {
 		color:inherit;
 		line-height: 30px;
 		display: inline;
@@ -1152,6 +1146,7 @@ footer .bottom .copyright a {
 	}
 	header {
 		height: auto;
+		margin-bottom: 60px;
 	}
 	header .rightPart .middle_row form {
 		width: 100%;

@@ -119,7 +119,8 @@ section.howtobuy .delivery .options_wrap .option:before {
 	background-position: center center;
 	background-size: 100%;
 	top: 50%;
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
 	left: -70px;
 }
 section.howtobuy .delivery .options_wrap .option.courier:before {

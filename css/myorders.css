@@ -1,0 +1,623 @@
+section.myorders {
+	padding-bottom: 90px;
+}
+section.myorders h2 {
+	text-align: left;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+section.myorders .selection_wrap {
+	width: 100%;
+	margin-bottom: 30px;
+}
+section.myorders .selection_wrap .date {
+	display: inline-block;
+}
+section.myorders .selection_wrap .date p {
+	margin: 0;
+	display: inline-block;
+	font-size: 1.3rem;
+}
+section.myorders .selection_wrap .date input {
+	display: inline-block;
+	width: 170px;
+	height: 40px;
+	border:1px solid #e0e5e9;
+	margin: 0 10px;
+	margin-bottom: -10px;
+}
+section.myorders .selection_wrap .status {
+	display: inline-block;
+	margin-left: 100px;
+}
+section.myorders .selection_wrap .status p {
+	display: inline-block;
+	font-size: 1.3rem;
+}
+section.myorders .selection_wrap .status .select_wrap {
+	width: 170px;
+	height: 40px;
+	margin-left: 10px;
+	margin-bottom: -10px;
+	display: inline-block;
+}
+section.myorders .selection_wrap .status .select_wrap select {
+	width: 100%;
+	height: 100%;
+	border:1px solid #e0e5e9;
+}
+
+section.myorders .selection_wrap .chosen-container {
+	margin-bottom: 20px;
+}
+section.myorders .selection_wrap .chosen-container .chosen-single {
+	width: 100%;
+	height: 40px;
+	margin-bottom: -15px;
+	background-color: #fff;
+	border:1px solid #e8ecef;
+	position: relative;
+	border-radius: 0;!important
+	background-color: #fff;
+	background-image: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;!important
+}
+section.myorders .selection_wrap .chosen-container-active .chosen-single {
+	width: 100%;
+	height:40px;
+	margin-bottom: -15px;
+	background-color: #fff;
+	border:1px solid #e8ecef;
+	position: relative;
+	border-radius: 0;!important
+	background-color: #fff;
+	background-image: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;!important
+}
+section.myorders .selection_wrap .chosen-container-active.chosen-with-drop .chosen-single {
+	width: 100%;
+	height: 40px;
+	margin-bottom: -15px;
+	background-color: #fff;
+	border:1px solid #e8ecef;
+	position: relative;
+	border-radius: 0;!important
+	background-color: #fff;
+	background-image: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;!important
+}
+section.myorders .selection_wrap .chosen-container-single .chosen-single span {
+	line-height: 40px;
+}
+section.myorders .selection_wrap .chosen-container .chosen-results-scroll-down span, 
+section.myorders .selection_wrap .chosen-container .chosen-results-scroll-up span, 
+section.myorders .selection_wrap .chosen-container-multi .chosen-choices .search-choice .search-choice-close, 
+section.myorders .selection_wrap .chosen-container-single .chosen-search input[type=text], 
+section.myorders .selection_wrap .chosen-container-single .chosen-single abbr, 
+section.myorders .selection_wrap .chosen-container-single .chosen-single div b, 
+section.myorders .selection_wrap .chosen-rtl .chosen-search input[type=text] {
+	background-image: url(../libs/chosen/arrow-down-select.jpg);
+	background-position: center left;
+}
+section.myorders .selection_wrap .chosen-container-single .chosen-search {
+	display: none;
+}
+section.myorders .selection_wrap .chosen-container-active.chosen-with-drop .chosen-single div b {
+	background-position: center left;
+}
+section.myorders .selection_wrap .chosen-container-single .chosen-drop {
+	border:1px solid #e8ecef;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	border-radius: 0;
+}
+section.myorders .selection_wrap .chosen-container .chosen-results {
+	max-height: auto;
+}
+section.myorders .selection_wrap .chosen-container .chosen-results li.highlighted {
+	background-image: none;
+	background-color:transparent;
+	color: #cf1141;
+}
+
+section.myorders .table_wrap {
+	width: 100%;
+}
+section.myorders .table_wrap table {
+	width: 100%;
+}
+section.myorders .table_wrap table th {
+	background-color: #f0f4f7;
+	border-right: 1px solid #fff;
+	padding: 10px 20px;
+	font-size: 1.4rem;
+}
+section.myorders .table_wrap table td:last-child {
+	border-right: 1px solid #fff;
+}
+section.myorders .table_wrap table td {
+	background-color: #fff;
+	border-right: 1px solid #e8ecef;
+	border-bottom: 1px solid #e8ecef;
+	padding: 20px 10px 20px 20px;
+	font-size: 1.3rem;
+	vertical-align: top;
+}
+section.myorders .table_wrap table td>div {
+	color: #b7bbbf;
+}
+section.myorders .table_wrap table td>span {
+	color: #cf1141;
+}
+section.myorders .table_wrap table td button {
+	background-color: transparent;
+	border:none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+section.myorders .table_wrap table td i {
+	font-size: 3.5rem;
+	color:#b7bbbf;
+	-webkit-transform: rotateY(180deg);
+	        transform: rotateY(180deg);
+	font-weight: 100;
+}
+section.myorders .table_wrap table td.status_main {
+	color: #7ca500;
+}
+section.myorders .table_wrap table td.repeat_main {
+	text-align: center;
+	padding: 20px;
+}
+
+
+section.myorders .table_wrap table td.number_main {
+	width: 120px;
+} 
+section.myorders .table_wrap table td.cost_main {
+	width: 114px;
+}
+section.myorders .table_wrap table td.payment_main {
+	width: 248px;
+}
+section.myorders .table_wrap table td.adress_main{
+	width: 248px;
+}
+section.myorders .table_wrap table td.delivery_main {
+	width: 241px;
+}
+section.myorders .table_wrap table td.status_main {
+	width: 193px;
+}
+section.myorders .table_wrap table td.repeat_main {
+	width: 115px;
+}
+section.myorders .table_wrap .mobile {
+	display: none;
+}
+
+@media all and (max-width: 1320px) {
+	section.myorders .table_wrap table td.number_main {
+		width: 104px;
+	} 
+	section.myorders .table_wrap table td.cost_main {
+		width: 114px;
+	}
+	section.myorders .table_wrap table td.payment_main {
+		width: 157px;
+	}
+	section.myorders .table_wrap table td.adress_main{
+		width:183px;
+	}
+	section.myorders .table_wrap table td.delivery_main {
+		width: 147px;
+	}
+	section.myorders .table_wrap table td.status_main {
+		width: 139px;
+	}
+	section.myorders .table_wrap table td.repeat_main {
+		width: 115px;
+		padding-top: 30px;
+	}
+}
+@media all and (max-width: 1000px) {
+	section.myorders .selection_wrap .date {
+		display: block;
+	}
+	section.myorders .selection_wrap .status {
+		display: block;
+		margin-left: 0;
+		margin-top: 35px;
+	}
+	section.myorders .table_wrap table th,
+	section.myorders .table_wrap table td {
+		padding: 5px 10px;
+	}
+	section.myorders .table_wrap table th {
+		font-size: 1rem;
+	}
+	section.myorders .table_wrap table td {
+		font-size: 1rem;
+	}
+	section.myorders .table_wrap table td.repeat_main {
+		padding-top: 20px;
+	}
+	section.myorders .table_wrap table td i {
+		font-size: 2rem;
+	}
+}
+@media all and (max-width: 700px) {
+	section.myorders .container>.row {
+		margin: 0;
+	}
+	section.myorders .table_wrap .desktop {
+		display: none;
+	}
+	section.myorders .table_wrap .mobile {
+		display: block;
+	}
+	section.myorders .table_wrap .mobile {
+		width: 100%;
+		min-width: 100%;
+	}
+	section.myorders .table_wrap .mobile tbody {
+		width: 100%;
+	}
+	section.myorders .table_wrap .mobile td{
+		border:1px solid #e8ecef;
+	}
+	section.myorders .table_wrap .mobile td.main_title {
+		font-size: 1.2rem;
+		width: 30%;
+		background-color: #f0f4f7;
+		border-top:1px solid #fff;
+		border-bottom:1px solid #fff;
+	}
+	section.myorders .table_wrap .mobile tr:first-child td.main_title {
+		border-top: 1px solid #e8ecef;
+	}
+	section.myorders .table_wrap .mobile tr:last-child td.main_title {
+		border-bottom: 1px solid #e8ecef;
+	}
+	section.myorders .table_wrap .mobile td.data {
+		font-size: 1.2rem;
+		width: 70%;
+		border:1px solid #e8ecef;
+	}
+	section.myorders .table_wrap table td {
+		padding: 7px 15px;
+	}
+	section.myorders .selection_wrap .date input {
+		height: 30px;
+	}
+	section.myorders .selection_wrap .status .select_wrap {
+		height: 30px;
+	}
+	section.myorders .selection_wrap .chosen-container .chosen-single {
+		height: 30px;
+	}
+	section.myorders .selection_wrap .chosen-container-active .chosen-single {
+		height:30px;
+	}
+	section.myorders .selection_wrap .chosen-container-active.chosen-with-drop .chosen-single {
+		height: 30px;
+	}
+	section.myorders .selection_wrap .chosen-container-single .chosen-single span {
+		line-height: 30px;
+	}
+
+}
+@media all and (max-width: 560px) {
+	section.myorders .selection_wrap .date p:first-child {
+		display: block;
+		margin-bottom: 10px;
+	}
+}
+@media all and (max-width: 435px) {
+	section.myorders .selection_wrap .date input {
+		width: 150px;
+		margin:0 5px;
+		margin-bottom: -5px;
+	}
+}
+@media all and (max-width: 373px) {
+	section.myorders .selection_wrap .date p {
+		display: block;
+		margin: 10px 0; 
+	}
+	section.myorders .table_wrap table td {
+		padding: 7px;
+	}
+}
+
+
+
+section.myorders .innerTable__head {
+	padding: 5px 10px;
+	background-color: #fafbfb;
+	cursor: pointer;
+}
+section.myorders .innerTable__head span {
+	font-size: 1.2rem;
+	color: #b7bbbf;
+}
+section.myorders .innerTable__head span i{
+	font-size: 1.2rem;
+	color: #b7bbbf;
+}
+section.myorders .innerTable__head span.active i {
+	-webkit-transform: rotateZ(180deg);
+	        transform: rotateZ(180deg);
+}
+section.myorders .innerTable__body {
+	display: none;
+}
+section.myorders .innerTable__body table {
+	width: 100%;
+	empty-cells:hide;
+	margin-bottom: 70px;
+}
+section.myorders .innerTable__body table thead th {
+	border: 1px solid #e8ecef;
+	background-color: #f2f3f3;
+	color: #242424;
+	font-size: 1.4rem;
+	height: 50px;
+	padding-left: 25px;
+}
+section.myorders .innerTable__body table thead th:first-child {
+	border-left: 1px solid #fff;
+}
+section.myorders .innerTable__body table thead th:last-child {
+	border-right: 1px solid #fff;
+}
+section.myorders .innerTable__body table tbody td {
+	padding:25px;
+	border-right:1px solid #e8ecef;
+	border-bottom:1px solid #e8ecef;
+	background-color: #fafbfb;
+}
+section.myorders .innerTable__body table tbody td:last-child {
+	border-right: 1px solid #fff;
+}
+section.myorders .innerTable__body table tbody td.code {
+	white-space: nowrap;
+}
+section.myorders .innerTable__body table tbody td .img_wrap {
+	display: inline-block;
+	overflow:hidden;
+	height: 70px;
+	width: 17%;
+	margin-right: 25px;
+}
+section.myorders .innerTable__body  table tbody td.description .title {
+	display: inline-block;
+	width: 69%;
+	vertical-align: top;
+	font-size: 1.4rem;
+	color: #242424;
+}
+section.myorders .innerTable__body  table tbody td.description {
+	vertical-align: top;
+}
+section.myorders .innerTable__body table tbody td.amount {
+	min-width: 170px;
+}
+section.myorders .innerTable__body table tbody td>span.avaliable {
+	font-size: 1.3rem;
+	color: #7ca500;
+}
+section.myorders .innerTable__body table tbody td>span.unavaliable {
+	font-size: 1.3rem;
+	color: #cf1141;
+}
+section.myorders .innerTable__body table tbody td.cost {
+	font-size: 2rem;
+	white-space: nowrap;
+}
+section.myorders .innerTable__body table tbody td .deleteItem i{
+	color: #c0c6ca;
+	font-size: 1.6rem;
+	cursor: pointer;
+}
+section.myorders .innerTable__body table tbody td .deleteItem i:hover {
+	color: #cf1141;
+}
+section.myorders .innerTable__body table tbody td:last-child {
+	border-right: none;
+}
+section.myorders .innerTable__body table tbody tr.footer td{
+	padding: 15px 25px;
+	border-bottom: none;
+}
+section.myorders .innerTable__body  table tbody tr.footer td:last-child {
+	border-right: none;
+}
+section.myorders .innerTable__body table tbody tr.footer td:first-child {
+	border-right: none;
+	padding-left: 0;
+}
+section.myorders .innerTable__body table tbody tr.footer td:first-child>a {
+	color: #cf1141; 
+}
+section.myorders .innerTable__body table tbody tr.footer td:first-child>a>i {
+	color: #cf1141; 
+}
+section.myorders .innerTable__body table tbody tr.footer td.cost {
+	background-color: #f0f4f7;
+	color: #cf1141;
+}
+section.myorders .innerTable__body table tbody tr.footer td.sum {
+	text-align: right;
+	font-weight: 600;
+}
+section.myorders .innerTable__body table tbody td .img_wrap>img {
+	width: 100%;
+}
+section.myorders .innerTable__body table.mobile {
+	display: none;
+}
+@media all and (max-width: 1320px) {
+	section.myorders .innerTable__body table tbody td .img_wrap {
+		height: 60px;
+		margin-right: 10px;
+		width: 33%;
+	}
+	section.myorders .innerTable__body  table tbody td .title {
+		width: 60%;
+	}
+}
+@media all and (max-width: 1140px) {
+	section.myorders .innerTable__body table tbody td {
+		padding: 10px;
+	}
+}
+@media all and (max-width: 1000px) {
+	section.myorders .innerTable__body table tbody td .img_wrap {
+		margin-right: 15px;
+	}
+	section.myorders .innerTable__body table tbody td .title {
+		font-size: 1.2rem;
+	}
+	section.myorders .innerTable__body  table tbody td.amount {
+		min-width: 140px;
+	}
+	section.myorders .innerTable__body  table tbody td.cost {
+		font-size: 1.5rem;
+	}
+	section.myorders .innerTable__body table tbody tr.footer td {
+		padding: 15px;
+	}
+	section.myorders .innerTable__body table thead th {
+		padding-left: 15px;
+	}
+	section.myorders .innerTable__body table tbody td .img_wrap {
+		display: block;
+		margin-right: 0;
+		margin-bottom: 10px;
+		width: 100px;
+	}
+	section.myorders .innerTable__body table tbody td .title {
+		display: block;
+		width: 100%;
+	}
+	section.myorders .innerTable__body table {
+		max-width: 100%;
+	}
+	section.myorders .innerTable__body table tbody td.amount {
+		text-align: center;
+	}
+}
+@media all and (max-width: 700px) {
+	section.myorders .innerTable__head {
+		max-width: 536px;
+	}
+	section.myorders .innerTable__body {
+		max-width: 536px;
+	}
+	section.myorders .innerTable__body table.mobile {
+		display: block;
+	}
+	section.myorders .innerTable__body table tbody td.code {
+		-webkit-transform:rotateZ(-90deg);
+		        transform:rotateZ(-90deg);
+		max-width: 40px;
+	}
+	section.myorders .innerTable__body table tbody {
+		width: 100%;
+	}
+	section.myorders .innerTable__body table tbody th {
+		padding-left: 5px;
+		font-size: 1.4rem;
+		border:1px solid #e8ecef;
+	}
+	section.myorders .innerTable__body table tbody td .input_wrap>button {
+		width: 40px;
+	}
+	section.myorders .innerTable__body table tbody td.amount {
+		min-width: 60px;
+	}
+	section.myorders .innerTable__body table.desktop {
+		display: none;
+	}
+	section.myorders .innerTable__body table.mobile {
+		display: block;
+	}
+	section.myorders .innerTable__body table.mobile tbody td {
+		border:1px solid #e8ecef;
+	}
+	section.myorders .innerTable__body table tbody td:last-child {
+		border-right: 1px solid #e8ecef;
+	}
+	section.myorders .innerTable__body table.mobile tbody th {
+		vertical-align: bottom;
+		font-size: 1.6rem;
+		font-weight: 600;
+		line-height: 1.4;
+		padding: 10px;
+		text-align: center;
+		background-color:#e8ecef;
+	}
+	section.myorders .innerTable__body table.mobile tbody.divider td, 
+	section.myorders .innerTable__body table tbody.divider td:last-child{
+		border:none;
+		padding:10px;
+		background-color: #fff;
+	}
+	section.myorders .innerTable__body table tbody td.delete {
+		text-align: center;
+		border-left: none;
+		border-right: none;
+	}
+	section.myorders .innerTable__body table tbody td .deleteItem i {
+		font-size: 2rem;
+	}
+	section.myorders .innerTable__body table tbody td.sum {
+		text-align: right;
+		font-size: 1.4rem;
+		font-weight: 600;
+		border:none;
+	}
+	section.myorders .innerTable__body table tbody td.cost {
+		background-color: #e8ecef;
+		color: #cf1141;
+		font-size: 1.6rem;
+		font-weight: 600;
+	}
+	section.myorders .innerTable__body table tbody td.shopping {
+		border:none;
+		vertical-align: bottom;
+	}
+	section.myorders .innerTable__body table tbody td>a {
+		color:#cf1141;
+		font-size: 1.4rem;
+	}
+	section.myorders .innerTable__body table tbody td>a>i {
+		color:#cf1141;
+	}
+	section.myorders .table_wrap table td {
+		font-size: 1.2rem;
+	}
+	section.myorders .innerTable__body table {
+		margin-bottom: 30px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
