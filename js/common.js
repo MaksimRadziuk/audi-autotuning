@@ -70,7 +70,7 @@ $(document).ready(function(){
 	    }
 	});
 
-	$('header .rightPart .middle_row .personalCab').click(function(){
+	$('header .rightPart .middle_row .personalCab i').click(function(){
 		$('.popup.signIn').fadeIn();
 		$('#popup_background').show();
 	});	
