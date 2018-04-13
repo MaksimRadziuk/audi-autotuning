@@ -782,6 +782,7 @@ section.product .contentPart>.slider_wrap .description .buyNow {
 	background-color:#cf1141;
 	float: left;
 	margin-bottom: 20px;
+	cursor: pointer;
 }
 section.product .contentPart>.slider_wrap .description .buyNow>a {
 	text-align: center;
@@ -825,6 +826,7 @@ section.product .contentPart>.slider_wrap .description .addToBusket {
 	background-color: #cf1141;
 	float: left;
 	margin-bottom: 20px;
+	cursor: pointer;
 }
 section.product .contentPart>.slider_wrap .description .addToBusket>a {
 	text-align: center;
@@ -857,6 +859,7 @@ section.product .contentPart>.slider_wrap .description .addToFavoriate {
 	height: 30px;
 	background-color: #242424;
 	float: left;
+	cursor: pointer;
 }
 section.product .contentPart>.slider_wrap .description .addToFavoriate>a {
 	text-align: center;

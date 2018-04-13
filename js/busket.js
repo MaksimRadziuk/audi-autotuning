@@ -36,7 +36,7 @@ $(document).ready(function(){
 	    }
 	});
 
-	if (innerWidth<=700) {
+	/*if (innerWidth<=700) {
 		$('.deleteItem').click(function(){
 			$(this).closest('table tbody.item').remove();
 		});	
@@ -46,6 +46,6 @@ $(document).ready(function(){
 			$(this).closest('table tr').remove();
 		});	
 	}
-	else{}
+	else{}*/
 
 });

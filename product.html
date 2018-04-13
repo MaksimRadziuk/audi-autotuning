@@ -62,6 +62,111 @@
 	</div>
 </div>
 
+<div class="popup adressInput">
+	<div class="addAdress_wrapper">
+		<div class="title">Заполните форму</div>
+		<form>
+			<select class="selectStreet" required>
+				<option value="ул.">Улица</option>
+				<option value="пр-т">Проспект</option>
+				<option value="бул.">Бульвар</option>
+				<option value="пер.">Переулок</option>
+			</select>
+			<input type="text" placeholder="Название улицы" required>
+			<input type="number" placeholder="Номер дома" required>
+			<input type="number" placeholder="Номер квартиры">
+			<button type="submit">Сохранить</button>
+		</form>
+		<div class="closePopup"><i class="fa fa-times" aria-hidden="true"></i></div>
+	</div>
+</div>
+
+<div class="popup deleteBusketRow">
+	<div class="deleteBusketRow_wrap">
+		<div class="title">Этот товар можно добавить в избранное и вернуться к его покупке позднее</div>
+		<button class="addToFavoriate">Добавить в избранное</button>
+		<div class="closePopup"><i class="fa fa-times" aria-hidden="true"></i></div>
+	</div>
+</div>
+
+<div class="popup buyWithOneClick">
+	<div class="buyWithOneClick_wrap">
+		<div class="title">Купить в 1 клик</div>
+		<form>
+			<div class="holder name">
+				<input type="name" required>
+				<label>Ваше Имя <span>*</span></label>
+			</div>
+			<div class="holder phone">
+				<input type="phone" required>
+				<label>+7(9хх)ххх-хх-хх) <span>*</span></label>
+			</div>
+			<div class="holder mail">
+				<input type="mail" required>
+				<label>Адрес эл. почты <span>*</span></label>
+			</div>
+			<textarea placeholder="Комментарий к заказу"></textarea>
+			<button type="submit">Оформить заказ</button>
+		</form>
+		<div class="closePopup"><i class="fa fa-times" aria-hidden="true"></i></div>
+	</div>
+</div>
+
+<div class="popup signIn">
+	<div class="signIn_wrap">
+		<div class="title">Выполните вход</div>
+		<p>и Вы сами сможете выбрать способ доставки, форму оплаты и следить за статусами Вашего заказа, а также получать уведомления, узнавать о новостях и проходящих акциях</p>
+		<form>
+			<div class="holder mail">
+				<input type="mail" required>
+				<label>Адрес эл. почты <span>*</span></label>
+			</div>
+			<div class="holder password1">
+				<input type="password" required>
+				<label>Пароль <span>*</span></label>
+			</div>
+			<div class="submitBlock">
+				<button type="submit">Войти</button>
+				<a href="#">Забыли пароль?</a>
+			</div>
+		</form>
+		<p class="socialTitle">Войти с помощью соцсетей:</p>
+		<div class="link_wrap">
+			<button class="signVK"></button>
+			<button class="signFcb"></button>
+		</div>
+		<div class="closePopup"><i class="fa fa-times" aria-hidden="true"></i></div>
+	</div>
+</div>
+
+<div class="popup signInUnregistered">
+	<div class="signInUnregistered_wrap">
+		<div class="title">Чтобы добавить товар в избранное просьба авторизоваться или зарегистрироваться.</div>
+		<p>В дальнейшем Вы сможете получать новости, узнавать и снижении цен и проходящих акциях</p>
+		<form>
+			<div class="holder mail">
+				<input type="mail" required>
+				<label>Адрес эл. почты <span>*</span></label>
+			</div>
+			<div class="holder password1">
+				<input type="password" required>
+				<label>Пароль <span>*</span></label>
+			</div>
+			<div class="submitBlock">
+				<button type="submit">Войти</button>
+				<a href="#">Забыли пароль?</a>
+				<a href="#" class="reg_link"><i class="fa fa-pencil" aria-hidden="true"></i>Регистрация</a>
+			</div>
+		</form>
+		<p class="socialTitle">Войти с помощью соцсетей:</p>
+		<div class="link_wrap">
+			<button class="signVK"></button>
+			<button class="signFcb"></button>
+		</div>
+		<div class="closePopup"><i class="fa fa-times" aria-hidden="true"></i></div>
+	</div>
+</div>
+
 
 
 
@@ -69,7 +174,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="logoBox">
-					<div class="logo"><img src="img/logo.jpg" alt="Audi-autotuning logo"></div>
+					<div class="logo"><a href="index.html"><img src="img/logo.jpg" alt="Audi-autotuning logo"></a></div>
 					<div class="slogan">Оригинальные аксессуары, диски, дооснащение и тюнинг Audi</div>
 				</div>
 				<div class="rightPart">
@@ -78,17 +183,17 @@
 							<span class="city">Санкт-Петербург</span>
 							<ul>
 								<li><a href="howtobuy.html">Как заказать</a></li>
-								<li><a href="#">Оплата</a></li>
-								<li><a href="#">Доставка</a></li>
-								<li><a href="#">Установка</a></li>
-								<li><a href="#">Контакты</a></li>
-								<li><a href="#">Новости</a></li>
+								<li><a href="howtobuy.html">Оплата</a></li>
+								<li><a href="howtobuy.html">Доставка</a></li>
+								<li><a href="howtobuy.html">Установка</a></li>
+								<li><a href="#contacts">Контакты</a></li>
+								<li><a href="news.html">Новости</a></li>
 							</ul>
 						</nav>
 					</div>
 					<div class="middle">
 						<div class="middle_row first">
-							<form>
+							<form action="">
 								<div class="input_wrap">
 									<input type="text" placeholder="Поиск"><button class="search"><i class="fa fa-search" aria-hidden="true"></i></button>
 								</div>
@@ -97,7 +202,18 @@
 								<span class="phoneNumber"><a href="tel:+74959737722" class="phone"><i class="fa fa-phone" aria-hidden="true"></i>+7(495)973-77-22</a></span>
 								<span class="callBackOrder"><i class="fa fa-phone" aria-hidden="true"></i><span>Обратный звонок</span></span>
 							</div>
-							<div class="personalCab"><i class="fa fa-user" aria-hidden="true"></i>Личный кабинет</div>
+							<div class="personalCab">
+								<i class="fa fa-user" aria-hidden="true"></i>Личный кабинет
+								<div class="dropdown_block">
+									<div class="dropdown_wrap">
+										<ul>
+											<li><a href="myorders.html"><i class="fa fa-angle-right"></i>Мои заказы</a></li>
+											<li><a href="myorders.html"><i class="fa fa-angle-right"></i>Избранное</a></li>
+											<li><a href="profile.html"><i class="fa fa-angle-right"></i>Профиль</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="middle_row second">
 							<div class="adress">
@@ -105,7 +221,7 @@
 								<p>Москва, Алтуфьевское шоссе, д.27, офис 229</p>
 							</div>
 							<div class="timeWork"><p>Время работы: с 10:00 до 19:00</p></div>
-							<div class="busketBlock"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Корзина<span id="busketFill">(0)</span></div>
+							<div class="busketBlock"><a href="busket-unknownUser.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Корзина<span id="busketFill">(0)</span></a></div>
 						</div>
 					</div>
 				</div>
@@ -116,18 +232,18 @@
 				<div class="row">
 					<div class="menu_models">
 						<ul class="header__menu-slider">
-							<li><a href="#">A3<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-							<li><a href="#">A4<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-							<li><a href="#">A5<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-							<li><a href="#">A6<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-							<li><a href="#">A7<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-							<li><a href="#">A8<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-							<li><a href="#">Q3<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-							<li><a href="#">Q5<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-							<li><a href="#">Q7<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-							<li><a href="#">R8<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-							<li><a href="#">TT<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-							<li class="last"><a href="#">Аксессуары<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="model.html">A3<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="model.html">A4<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="model.html">A5<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="model.html">A6<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="model.html">A7<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="model.html">A8<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="model.html">Q3<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="model.html">Q5<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="model.html">Q7<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="model.html">R8<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="model.html">TT<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li class="last"><a href="model.html">Аксессуары<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
 						</ul>
 					</div>
 				</div>
@@ -143,9 +259,9 @@
 				<div class="wrapper">
 					<span><a href="index.html">Главная</a></span>
 					<span class="divider"> / </span>
-					<span><a href="">Каталог товаров</a></span>
+					<span><a href="catalog.html">Каталог товаров</a></span>
 					<span class="divider"> / </span>
-					<span><a href="">Оригинальное дооснащение</a></span>
+					<span><a href="catalog.html">Оригинальное дооснащение</a></span>
 					<span class="divider"> / </span>
 					<span><a href="">Аэродинамика и дизайн</a></span>
 				</div>
@@ -360,9 +476,9 @@
 									<div class="countryIndex">Германия</div>
 								</div>
 							</div>
-							<div class="buyNow"><a href="">Купить в 1 клик</a></div> 
-							<div class="addToBusket"><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>В корзину</span></a></div> 
-							<div class="addToFavoriate"><a href="">Добавить в избранное</a></div>
+							<div class="buyNow"><a>Купить в 1 клик</a></div> 
+							<div class="addToBusket"><a><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>В корзину</span></a></div> 
+							<div class="addToFavoriate"><a>Добавить в избранное</a></div>
 						</div>
 					</div>
 					<div class="tabs_wrap">
@@ -440,10 +556,10 @@
 						<div class="popular__slider-wrap">
 							<div class="popularBlock">
 								<div class="img_wrap">
-									<a href=""><img src="img/slide-1-popular.jpg" alt=""></a>
+									<a href="product.html"><img src="img/slide-1-popular.jpg" alt=""></a>
 								</div>
 								<div class="content_wrap">
-									<a class="title">Бампер передний Audi A4/S4 Limousine (8K/B8) 2012-н.в., A4/S4 Avant (8K/B8) 2012-н.в. для автомобилей с омывателями фар и без системы парктроник с подготовкой под решетку RS</a>
+									<a href="product.html" class="title">Бампер передний Audi A4/S4 Limousine (8K/B8) 2012-н.в., A4/S4 Avant (8K/B8) 2012-н.в. для автомобилей с омывателями фар и без системы парктроник с подготовкой под решетку RS</a>
 									<div class="code">Артикул: <span>K 00055544</span></div>
 									<div class="warehouse">Со склада в <span>Москве</span></div>
 									<div class="producer">Производитель: <span>ABT Sportsline</span></div>
@@ -460,10 +576,10 @@
 							</div>
 							<div class="popularBlock">
 								<div class="img_wrap">
-									<a href=""><img src="img/slide-2-popular.jpg" alt=""></a>
+									<a href="product.html"><img src="img/slide-2-popular.jpg" alt=""></a>
 								</div>
 								<div class="content_wrap">
-									<a class="title">Бампер передний и решетка радиатора для Audi Q5 (рестайлинг)</a>
+									<a href="product.html" class="title">Бампер передний и решетка радиатора для Audi Q5 (рестайлинг)</a>
 									<div class="code">Артикул: <span>K 00055544</span></div>
 									<div class="warehouse">Со склада в <span>Москве</span></div>
 									<div class="producer">Производитель: <span>ABT Sportsline</span></div>
@@ -480,10 +596,10 @@
 							</div>
 							<div class="popularBlock">
 								<div class="img_wrap">
-									<a href=""><img src="img/slide-3-popular.jpg" alt=""></a>
+									<a href="product.html"><img src="img/slide-3-popular.jpg" alt=""></a>
 								</div>
 								<div class="content_wrap">
-									<a class="title">Диффузор заднего бампера Audi A4 (B8) для автомобилей с одинарным глушителем слева и справа</a>
+									<a href="product.html" class="title">Диффузор заднего бампера Audi A4 (B8) для автомобилей с одинарным глушителем слева и справа</a>
 									<div class="code">Артикул: <span>K 00055544</span></div>
 									<div class="warehouse">Со склада в <span>Москве</span></div>
 									<div class="producer">Производитель: <span>ABT Sportsline</span></div>
@@ -500,10 +616,10 @@
 							</div>
 							<div class="popularBlock">
 								<div class="img_wrap">
-									<a href=""><img src="img/slide-4-popular.jpg" alt=""></a>
+									<a href="product.html"><img src="img/slide-4-popular.jpg" alt=""></a>
 								</div>
 								<div class="content_wrap">
-									<a class="title">Бампер передний Audi Q3 для автомобилей с системой Einparkhilfe и без системы Parkassistent</a>
+									<a href="product.html" class="title">Бампер передний Audi Q3 для автомобилей с системой Einparkhilfe и без системы Parkassistent</a>
 									<div class="code">Артикул: <span>K 00055544</span></div>
 									<div class="warehouse">Со склада в <span>Москве</span></div>
 									<div class="producer">Производитель: <span>ABT Sportsline</span></div>
@@ -520,10 +636,10 @@
 							</div>
 							<div class="popularBlock">
 								<div class="img_wrap">
-									<a href=""><img src="img/slide-2-popular.jpg" alt=""></a>
+									<a href="product.html"><img src="img/slide-2-popular.jpg" alt=""></a>
 								</div>
 								<div class="content_wrap">
-									<a class="title">Бампер передний Audi Q3 для автомобилей с системой Einparkhilfe и без системы Parkassistent</a>
+									<a href="product.html" class="title">Бампер передний Audi Q3 для автомобилей с системой Einparkhilfe и без системы Parkassistent</a>
 									<div class="code">Артикул: <span>K 00055544</span></div>
 									<div class="warehouse">Со склада в <span>Москве</span></div>
 									<div class="producer">Производитель: <span>ABT Sportsline</span></div>
@@ -552,29 +668,29 @@
 			<div class="row">
 				<div class="top">
 					<ul>
-						<li><a href="#">A3</a></li>
-						<li><a href="#">A4</a></li>
-						<li><a href="#">A5</a></li>
-						<li><a href="#">A6</a></li>
-						<li><a href="#">A7</a></li>
-						<li><a href="#">A8</a></li>
-						<li><a href="#">Q3</a></li>
-						<li><a href="#">Q5</a></li>
-						<li><a href="#">Q7</a></li>
-						<li><a href="#">R8</a></li>
-						<li><a href="#">TT</a></li>
-						<li><a href="#">Аксессуары</a></li>
+						<li><a href="model.html">A3</a></li>
+						<li><a href="model.html">A4</a></li>
+						<li><a href="model.html">A5</a></li>
+						<li><a href="model.html">A6</a></li>
+						<li><a href="model.html">A7</a></li>
+						<li><a href="model.html">A8</a></li>
+						<li><a href="model.html">Q3</a></li>
+						<li><a href="model.html">Q5</a></li>
+						<li><a href="model.html">Q7</a></li>
+						<li><a href="model.html">R8</a></li>
+						<li><a href="model.html">TT</a></li>
+						<li><a href="model.html">Аксессуары</a></li>
 					</ul>
 					<ul>
-						<li><a href="#">Как заказать</a></li>
-						<li><a href="#">Оплата</a></li>
-						<li><a href="#">Доставка</a></li>
-						<li><a href="#">Установка</a></li>
-						<li><a href="#">Контакты</a></li>
-						<li><a href="#">Новости</a></li>
+						<li><a href="howtobuy.html">Как заказать</a></li>
+						<li><a href="howtobuy.html">Оплата</a></li>
+						<li><a href="howtobuy.html">Доставка</a></li>
+						<li><a href="howtobuy.html">Установка</a></li>
+						<li><a href="#contacts">Контакты</a></li>
+						<li><a href="news.html">Новости</a></li>
 					</ul>
 				</div>
-				<div class="middle">
+				<div class="middle" id="contacts">
 					<div class="leftPart">
 						<div class="logoPart">
 							<div class="logo"><img src="img/logo-footer.png" alt="Audi-autotuning logo"></div>
@@ -615,7 +731,7 @@
 					<div class="bottom__wrapper">
 						<div class="stat_wrapper"><img src="img/stat-footer.png" alt=""></div>
 						<div class="copyright">
-							<p>&copy; Autotuning-Audi.ru 2008 - 2017. Все права защищены.</p>
+							<p>&copy Autotuning-Audi.ru 2008 - 2017. Все права защищены.</p>
 							<a href="#">Карта сайта</a>
 						</div>
 					</div>

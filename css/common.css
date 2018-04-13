@@ -167,7 +167,6 @@ header .rightPart .middle{
 header .rightPart .middle_row {
 	width: 100%;
 	height: 30px;
-	overflow:hidden;
 	margin-bottom: 10px;
 }
 header .rightPart .middle_row>* {
@@ -212,12 +211,81 @@ header .rightPart .middle_row .personalCab {
 	float: right;
 	height: 30px;
 	cursor: pointer;
+	position: relative;
 }
 header .rightPart .middle_row .personalCab i{
 	margin-right: 10px;
 	line-height: 30px;
 	font-size: 1.4rem;
 	text-align:right;
+}
+header .rightPart .middle_row .personalCab:hover .dropdown_block {
+	display: block;
+}
+header .rightPart .middle_row .personalCab .dropdown_block {
+	position: absolute;
+	right: 0;
+	top: 30px;
+	padding-top: 10px;
+	display: none;
+	background-color: #f0f4f7;
+	border:1px solid #e8ecef;
+	z-index: 11;
+	width: 130px;
+}
+header .rightPart .middle_row .personalCab .dropdown_block:after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	top: -8px;
+	right: 20px;
+	background-color: #f0f4f7;
+	border-left:1px solid #e8ecef;
+	border-top:1px solid #e8ecef;
+	-webkit-transform: rotateZ(45deg);
+	        transform: rotateZ(45deg); 
+}
+header .rightPart .middle_row .personalCab .dropdown_block:hover {
+	display: block;
+}
+header .rightPart .middle_row .personalCab .dropdown_block ul{
+	padding:0;
+	padding-bottom: 10px;
+	margin: 0;
+}
+header .rightPart .middle_row .personalCab .dropdown_block ul>li {
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid #e8ecef;
+	border-top:1px solid #fbfcfd;
+}
+header .rightPart .middle_row .personalCab .dropdown_block ul>li:first-child {
+	border-top: none;
+}
+header .rightPart .middle_row .personalCab .dropdown_block ul>li:last-child {
+	border-bottom: none;
+}
+header .rightPart .middle_row .personalCab .dropdown_block ul>li>a {
+	font-size: 1.2rem;
+	color: #242424;
+	display: block;
+	width: 100%;
+	height: 100%;
+	line-height: 40px;
+	padding-left: 20px;
+}
+header .rightPart .middle_row .personalCab .dropdown_block ul>li>a:hover {
+	color: #cf1141;
+}
+header .rightPart .middle_row .personalCab .dropdown_block ul>li>a i{
+	font-size: 1.2rem;
+	color: #242424;
+	margin-right: 10px;
+}
+header .rightPart .middle_row .personalCab .dropdown_block ul>li>a:hover i{
+	color: #cf1141;
 }
 header .rightPart .middle_row .phoneBlock {
 	margin-left: 5%;
@@ -290,6 +358,12 @@ header .rightPart .middle_row .busketBlock {
 	font-size: 1.4rem;
 	line-height: 30px;
 	cursor: pointer;
+}
+header .rightPart .middle_row .busketBlock a {
+	color: inherit;
+}
+header .rightPart .middle_row .busketBlock a:hover {
+	color: inherit;
 }
 header .rightPart .middle_row .busketBlock i {
 	margin-right: 10px;
@@ -720,6 +794,563 @@ footer .bottom .copyright a {
 	z-index: 12;
 	opacity: 1;
 }
+
+
+
+.popup.adressInput {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	        transform: translate3d(-50%,-50%,0);
+	width: 300px;
+	z-index: 11;
+	display: none;
+	background-color: #fff;
+
+}
+.popup.adressInput .addAdress_wrapper {
+	width: 100%;
+	height: 100%;
+	padding:50px;
+	position: relative;	
+}
+.popup.adressInput .addAdress_wrapper .title {
+	font-size: 1.8rem;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.popup.adressInput .addAdress_wrapper form {
+	width: 100%;
+}
+.popup.adressInput .addAdress_wrapper form select {
+	width: 100%;
+	height: 30px;
+	margin-bottom: 20px;
+}
+.popup.adressInput .addAdress_wrapper form input {
+	width: 100%;
+	height: 30px;
+	margin-bottom: 20px;
+	border:1px solid #e9ecee;
+
+}
+.popup.adressInput .addAdress_wrapper form button {
+	display: block;
+	width: 150px;
+	height: 30px;
+	background-color: #cf1141;
+	color: #fff;
+	margin-left: 50%;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	border:none;
+	cursor: pointer;
+}
+.closePopup {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+}
+.closePopup i {
+	font-size: 1.6rem;
+	color:  #cf1141;
+}
+.popup.adressInput .addAdress_wrapper .selectStreet {
+	width: 100%;
+	height: 30px;
+	background-color: #fff;
+	border:1px solid #e8ecef;
+	position: relative;
+	margin-bottom: 20px;
+}
+.popup.adressInput .chosen-container {
+	margin-bottom: 20px;
+}
+.popup.adressInput .chosen-container .chosen-single {
+	width: 100%;
+	height: 30px;
+	background-color: #fff;
+	border:1px solid #e8ecef;
+	position: relative;
+	border-radius: 0;!important
+	background-color: #fff;
+	background-image: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;!important
+}
+.popup.adressInput .chosen-container-active .chosen-single {
+	width: 100%;
+	height:30px;
+	background-color: #fff;
+	border:1px solid #e8ecef;
+	position: relative;
+	border-radius: 0;!important
+	background-color: #fff;
+	background-image: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;!important
+}
+.popup.adressInput .chosen-container-active.chosen-with-drop .chosen-single {
+	width: 100%;
+	height: 30px;
+	background-color: #fff;
+	border:1px solid #e8ecef;
+	position: relative;
+	border-radius: 0;!important
+	background-color: #fff;
+	background-image: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;!important
+}
+.popup.adressInput .chosen-container-single .chosen-single span {
+	line-height: 30px;
+}
+.popup.adressInput .chosen-container .chosen-results-scroll-down span, 
+.popup.adressInput .chosen-container .chosen-results-scroll-up span, 
+.popup.adressInput .chosen-container-multi .chosen-choices .search-choice .search-choice-close, 
+.popup.adressInput .chosen-container-single .chosen-search input[type=text], 
+.popup.adressInput .chosen-container-single .chosen-single abbr, 
+.popup.adressInput .chosen-container-single .chosen-single div b, 
+.popup.adressInput .chosen-rtl .chosen-search input[type=text] {
+	background-image: url(../libs/chosen/arrow-down-select.jpg);
+	background-position: center left;
+}
+.popup.adressInput .chosen-container-single .chosen-search {
+	display: none;
+}
+.popup.adressInput .chosen-container-active.chosen-with-drop .chosen-single div b {
+	background-position: center left;
+}
+.popup.adressInput .chosen-container-single .chosen-drop {
+	border:1px solid #e8ecef;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	border-radius: 0;
+}
+.popup.adressInput .chosen-container .chosen-results {
+	max-height: auto;
+}
+.popup.adressInput .chosen-container .chosen-results li.highlighted {
+	background-image: none;
+	background-color:transparent;
+	color: #cf1141;
+}
+
+
+.popup.deleteBusketRow {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	        transform: translate3d(-50%,-50%,0);
+	width: 30%;
+	min-width:300px;
+	max-width: 540px;
+	z-index: 11;
+	display: none;
+	background-color: #fff;
+}
+.popup.deleteBusketRow .deleteBusketRow_wrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 40px;
+	padding-bottom: 60px;
+}
+.popup.deleteBusketRow .deleteBusketRow_wrap .title {
+	margin-top: 15px;
+	margin-bottom: 50px;
+	font-size: 1.4rem;
+	text-align: center;
+}
+.popup.deleteBusketRow .deleteBusketRow_wrap button {
+	display: block;
+	max-width: 230px;
+	width: 50%;
+	min-width: 170px;
+	height: 40px;
+	background-color: #cf1141;
+	color: #fff;
+	margin-left: 50%;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	border:none;
+	font-size: 1.3rem;
+}
+
+
+.popup.buyWithOneClick {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	        transform: translate3d(-50%,-50%,0);
+	width: 30%;
+	min-width:300px;
+	max-width: 540px;
+	z-index: 11;
+	display: none;
+	background-color: #fff;
+}
+.popup.buyWithOneClick .buyWithOneClick_wrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 40px;
+}
+.popup.buyWithOneClick .title {
+	font-size: 1.6rem;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.popup.buyWithOneClick form {
+	width: 100%;
+	padding: 0 20px;
+}
+.popup.buyWithOneClick form input{
+	width: 100%;
+	height: 30px;
+	border:1px solid #e8ecef;
+	padding-left: 10px;
+	margin-bottom: 20px;
+	position: relative;
+	font-size: 1.3rem;
+}
+.popup.buyWithOneClick form textarea{
+	width: 100%;
+	border:1px solid #e8ecef;
+	height: 120px;
+	padding-top: 5px;
+	padding-left: 10px;
+	margin-bottom: 40px;
+	resize: none;
+	font-size: 1.3rem;
+}
+.popup.buyWithOneClick form textarea:focus {
+	outline: none;
+}
+.popup.buyWithOneClick form button {
+	height: 30px;
+	border:none;
+	background-color: #cf1141;
+	color: #fff;
+	width: 150px;
+	font-size: 1.3rem;
+	margin-left: 50%;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+}
+.popup.buyWithOneClick form .holder {
+	position: relative;
+}
+.popup.buyWithOneClick form label {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	color: #929292;
+	font-size: 1.3rem;
+	font-style: italic;
+	font-weight: 400;
+	pointer-events: none;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+}
+.popup.buyWithOneClick form label>span {
+	color: #cf1141;
+}
+
+
+
+.popup.signIn {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	        transform: translate3d(-50%,-50%,0);
+	width: 30%;
+	min-width:300px;
+	max-width: 540px;
+	z-index: 11;
+	display: none;
+	background-color: #fff;
+}
+.popup.signIn .signIn_wrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 40px;
+}
+.popup.signIn .title {
+	font-size: 1.4rem;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.popup.signIn p {
+	font-size: 1.2rem;
+	margin-bottom: 20px;
+	margin-top: 0;
+}
+.popup.signIn form {
+	width: 100%;
+	padding: 0 20px;
+}
+.popup.signIn form input{
+	width: 100%;
+	height: 30px;
+	border:1px solid #e8ecef;
+	padding-left: 10px;
+	margin-bottom: 20px;
+	position: relative;
+	font-size: 1.3rem;
+}
+.popup.signIn form textarea{
+	width: 100%;
+	border:1px solid #e8ecef;
+	height: 120px;
+	padding-top: 5px;
+	padding-left: 10px;
+	margin-bottom: 40px;
+	resize: none;
+	font-size: 1.3rem;
+}
+.popup.signIn form textarea:focus {
+	outline: none;
+}
+.popup.signIn form .submitBlock button {
+	height: 30px;
+	border:none;
+	background-color: #cf1141;
+	color: #fff;
+	width: 100px;
+	font-size: 1.3rem;
+	margin-left: 50%;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	display: block;
+	margin-bottom: 20px;
+}
+.popup.signIn form .submitBlock {
+	text-align: center;
+	margin-bottom: 40px;
+}
+.popup.signIn form .submitBlock a {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 1.1rem;
+}
+.popup.signIn form .submitBlock a:hover {
+	color: #242424;
+}
+.popup.signIn form .holder {
+	position: relative;
+}
+.popup.signIn form label {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	color: #929292;
+	font-size: 1.3rem;
+	font-style: italic;
+	font-weight: 400;
+	pointer-events: none;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+}
+.popup.signIn form label>span {
+	color: #cf1141;
+}
+.popup.signIn p.socialTitle {
+	font-size: 1.4rem;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.popup.signIn .link_wrap {
+	text-align: center;
+}
+.popup.signIn .link_wrap>button {
+	height: 25px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: transparent;
+	border-radius: 2px;
+	border:none;
+}
+.popup.signIn .link_wrap>button.signVK {
+	width: 105px;
+	background-image: url(../img/VK-button.png);
+	margin-right: 7px;
+	display: inline-block;
+	margin-left: 0;
+	-webkit-transform: translateX(0);
+	        transform: translateX(0);
+}
+.popup.signIn .link_wrap>button.signFcb {
+	width: 95px;
+	background-image: url(../img/Fcb-button.png);
+	display: inline-block;
+	margin-left: 0;
+	-webkit-transform: translateX(0);
+	        transform: translateX(0);
+}
+
+
+.popup.signInUnregistered {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	        transform: translate3d(-50%,-50%,0);
+	width: 30%;
+	min-width:300px;
+	max-width: 540px;
+	z-index: 11;
+	display: none;
+	background-color: #fff;
+}
+.popup.signInUnregistered .signInUnregistered_wrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 40px;
+}
+.popup.signInUnregistered .title {
+	font-size: 1.4rem;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.popup.signInUnregistered p {
+	font-size: 1.2rem;
+	margin-bottom: 20px;
+	margin-top: 0;
+}
+.popup.signInUnregistered form {
+	width: 100%;
+	padding: 0 20px;
+}
+.popup.signInUnregistered form input{
+	width: 100%;
+	height: 30px;
+	border:1px solid #e8ecef;
+	padding-left: 10px;
+	margin-bottom: 20px;
+	position: relative;
+	font-size: 1.3rem;
+}
+.popup.signInUnregistered form textarea{
+	width: 100%;
+	border:1px solid #e8ecef;
+	height: 120px;
+	padding-top: 5px;
+	padding-left: 10px;
+	margin-bottom: 40px;
+	resize: none;
+	font-size: 1.3rem;
+}
+.popup.signInUnregistered form textarea:focus {
+	outline: none;
+}
+.popup.signInUnregistered form .submitBlock button {
+	height: 30px;
+	border:none;
+	background-color: #cf1141;
+	color: #fff;
+	width: 100px;
+	font-size: 1.3rem;
+	margin-left: 50%;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	display: block;
+	margin-bottom: 20px;
+}
+.popup.signInUnregistered form .submitBlock {
+	text-align: center;
+	margin-bottom: 40px;
+}
+.popup.signInUnregistered form .submitBlock a {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 1.1rem;
+	display: inline;
+}
+.popup.signInUnregistered form .submitBlock a:hover {
+	color:#242424;
+}
+.popup.signInUnregistered form .submitBlock a>i {
+	font-size: 1rem; 
+	margin-right: 5px;
+}
+.popup.signInUnregistered form .submitBlock a.reg_link {
+	margin-left: 20px;
+}
+.popup.signInUnregistered form .holder {
+	position: relative;
+}
+.popup.signInUnregistered form label {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	color: #929292;
+	font-size: 1.3rem;
+	font-style: italic;
+	font-weight: 400;
+	pointer-events: none;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+}
+.popup.signInUnregistered form label>span {
+	color: #cf1141;
+}
+.popup.signInUnregistered p.socialTitle {
+	font-size: 1.4rem;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.popup.signInUnregistered .link_wrap {
+	text-align: center;
+}
+.popup.signInUnregistered .link_wrap>button {
+	height: 25px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: transparent;
+	border-radius: 2px;
+	border:none;
+}
+.popup.signInUnregistered .link_wrap>button.signVK {
+	width: 105px;
+	background-image: url(../img/VK-button.png);
+	margin-right: 7px;
+	display: inline-block;
+	margin-left: 0;
+	-webkit-transform: translateX(0);
+	        transform: translateX(0);
+}
+.popup.signInUnregistered .link_wrap>button.signFcb {
+	width: 95px;
+	background-image: url(../img/Fcb-button.png);
+	display: inline-block;
+	margin-left: 0;
+	-webkit-transform: translateX(0);
+	        transform: translateX(0);
+}
+
+
+
 
 
 

@@ -1,0 +1,23 @@
+
+
+
+section.success {
+	min-height: 150px;
+}
+section.success p:first-child {
+	font-size: 1.6rem;
+	text-align: left;
+	margin-bottom: 20px;
+}
+section.success p:last-child {
+	font-size: 2rem;
+	text-align: left;
+}
+@media all and (max-width: 767px) {
+	.container>.row {
+		margin:0;
+	}
+}
+
+
+

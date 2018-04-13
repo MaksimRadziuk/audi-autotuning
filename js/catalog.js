@@ -17,7 +17,7 @@ $(document).ready(function(){
 	});
 
 	if (innerWidth>767) {
-		$('section.product .sidebar_block.producer .innerPart .submenu').jScrollPane({
+		$('section.catalog .sidebar_block.producer .innerPart .submenu').jScrollPane({
 			showArrows:true
 		});
 	}

@@ -59,6 +59,111 @@
 	</div>
 </div>
 
+<div class="popup adressInput">
+	<div class="addAdress_wrapper">
+		<div class="title">Заполните форму</div>
+		<form>
+			<select class="selectStreet" required>
+				<option value="ул.">Улица</option>
+				<option value="пр-т">Проспект</option>
+				<option value="бул.">Бульвар</option>
+				<option value="пер.">Переулок</option>
+			</select>
+			<input type="text" placeholder="Название улицы" required>
+			<input type="number" placeholder="Номер дома" required>
+			<input type="number" placeholder="Номер квартиры">
+			<button type="submit">Сохранить</button>
+		</form>
+		<div class="closePopup"><i class="fa fa-times" aria-hidden="true"></i></div>
+	</div>
+</div>
+
+<div class="popup deleteBusketRow">
+	<div class="deleteBusketRow_wrap">
+		<div class="title">Этот товар можно добавить в избранное и вернуться к его покупке позднее</div>
+		<button class="addToFavoriate">Добавить в избранное</button>
+		<div class="closePopup"><i class="fa fa-times" aria-hidden="true"></i></div>
+	</div>
+</div>
+
+<div class="popup buyWithOneClick">
+	<div class="buyWithOneClick_wrap">
+		<div class="title">Купить в 1 клик</div>
+		<form>
+			<div class="holder name">
+				<input type="name" required>
+				<label>Ваше Имя <span>*</span></label>
+			</div>
+			<div class="holder phone">
+				<input type="phone" required>
+				<label>+7(9хх)ххх-хх-хх) <span>*</span></label>
+			</div>
+			<div class="holder mail">
+				<input type="mail" required>
+				<label>Адрес эл. почты <span>*</span></label>
+			</div>
+			<textarea placeholder="Комментарий к заказу"></textarea>
+			<button type="submit">Оформить заказ</button>
+		</form>
+		<div class="closePopup"><i class="fa fa-times" aria-hidden="true"></i></div>
+	</div>
+</div>
+
+<div class="popup signIn">
+	<div class="signIn_wrap">
+		<div class="title">Выполните вход</div>
+		<p>и Вы сами сможете выбрать способ доставки, форму оплаты и следить за статусами Вашего заказа, а также получать уведомления, узнавать о новостях и проходящих акциях</p>
+		<form>
+			<div class="holder mail">
+				<input type="mail" required>
+				<label>Адрес эл. почты <span>*</span></label>
+			</div>
+			<div class="holder password1">
+				<input type="password" required>
+				<label>Пароль <span>*</span></label>
+			</div>
+			<div class="submitBlock">
+				<button type="submit">Войти</button>
+				<a href="#">Забыли пароль?</a>
+			</div>
+		</form>
+		<p class="socialTitle">Войти с помощью соцсетей:</p>
+		<div class="link_wrap">
+			<button class="signVK"></button>
+			<button class="signFcb"></button>
+		</div>
+		<div class="closePopup"><i class="fa fa-times" aria-hidden="true"></i></div>
+	</div>
+</div>
+
+<div class="popup signInUnregistered">
+	<div class="signInUnregistered_wrap">
+		<div class="title">Чтобы добавить товар в избранное просьба авторизоваться или зарегистрироваться.</div>
+		<p>В дальнейшем Вы сможете получать новости, узнавать и снижении цен и проходящих акциях</p>
+		<form>
+			<div class="holder mail">
+				<input type="mail" required>
+				<label>Адрес эл. почты <span>*</span></label>
+			</div>
+			<div class="holder password1">
+				<input type="password" required>
+				<label>Пароль <span>*</span></label>
+			</div>
+			<div class="submitBlock">
+				<button type="submit">Войти</button>
+				<a href="#">Забыли пароль?</a>
+				<a href="#" class="reg_link"><i class="fa fa-pencil" aria-hidden="true"></i>Регистрация</a>
+			</div>
+		</form>
+		<p class="socialTitle">Войти с помощью соцсетей:</p>
+		<div class="link_wrap">
+			<button class="signVK"></button>
+			<button class="signFcb"></button>
+		</div>
+		<div class="closePopup"><i class="fa fa-times" aria-hidden="true"></i></div>
+	</div>
+</div>
+
 
 
 
@@ -66,7 +171,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="logoBox">
-					<div class="logo"><img src="img/logo.jpg" alt="Audi-autotuning logo"></div>
+					<div class="logo"><a href="index.html"><img src="img/logo.jpg" alt="Audi-autotuning logo"></a></div>
 					<div class="slogan">Оригинальные аксессуары, диски, дооснащение и тюнинг Audi</div>
 				</div>
 				<div class="rightPart">
@@ -75,11 +180,11 @@
 							<span class="city">Санкт-Петербург</span>
 							<ul>
 								<li><a href="howtobuy.html">Как заказать</a></li>
-								<li><a href="#">Оплата</a></li>
-								<li><a href="#">Доставка</a></li>
-								<li><a href="#">Установка</a></li>
-								<li><a href="#">Контакты</a></li>
-								<li><a href="#">Новости</a></li>
+								<li><a href="howtobuy.html">Оплата</a></li>
+								<li><a href="howtobuy.html">Доставка</a></li>
+								<li><a href="howtobuy.html">Установка</a></li>
+								<li><a href="#contacts">Контакты</a></li>
+								<li><a href="news.html">Новости</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -94,7 +199,18 @@
 								<span class="phoneNumber"><a href="tel:+74959737722" class="phone"><i class="fa fa-phone" aria-hidden="true"></i>+7(495)973-77-22</a></span>
 								<span class="callBackOrder"><i class="fa fa-phone" aria-hidden="true"></i><span>Обратный звонок</span></span>
 							</div>
-							<div class="personalCab"><i class="fa fa-user" aria-hidden="true"></i>Личный кабинет</div>
+							<div class="personalCab">
+								<i class="fa fa-user" aria-hidden="true"></i>Личный кабинет
+								<div class="dropdown_block">
+									<div class="dropdown_wrap">
+										<ul>
+											<li><a href="myorders.html"><i class="fa fa-angle-right"></i>Мои заказы</a></li>
+											<li><a href="myorders.html"><i class="fa fa-angle-right"></i>Избранное</a></li>
+											<li><a href="profile.html"><i class="fa fa-angle-right"></i>Профиль</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="middle_row second">
 							<div class="adress">
@@ -102,7 +218,7 @@
 								<p>Москва, Алтуфьевское шоссе, д.27, офис 229</p>
 							</div>
 							<div class="timeWork"><p>Время работы: с 10:00 до 19:00</p></div>
-							<div class="busketBlock"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Корзина<span id="busketFill">(0)</span></div>
+							<div class="busketBlock"><a href="busket-unknownUser.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Корзина<span id="busketFill">(0)</span></a></div>
 						</div>
 					</div>
 				</div>
@@ -113,18 +229,18 @@
 				<div class="row">
 					<div class="menu_models">
 						<ul class="header__menu-slider">
-							<li><a href="#">A3<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-							<li><a href="#">A4<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-							<li><a href="#">A5<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-							<li><a href="#">A6<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-							<li><a href="#">A7<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-							<li><a href="#">A8<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-							<li><a href="#">Q3<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-							<li><a href="#">Q5<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-							<li><a href="#">Q7<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-							<li><a href="#">R8<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-							<li><a href="#">TT<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-							<li class="last"><a href="#">Аксессуары<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="model.html">A3<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="model.html">A4<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="model.html">A5<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="model.html">A6<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="model.html">A7<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="model.html">A8<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="model.html">Q3<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="model.html">Q5<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="model.html">Q7<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="model.html">R8<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li><a href="model.html">TT<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+							<li class="last"><a href="model.html">Аксессуары<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
 						</ul>
 					</div>
 				</div>
@@ -138,51 +254,51 @@
 		<div class="container">
 			<div class="row">
 				<div class="tiles_wrap">
-					<a class="tile">
+					<a href="model.html" class="tile">
 						<div class="model_name">A3</div>
 						<div class="img_wrap"><img src="img/A3-tile.jpg" alt="Audi A3"></div>
 					</a>
-					<a class="tile">
+					<a href="model.html" class="tile">
 						<div class="model_name">A4</div>
 						<div class="img_wrap"><img src="img/A4-tile.jpg" alt="Audi A4"></div>
 					</a>
-					<a class="tile">
+					<a href="model.html" class="tile">
 						<div class="model_name">A5</div>
 						<div class="img_wrap"><img src="img/A5-tile.jpg" alt="Audi A5"></div>
 					</a>
-					<a class="tile">
+					<a href="model.html" class="tile">
 						<div class="model_name">A6</div>
 						<div class="img_wrap"><img src="img/A6-tile.jpg" alt="Audi A6"></div>
 					</a>
-					<a class="tile">
+					<a href="model.html" class="tile">
 						<div class="model_name">A7</div>
 						<div class="img_wrap"><img src="img/A7-tile.jpg" alt="Audi A7"></div>
 					</a>
-					<a class="tile">
+					<a href="model.html" class="tile">
 						<div class="model_name">A8</div>
 						<div class="img_wrap"><img src="img/A8-tile.jpg" alt="Audi A8"></div>
 					</a>
-					<a class="tile">
+					<a href="model.html" class="tile">
 						<div class="model_name">Q3</div>
 						<div class="img_wrap"><img src="img/Q3-tile.jpg" alt="Audi Q3"></div>
 					</a>
-					<a class="tile">
+					<a href="model.html" class="tile">
 						<div class="model_name">Q5</div>
 						<div class="img_wrap"><img src="img/Q5-tile.jpg" alt="Audi Q5"></div>
 					</a>
-					<a class="tile">
+					<a href="model.html" class="tile">
 						<div class="model_name">Q7</div>
 						<div class="img_wrap"><img src="img/Q7-tile.jpg" alt="Audi Q7"></div>
 					</a>
-					<a class="tile">
+					<a href="model.html" class="tile">
 						<div class="model_name">TT</div>
 						<div class="img_wrap"><img src="img/TT-tile.jpg" alt="Audi TT"></div>
 					</a>
-					<a class="tile">
+					<a href="model.html" class="tile">
 						<div class="model_name">R8</div>
 						<div class="img_wrap"><img src="img/R8-tile.jpg" alt="Audi R8"></div>
 					</a>
-					<a class="tile">
+					<a href="model.html" class="tile">
 						<div class="model_name">Аксессауры</div>
 						<div class="img_wrap"><img src="img/accessories-tile.jpg" alt="Audi Аксессуары"></div>
 					</a>
@@ -210,14 +326,14 @@
 			<div class="row">
 				<h2>каталог товаров</h2>
 				<div class="catalog__tile_wrap">
-					<div class="tile interior height2"><a href="#"><span>тюнинг салона</span></a></div>
-					<div class="tile exterior"><a href="#"><span>внешний тюнинг</span></a></div>
-					<div class="tile add w2"><a href="#"><span>оригинальное дооснащение</span></a></div>
-					<div class="tile exaust w2"><a href="#"><span>тюнинг выпуска</span></a></div>
-					<div class="tile wheels height2"><a href="#"><span>колесные диски</span></a></div>
-					<div class="tile brakes"><a href="#"><span>тюнинг тормозной системы</span></a></div>
-					<div class="tile suspention"><a href="#"><span>тюнинг подвески</span></a></div>
-					<div class="tile engine"><a href="#"><span>тюнинг двигателя</span></a></div>
+					<div class="tile interior height2"><a href="catalog.html"><span>тюнинг салона</span></a></div>
+					<div class="tile exterior"><a href="catalog.html"><span>внешний тюнинг</span></a></div>
+					<div class="tile add w2"><a href="catalog.html"><span>оригинальное дооснащение</span></a></div>
+					<div class="tile exaust w2"><a href="catalog.html"><span>тюнинг выпуска</span></a></div>
+					<div class="tile wheels height2"><a href="catalog.html"><span>колесные диски</span></a></div>
+					<div class="tile brakes"><a href="catalog.html"><span>тюнинг тормозной системы</span></a></div>
+					<div class="tile suspention"><a href="catalog.html"><span>тюнинг подвески</span></a></div>
+					<div class="tile engine"><a href="catalog.html"><span>тюнинг двигателя</span></a></div>
 				</div>
 			</div>
 		</div>
@@ -240,10 +356,10 @@
 					<div class="popularBlock">
 						<div class="ticket hit"></div>
 						<div class="img_wrap">
-							<a href=""><img src="img/slide-1-popular.jpg" alt=""></a>
+							<a href="product.html"><img src="img/slide-1-popular.jpg" alt=""></a>
 						</div>
 						<div class="content_wrap">
-							<a class="title">Бампер передний Audi A4/S4 Limousine (8K/B8) 2012-н.в., A4/S4 Avant (8K/B8) 2012-н.в. для автомобилей с омывателями фар и без системы парктроник с подготовкой под решетку RS</a>
+							<a href="product.html" class="title">Бампер передний Audi A4/S4 Limousine (8K/B8) 2012-н.в., A4/S4 Avant (8K/B8) 2012-н.в. для автомобилей с омывателями фар и без системы парктроник с подготовкой под решетку RS</a>
 							<div class="code">Артикул: <span>K 00055544</span></div>
 							<div class="warehouse">Со склада в <span>Москве</span></div>
 							<div class="producer">Производитель: <span>ABT Sportsline</span></div>
@@ -261,10 +377,10 @@
 					<div class="popularBlock">
 						<div class="ticket new"></div>
 						<div class="img_wrap">
-							<a href=""><img src="img/slide-2-popular.jpg" alt=""></a>
+							<a href="product.html""><img src="img/slide-2-popular.jpg" alt=""></a>
 						</div>
 						<div class="content_wrap">
-							<a class="title">Бампер передний и решетка радиатора для Audi Q5 (рестайлинг)</a>
+							<a href="product.html" class="title">Бампер передний и решетка радиатора для Audi Q5 (рестайлинг)</a>
 							<div class="code">Артикул: <span>K 00055544</span></div>
 							<div class="warehouse">Со склада в <span>Москве</span></div>
 							<div class="producer">Производитель: <span>ABT Sportsline</span></div>
@@ -282,10 +398,10 @@
 					<div class="popularBlock">
 						<div class="ticket action"></div>
 						<div class="img_wrap">
-							<a href=""><img src="img/slide-3-popular.jpg" alt=""></a>
+							<a href="product.html"><img src="img/slide-3-popular.jpg" alt=""></a>
 						</div>
 						<div class="content_wrap">
-							<a class="title">Диффузор заднего бампера Audi A4 (B8) для автомобилей с одинарным глушителем слева и справа</a>
+							<a href="product.html" class="title">Диффузор заднего бампера Audi A4 (B8) для автомобилей с одинарным глушителем слева и справа</a>
 							<div class="code">Артикул: <span>K 00055544</span></div>
 							<div class="warehouse">Со склада в <span>Москве</span></div>
 							<div class="producer">Производитель: <span>ABT Sportsline</span></div>
@@ -302,10 +418,10 @@
 					</div>
 					<div class="popularBlock">
 						<div class="img_wrap">
-							<a href=""><img src="img/slide-4-popular.jpg" alt=""></a>
+							<a href="product.html"><img src="img/slide-4-popular.jpg" alt=""></a>
 						</div>
 						<div class="content_wrap">
-							<a class="title">Бампер передний Audi Q3 для автомобилей с системой Einparkhilfe и без системы Parkassistent</a>
+							<a href="product.html" class="title">Бампер передний Audi Q3 для автомобилей с системой Einparkhilfe и без системы Parkassistent</a>
 							<div class="code">Артикул: <span>K 00055544</span></div>
 							<div class="warehouse">Со склада в <span>Москве</span></div>
 							<div class="producer">Производитель: <span>ABT Sportsline</span></div>
@@ -322,10 +438,10 @@
 					</div>
 					<div class="popularBlock">
 						<div class="img_wrap">
-							<a href=""><img src="img/slide-2-popular.jpg" alt=""</a>>
+							<a href="product.html"><img src="img/slide-2-popular.jpg" alt=""</a>>
 						</div>
 						<div class="content_wrap">
-							<a class="title">Бампер передний Audi Q3 для автомобилей с системой Einparkhilfe и без системы Parkassistent</a>
+							<a href="product.html" class="title">Бампер передний Audi Q3 для автомобилей с системой Einparkhilfe и без системы Parkassistent</a>
 							<div class="code">Артикул: <span>K 00055544</span></div>
 							<div class="warehouse">Со склада в <span>Москве</span></div>
 							<div class="producer">Производитель: <span>ABT Sportsline</span></div>
@@ -350,16 +466,16 @@
 			<div class="row">
 				<h2>авто ателье</h2>
 				<div class="autoHouse__slider_wrap">
-					<div class="autoHouse__slide"><img src="img/SLine-autoHouse.png" alt=""></div>
-					<div class="autoHouse__slide"><img src="img/ABT-autoHouse.png" alt=""></div>
-					<div class="autoHouse__slide"><img src="img/caractere-autoHouse.png" alt=""></div>
-					<div class="autoHouse__slide"><img src="img/nothelle-autoHouse.png" alt=""></div>
-					<div class="autoHouse__slide"><img src="img/JeDesign-autoHouse.png" alt=""></div>
-					<div class="autoHouse__slide"><img src="img/SLine-autoHouse.png" alt=""></div>
-					<div class="autoHouse__slide"><img src="img/ABT-autoHouse.png" alt=""></div>
-					<div class="autoHouse__slide"><img src="img/caractere-autoHouse.png" alt=""></div>
-					<div class="autoHouse__slide"><img src="img/nothelle-autoHouse.png" alt=""></div>
-					<div class="autoHouse__slide"><img src="img/JeDesign-autoHouse.png" alt=""></div>
+					<div class="autoHouse__slide"><a href="autohouse.html"><img src="img/SLine-autoHouse.png" alt=""></a></div>
+					<div class="autoHouse__slide"><a href="autohouse.html"><img src="img/ABT-autoHouse.png" alt=""></a></div>
+					<div class="autoHouse__slide"><a href="autohouse.html"><img src="img/nothelle-autoHouse.png" alt=""></a></div>
+					<div class="autoHouse__slide"><a href="autohouse.html"><img src="img/nothelle-autoHouse.png" alt=""></a></div>
+					<div class="autoHouse__slide"><a href="autohouse.html"><img src="img/JeDesign-autoHouse.png" alt=""></a></div>
+					<div class="autoHouse__slide"><a href="autohouse.html"><img src="img/SLine-autoHouse.png" alt=""></a></div>
+					<div class="autoHouse__slide"><a href="autohouse.html"><img src="img/ABT-autoHouse.png" alt=""></a></div>
+					<div class="autoHouse__slide"><a href="autohouse.html"><img src="img/caractere-autoHouse.png" alt=""></a></div>
+					<div class="autoHouse__slide"><a href="autohouse.html"><img src="img/nothelle-autoHouse.png" alt=""></a></div>
+					<div class="autoHouse__slide"><a href="autohouse.html"><img src="img/JeDesign-autoHouse.png" alt=""></a></div>
 				</div>
 			</div>
 		</div>
@@ -407,70 +523,70 @@
 					<div class="newsBlock">
 						<div class="date">29.07.2014</div>
 						<div class="img_wrap">
-							<a href=""><img src="img/slide-1-popular.jpg" alt=""></a>
+							<a href="single-news.html"><img src="img/slide-1-popular.jpg" alt=""></a>
 						</div>
 						<div class="content_wrap">
-							<a class="title">Скидки на спойлеры для Audi Q7 (4L)</a>
+							<a href="single-news.html" class="title">Скидки на спойлеры для Audi Q7 (4L)</a>
 							<div class="description">Акция на спойлеры для Audi Q7 всех годов выпуска производства компании ABT Sportsline Акция на спойлеры для Audi Q7 всех годов выпуска производства компании ABT Sportsline</div>
 						</div>
 						<div class="bottomPart">
-							<a href=""><span><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-angle-right" aria-hidden="true"></i></span> Подробнее</a>
+							<a href="single-news.html"><span><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-angle-right" aria-hidden="true"></i></span> Подробнее</a>
 						</div>
 					</div>
 					<div class="newsBlock">
 						<div class="date">18.12.2013</div>
 						<div class="img_wrap">
-							<a href=""><img src="img/slide-2-popular.jpg" alt=""></a>
+							<a href="single-news.html"><img src="img/slide-2-popular.jpg" alt=""></a>
 						</div>
 						<div class="content_wrap">
-							<a class="title">Новинки каталога товаров транспортировки</a>
+							<a href="single-news.html" class="title">Новинки каталога товаров транспортировки</a>
 							<div class="description">Расширен ассортимент оригинальных деталей траспортировки и крепежных систем для всех моделей AudiАкция на спойлеры для Audi Q7 всех годов выпуска производства компании ABT Sportsline</div>
 						</div>
 						<div class="bottomPart">
-							<a href=""><span><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-angle-right" aria-hidden="true"></i></span> Подробнее</a>
+							<a href="single-news.html"><span><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-angle-right" aria-hidden="true"></i></span> Подробнее</a>
 						</div>
 					</div>
 					<div class="newsBlock">
 						<div class="date">21.05.2013</div>
 						<div class="img_wrap">
-							<a href=""><img src="img/slide-3-popular.jpg" alt=""></a>
+							<a href="single-news.html"><img src="img/slide-3-popular.jpg" alt=""></a>
 						</div>
 						<div class="content_wrap">
-							<a class="title">Литые диски для новой Audi A3</a>
+							<a href="single-news.html" class="title">Литые диски для новой Audi A3</a>
 							<div class="description">Весь ассортимент литых дисков для Audi A3 (8V) в продаже. Диски представлены в радиусе</div>
 						</div>
 						<div class="bottomPart">
-							<a href=""><span><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-angle-right" aria-hidden="true"></i></span> Подробнее</a>
+							<a href="single-news.html"><span><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-angle-right" aria-hidden="true"></i></span> Подробнее</a>
 						</div>
 					</div>
 					<div class="newsBlock">
 						<div class="date">29.07.2014</div>
 						<div class="img_wrap">
-							<a href=""><img src="img/slide-4-popular.jpg" alt=""></a>
+							<a href="single-news.html"><img src="img/slide-4-popular.jpg" alt=""></a>
 						</div>
 						<div class="content_wrap">
-							<a class="title">Новые элементы экстерьера Rieger на A1</a>
+							<a href="single-news.html" class="title">Новые элементы экстерьера Rieger на A1</a>
 							<div class="description">Представляем новые элементы экстерьера от компании Rieger на модель Audi A1</div>
 						</div>
 						<div class="bottomPart">
-							<a href=""><span><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-angle-right" aria-hidden="true"></i></span> Подробнее</a>
+							<a href="single-news.html"><span><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-angle-right" aria-hidden="true"></i></span> Подробнее</a>
 						</div>
 					</div>
 					<div class="newsBlock">
 						<div class="date">29.07.2014</div>
 						<div class="img_wrap">
-							<a href=""><img src="img/slide-2-popular.jpg" alt=""></a>
+							<a href="single-news.html"><img src="img/slide-2-popular.jpg" alt=""></a>
 						</div>
 						<div class="content_wrap">
-							<a class="title">Литые диски для новой Audi A3</a>
+							<a href="single-news.html" class="title">Литые диски для новой Audi A3</a>
 							<div class="description">Весь ассортимент литых дисков для Audi A3 (8V) в продаже. Диски представлены в радиусе</div>
 						</div>
 						<div class="bottomPart">
-							<a href=""> <span><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-angle-right" aria-hidden="true"></i></span> Подробнее</a>
+							<a href="single-news.html"> <span><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-angle-right" aria-hidden="true"></i></span> Подробнее</a>
 						</div>
 					</div>
 				</div>
-				<a href="" class="archive"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span> Архив новостей</a>
+				<a href="news.html" class="archive"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span> Архив новостей</a>
 			</div>
 		</div>
 	</section>
@@ -501,29 +617,29 @@
 			<div class="row">
 				<div class="top">
 					<ul>
-						<li><a href="#">A3</a></li>
-						<li><a href="#">A4</a></li>
-						<li><a href="#">A5</a></li>
-						<li><a href="#">A6</a></li>
-						<li><a href="#">A7</a></li>
-						<li><a href="#">A8</a></li>
-						<li><a href="#">Q3</a></li>
-						<li><a href="#">Q5</a></li>
-						<li><a href="#">Q7</a></li>
-						<li><a href="#">R8</a></li>
-						<li><a href="#">TT</a></li>
-						<li><a href="#">Аксессуары</a></li>
+						<li><a href="model.html">A3</a></li>
+						<li><a href="model.html">A4</a></li>
+						<li><a href="model.html">A5</a></li>
+						<li><a href="model.html">A6</a></li>
+						<li><a href="model.html">A7</a></li>
+						<li><a href="model.html">A8</a></li>
+						<li><a href="model.html">Q3</a></li>
+						<li><a href="model.html">Q5</a></li>
+						<li><a href="model.html">Q7</a></li>
+						<li><a href="model.html">R8</a></li>
+						<li><a href="model.html">TT</a></li>
+						<li><a href="model.html">Аксессуары</a></li>
 					</ul>
 					<ul>
-						<li><a href="#">Как заказать</a></li>
-						<li><a href="#">Оплата</a></li>
-						<li><a href="#">Доставка</a></li>
-						<li><a href="#">Установка</a></li>
-						<li><a href="#">Контакты</a></li>
-						<li><a href="#">Новости</a></li>
+						<li><a href="howtobuy.html">Как заказать</a></li>
+						<li><a href="howtobuy.html">Оплата</a></li>
+						<li><a href="howtobuy.html">Доставка</a></li>
+						<li><a href="howtobuy.html">Установка</a></li>
+						<li><a href="#contacts">Контакты</a></li>
+						<li><a href="news.html">Новости</a></li>
 					</ul>
 				</div>
-				<div class="middle">
+				<div class="middle" id="contacts">
 					<div class="leftPart">
 						<div class="logoPart">
 							<div class="logo"><img src="img/logo-footer.png" alt="Audi-autotuning logo"></div>
