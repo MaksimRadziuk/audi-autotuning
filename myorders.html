@@ -177,12 +177,21 @@
 				<div class="logoBox">
 					<div class="logo"><a href="index.html"><img src="img/logo.jpg" alt="Audi-autotuning logo"></a></div>
 					<div class="slogan">Оригинальные аксессуары, диски, дооснащение и тюнинг Audi</div>
+					<h1></h1>
 				</div>
 				<div class="rightPart">
 					<div class="top">
 						<nav class="menu_wrap">
-							<span class="city">Санкт-Петербург</span>
-							<ul>
+							<div class="city_wrap">
+								<select id="locationCity">
+									<option value="">Санкт-Петербург</option>
+									<option value="">Москва</option>
+									<option value="">Екатеринбург</option>
+									<option value="">Владивосток</option>
+									<option value="">Сочи</option>
+								</select>
+							</div>
+							<ul class="menu_header_list">
 								<li><a href="howtobuy.html">Как заказать</a></li>
 								<li><a href="howtobuy.html">Оплата</a></li>
 								<li><a href="howtobuy.html">Доставка</a></li>
@@ -271,7 +280,7 @@
 	<section class="myorders">
 		<div class="container">
 			<div class="row">
-				<h2>Мои заказы</h2>
+				<h1>Мои заказы</h1>
 				<div class="myorders__wrap">
 					<div class="selection_wrap">
 						<form>
@@ -304,7 +313,7 @@
 								<th class="adress_main">Адрес и дата доставки</th>
 								<th class="delivery_main">Способ доставки</th>
 								<th class="status_main">Статус</th>
-								<th class="repeat_main">Повторить</th>
+								<!-- <th class="repeat_main">Повторить</th> -->
 							</tr>
 							<tr>
 								<td class="number_main">A 00322097 <div>24.02.2017</div></td>
@@ -313,7 +322,7 @@
 								<td class="adress_main">г. Москва, ул. Железнодорожная, д. 45, кв. 12 <div>24.02.2017</div></td>
 								<td class="delivery_main">Курьером по Москве и Мск. области <span>(400р.)</span></td>
 								<td class="status_main">Ожидается поступление на склад</td>
-								<td class="repeat_main"><button><i class="fa fa-undo" aria-hidden="true"></i></button></td>
+								<!-- <td class="repeat_main"><button><i class="fa fa-undo" aria-hidden="true"></i></button></td> -->
 							</tr>
 						</table>
 						<table class="main mobile">
@@ -341,10 +350,10 @@
 								<td class="main_title">Статус</td>
 								<td class="data status_main">Ожидается поступление на склад</td>
 							</tr>
-							<tr>
+							<!-- <tr>
 								<td class="main_title">Повторить</td>
 								<td class="data repeat_main"><button><i class="fa fa-undo" aria-hidden="true"></i></button></td>
-							</tr>
+							</tr> -->
 						</table>
 						<div class="innerTable">
 							<div class="innerTable__head">
@@ -366,8 +375,8 @@
 										<tr>
 											<td class="code">A 00322097</td>
 											<td class="description">
-												<div class="img_wrap"><img src="img/slide-1-popular.jpg" alt=""></div>
-												<span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span>
+												<div class="img_wrap"><a href="product.html"><img src="img/slide-1-popular.jpg" alt=""></a></div>
+												<a href="product.html"><span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span></a>
 											</td>
 											<td class="amount">
 												1
@@ -378,8 +387,8 @@
 										<tr>
 											<td class="code">A 00322097</td>
 											<td class="description">
-												<div class="img_wrap"><img src="img/slide-1-popular.jpg" alt=""></div>
-												<span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span>
+												<div class="img_wrap"><a href="product.html"><img src="img/slide-1-popular.jpg" alt=""></a></div>
+												<a href="product.html"><span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span></a>
 											</td>
 											<td class="amount">
 												1
@@ -390,8 +399,8 @@
 										<tr>
 											<td class="code">A 00322097</td>
 											<td class="description">
-												<div class="img_wrap"><img src="img/slide-1-popular.jpg" alt=""></div>
-												<span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span>
+												<div class="img_wrap"><a href="product.html"><img src="img/slide-1-popular.jpg" alt=""></a></div>
+												<a href="product.html"><span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span></a>
 											</td>
 											<td class="amount">
 												1
@@ -408,7 +417,7 @@
 								<table class="mobile">
 									<tbody class="item">
 										<tr>
-											<th colspan="2">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</th>
+											<th colspan="2"><a href="product.html">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</a></th>
 										</tr>
 										<tr>
 											<td>Артикул</td>
@@ -436,7 +445,7 @@
 									</tbody>
 									<tbody class="item">
 										<tr>
-											<th colspan="2">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</th>
+											<th colspan="2"><a href="product.html">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</a></th>
 										</tr>
 										<tr>
 											<td>Артикул</td>
@@ -464,7 +473,7 @@
 									</tbody>
 									<tbody class="item">
 										<tr>
-											<th colspan="2">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</th>
+											<th colspan="2"><a href="product.html">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</a></th>
 										</tr>
 										<tr>
 											<td>Артикул</td>
@@ -502,7 +511,7 @@
 								<td class="adress_main">г. Москва, ул. Железнодорожная, д. 45, кв. 12 <div>24.02.2017</div></td>
 								<td class="delivery_main">Курьером по Москве и Мск. области <span>(400р.)</span></td>
 								<td class="status_main">Ожидается поступление на склад</td>
-								<td class="repeat_main"><button><i class="fa fa-undo" aria-hidden="true"></i></button></td>
+								<!-- <td class="repeat_main"><button><i class="fa fa-undo" aria-hidden="true"></i></button></td> -->
 							</tr>
 						</table>
 						<table class="main mobile">
@@ -530,10 +539,10 @@
 								<td class="main_title">Статус</td>
 								<td class="data status_main">Ожидается поступление на склад</td>
 							</tr>
-							<tr>
+							<!-- <tr>
 								<td class="main_title">Повторить</td>
 								<td class="data repeat_main"><button><i class="fa fa-undo" aria-hidden="true"></i></button></td>
-							</tr>
+							</tr> -->
 						</table>
 						<div class="innerTable">
 							<div class="innerTable__head">
@@ -555,8 +564,8 @@
 										<tr>
 											<td class="code">A 00322097</td>
 											<td class="description">
-												<div class="img_wrap"><img src="img/slide-1-popular.jpg" alt=""></div>
-												<span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span>
+												<div class="img_wrap"><a href="product.html"><img src="img/slide-1-popular.jpg" alt=""></a></div>
+												<a href="product.html"><span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span></a>
 											</td>
 											<td class="amount">
 												1
@@ -567,8 +576,8 @@
 										<tr>
 											<td class="code">A 00322097</td>
 											<td class="description">
-												<div class="img_wrap"><img src="img/slide-1-popular.jpg" alt=""></div>
-												<span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span>
+												<div class="img_wrap"><a href="product.html"><img src="img/slide-1-popular.jpg" alt=""></a></div>
+												<a href="product.html"><span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span></a>
 											</td>
 											<td class="amount">
 												1
@@ -597,7 +606,7 @@
 								<table class="mobile">
 									<tbody class="item">
 										<tr>
-											<th colspan="2">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</th>
+											<th colspan="2"><a href="product.html">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</a></th>
 										</tr>
 										<tr>
 											<td>Артикул</td>
@@ -625,7 +634,7 @@
 									</tbody>
 									<tbody class="item">
 										<tr>
-											<th colspan="2">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</th>
+											<th colspan="2"><a href="product.html">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</a></th>
 										</tr>
 										<tr>
 											<td>Артикул</td>
@@ -653,7 +662,7 @@
 									</tbody>
 									<tbody class="item">
 										<tr>
-											<th colspan="2">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</th>
+											<th colspan="2"><a href="product.html">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</a></th>
 										</tr>
 										<tr>
 											<td>Артикул</td>
@@ -691,7 +700,7 @@
 								<td class="adress_main">г. Москва, ул. Железнодорожная, д. 45, кв. 12 <div>24.02.2017</div></td>
 								<td class="delivery_main">Курьером по Москве и Мск. области <span>(400р.)</span></td>
 								<td class="status_main">Ожидается поступление на склад</td>
-								<td class="repeat_main"><button><i class="fa fa-undo" aria-hidden="true"></i></button></td>
+								<!-- <td class="repeat_main"><button><i class="fa fa-undo" aria-hidden="true"></i></button></td> -->
 							</tr>
 						</table>
 						<table class="main mobile">
@@ -719,10 +728,10 @@
 								<td class="main_title">Статус</td>
 								<td class="data status_main">Ожидается поступление на склад</td>
 							</tr>
-							<tr>
+							<!-- <tr>
 								<td class="main_title">Повторить</td>
 								<td class="data repeat_main"><button><i class="fa fa-undo" aria-hidden="true"></i></button></td>
-							</tr>
+							</tr> -->
 						</table>
 						<div class="innerTable">
 							<div class="innerTable__head">
@@ -744,8 +753,8 @@
 										<tr>
 											<td class="code">A 00322097</td>
 											<td class="description">
-												<div class="img_wrap"><img src="img/slide-1-popular.jpg" alt=""></div>
-												<span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span>
+												<div class="img_wrap"><a href="product.html"><img src="img/slide-1-popular.jpg" alt=""></a></div>
+												<a href="product.html"><span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span></a>
 											</td>
 											<td class="amount">
 												1
@@ -756,8 +765,8 @@
 										<tr>
 											<td class="code">A 00322097</td>
 											<td class="description">
-												<div class="img_wrap"><img src="img/slide-1-popular.jpg" alt=""></div>
-												<span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span>
+												<div class="img_wrap"><a href="product.html"><img src="img/slide-1-popular.jpg" alt=""></a></div>
+												<a href="product.html"><span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span></a>
 											</td>
 											<td class="amount">
 												1
@@ -768,8 +777,8 @@
 										<tr>
 											<td class="code">A 00322097</td>
 											<td class="description">
-												<div class="img_wrap"><img src="img/slide-1-popular.jpg" alt=""></div>
-												<span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span>
+												<div class="img_wrap"><a href="product.html"><img src="img/slide-1-popular.jpg" alt=""></a></div>
+												<a href="product.html"><span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span></a>
 											</td>
 											<td class="amount">
 												1
@@ -786,7 +795,7 @@
 								<table class="mobile">
 									<tbody class="item">
 										<tr>
-											<th colspan="2">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</th>
+											<th colspan="2"><a href="product.html">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</a></th>
 										</tr>
 										<tr>
 											<td>Артикул</td>
@@ -814,7 +823,7 @@
 									</tbody>
 									<tbody class="item">
 										<tr>
-											<th colspan="2">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</th>
+											<th colspan="2"><a href="product.html">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</a></th>
 										</tr>
 										<tr>
 											<td>Артикул</td>
@@ -842,7 +851,7 @@
 									</tbody>
 									<tbody class="item">
 										<tr>
-											<th colspan="2">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</th>
+											<th colspan="2"><a href="product.html">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</a></th>
 										</tr>
 										<tr>
 											<td>Артикул</td>
@@ -880,7 +889,7 @@
 								<td class="adress_main">г. Москва, ул. Железнодорожная, д. 45, кв. 12 <div>24.02.2017</div></td>
 								<td class="delivery_main">Курьером по Москве и Мск. области <span>(400р.)</span></td>
 								<td class="status_main">Ожидается поступление на склад</td>
-								<td class="repeat_main"><button><i class="fa fa-undo" aria-hidden="true"></i></button></td>
+								<!-- <td class="repeat_main"><button><i class="fa fa-undo" aria-hidden="true"></i></button></td> -->
 							</tr>
 						</table>
 						<table class="main mobile">
@@ -908,10 +917,10 @@
 								<td class="main_title">Статус</td>
 								<td class="data status_main">Ожидается поступление на склад</td>
 							</tr>
-							<tr>
+							<!-- <tr>
 								<td class="main_title">Повторить</td>
 								<td class="data repeat_main"><button><i class="fa fa-undo" aria-hidden="true"></i></button></td>
-							</tr>
+							</tr> -->
 						</table>
 						<div class="innerTable">
 							<div class="innerTable__head">
@@ -933,8 +942,8 @@
 										<tr>
 											<td class="code">A 00322097</td>
 											<td class="description">
-												<div class="img_wrap"><img src="img/slide-1-popular.jpg" alt=""></div>
-												<span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span>
+												<div class="img_wrap"><a href="product.html"><img src="img/slide-1-popular.jpg" alt=""></a></div>
+												<a href="product.html"><span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span></a>
 											</td>
 											<td class="amount">
 												1
@@ -945,8 +954,8 @@
 										<tr>
 											<td class="code">A 00322097</td>
 											<td class="description">
-												<div class="img_wrap"><img src="img/slide-1-popular.jpg" alt=""></div>
-												<span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span>
+												<div class="img_wrap"><a href="product.html"><img src="img/slide-1-popular.jpg" alt=""></a></div>
+												<a href="product.html"><span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span></a>
 											</td>
 											<td class="amount">
 												1
@@ -957,8 +966,8 @@
 										<tr>
 											<td class="code">A 00322097</td>
 											<td class="description">
-												<div class="img_wrap"><img src="img/slide-1-popular.jpg" alt=""></div>
-												<span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span>
+												<div class="img_wrap"><a href="product.html"><img src="img/slide-1-popular.jpg" alt=""></a></div>
+												<a href="product.html"><span class="title">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</span></a>
 											</td>
 											<td class="amount">
 												1
@@ -975,7 +984,7 @@
 								<table class="mobile">
 									<tbody class="item">
 										<tr>
-											<th colspan="2">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</th>
+											<th colspan="2"><a href="product.html">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</a></th>
 										</tr>
 										<tr>
 											<td>Артикул</td>
@@ -1003,7 +1012,7 @@
 									</tbody>
 									<tbody class="item">
 										<tr>
-											<th colspan="2">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</th>
+											<th colspan="2"><a href="product.html">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</a></th>
 										</tr>
 										<tr>
 											<td>Артикул</td>
@@ -1031,7 +1040,7 @@
 									</tbody>
 									<tbody class="item">
 										<tr>
-											<th colspan="2">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</th>
+											<th colspan="2"><a href="product.html">Бампер задний Audi A5/S5 Sportback (8T) 2012-н.в. для автомобилей с системой парктроник</a></th>
 										</tr>
 										<tr>
 											<td>Артикул</td>

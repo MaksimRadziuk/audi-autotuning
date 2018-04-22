@@ -85,4 +85,6 @@ $(document).ready(function(){
 		$('#popup_background').show();
 	});	
 
+	$('#locationCity').chosen({width: "100%"});
+
 });

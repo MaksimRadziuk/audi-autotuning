@@ -466,7 +466,7 @@ section.catalog .container>.row {
 	border-bottom: 1px solid #e8ecef;
 	padding-bottom: 50px;
 }
-section.catalog .contentPart>.title {
+section.catalog .contentPart>h1 {
 	font-size: 2rem;
 	padding-left: 1%;
 	font-weight: 600;
@@ -748,6 +748,7 @@ section.seo h2 {
 }
 section.seo p {
 	padding: 0;
+	padding-top: 30px;
 	margin: 0;
 	-webkit-column-count: 2;
 	        column-count: 2;

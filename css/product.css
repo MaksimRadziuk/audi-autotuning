@@ -670,7 +670,7 @@ section.product .offer_wrap .slick-next:before {
 }
 
 /* SLIDER WRAP */
-section.product .contentPart>.title {
+section.product .contentPart>h1 {
 	font-size: 1.6rem;
 	font-weight: 600;
 	margin-top: 5px;
@@ -828,6 +828,11 @@ section.product .contentPart>.slider_wrap .description .addToBusket {
 	margin-bottom: 20px;
 	cursor: pointer;
 }
+section.product .contentPart>.slider_wrap .description .addToBusket:hover {
+	-webkit-animation: buyMe .7s linear alternate infinite;
+	        animation: buyMe .7s linear alternate infinite;
+}
+
 section.product .contentPart>.slider_wrap .description .addToBusket>a {
 	text-align: center;
 	display: -webkit-box;

@@ -746,6 +746,7 @@ section.autoHouse h2 {
 section.autoHouse .autoHouse__slider_wrap {
 	width:1100px;
 	margin:0 auto;
+	margin-bottom: 40px;
 }
 section.autoHouse .autoHouse__slider_wrap .autoHouse__slide {
 	text-align:center;
@@ -798,6 +799,23 @@ section.autoHouse .autoHouse__slider_wrap .autoHouse__slide.slick-current {
 	opacity: 1;
 	-webkit-filter: saturate(100%);
 	        filter: saturate(100%);
+}
+
+section.autoHouse .archive {
+	margin-left: 20px;
+	font-size: 1.5rem;
+	font-weight: 600;
+	-webkit-transition: all .1s linear;
+	transition: all .1s linear;
+	margin-top: 40px;
+}
+section.autoHouse .archive>span>i {
+	font-size: 1.5rem;
+	color: #cf1141;
+	font-weight: 600;
+}
+section.autoHouse .archive:hover {
+	color: #cf1141;
 }
 
 

@@ -43,11 +43,16 @@ section.busket_table table tbody td .img_wrap {
 	width: 25%;
 	margin-right: 25px;
 }
-section.busket_table table tbody td .title {
+section.busket_table table tbody td a {
 	display: inline-block;
 	width: 69%;
 	vertical-align: top;
+}
+section.busket_table table tbody td a>.title {
 	font-size: 1.4rem;
+}
+section.busket_table table tbody td a:hover>.title {
+	color: #cf1141;
 }
 section.busket_table table tbody td.description {
 	vertical-align: top;
@@ -126,7 +131,10 @@ section.busket_table table tbody tr.footer td.sum {
 	text-align: right;
 	font-weight: 600;
 }
-section.busket_table table tbody td .img_wrap>img {
+section.busket_table table tbody td .img_wrap>a {
+	width: 100%;
+}
+section.busket_table table tbody td .img_wrap>a>img {
 	width: 100%;
 }
 section.busket_table table.mobile {

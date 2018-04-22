@@ -163,7 +163,19 @@ section.slider .slick-dots li.slick-active button:before {
 section.about {
 	background-color: #fff;
 }
-section.about p {
+section.about .img_wrap {
+	margin:0 auto;
+	margin-bottom: 20px;
+	text-align: center;
+}
+section.about .video_wrap {
+	margin:0 auto;
+	margin-bottom: 20px;
+	text-align: center;
+	width: 540px;
+	height: 300px;
+}
+section.about .text_wrap p {
 	font-size: 1.4rem;
 	width: 100%;
 	-webkit-column-count: 2;
@@ -171,8 +183,20 @@ section.about p {
 	-webkit-column-gap:100px;
 	        column-gap:100px;
 	text-align: justify;
-	margin-bottom: 70px;
+	margin-bottom: 20px;
 	line-height: 1.6;
+}
+section.about .text_wrap p>a {
+	color: #636262;
+}
+section.about .text_wrap p>a:hover {
+	color: #cf1141;
+}
+section.about .text_wrap:last-child p {
+	margin-bottom: 70px;
+}
+section.about .text_wrap ol, section.about .text_wrap ul {
+	margin-bottom: 20px;
 }
 @media all and (max-width: 700px) {
 	section.about .container>.row {
@@ -408,6 +432,12 @@ section.popular .slick-next:hover {
 }
 section.popular .slick-prev:before, section.popular .slick-next:before {
 	display: none;
+}
+section.popular .section_title>span {
+	font-size: 2.7rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #242424;
 }
 
 

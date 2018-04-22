@@ -22,6 +22,7 @@
 	<link rel="stylesheet" href="libs/slick/slick-theme.css">
 	<link rel="stylesheet" href="fonts/stylesheet.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/chosen/chosen.min.css">
 	
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -173,12 +174,21 @@
 				<div class="logoBox">
 					<div class="logo"><a href="index.html"><img src="img/logo.jpg" alt="Audi-autotuning logo"></a></div>
 					<div class="slogan">Оригинальные аксессуары, диски, дооснащение и тюнинг Audi</div>
+					<h1></h1>
 				</div>
 				<div class="rightPart">
 					<div class="top">
 						<nav class="menu_wrap">
-							<span class="city">Санкт-Петербург</span>
-							<ul>
+							<div class="city_wrap">
+								<select id="locationCity">
+									<option value="">Санкт-Петербург</option>
+									<option value="">Москва</option>
+									<option value="">Екатеринбург</option>
+									<option value="">Владивосток</option>
+									<option value="">Сочи</option>
+								</select>
+							</div>
+							<ul class="menu_header_list">
 								<li><a href="howtobuy.html">Как заказать</a></li>
 								<li><a href="howtobuy.html">Оплата</a></li>
 								<li><a href="howtobuy.html">Доставка</a></li>
@@ -324,7 +334,7 @@
 	<section class="catalog">
 		<div class="container">
 			<div class="row">
-				<h2>каталог товаров</h2>
+				<div class="section_title">каталог товаров</div>
 				<div class="catalog__tile_wrap">
 					<div class="tile interior height2"><a href="catalog.html"><span>тюнинг салона</span></a></div>
 					<div class="tile exterior"><a href="catalog.html"><span>внешний тюнинг</span></a></div>
@@ -342,7 +352,7 @@
 	<section class="about">
 		<div class="container">
 			<div class="row">
-				<h2>о компании</h2>
+				<div class="section_title">о компании</div>
 				<p>Качество немецкое, название Audi. Но совершенству нет предела, поэтому тюнинг автомобилей Audi поражает все новыми и новыми усовершенствованиями и без того презентабельных автомобилей. <br><br>Начинаться он может с внешней доводки или наращивания мощности двигателя. Благородные очертания автомобилей Ауди – это благодатная основа для разработки самых изощренных обвесов. Конечно, автолюбители в первую очередь хотят сделать свою машину уникальной внешне. <br>Именно этой цели служат многочисленные предлагаемые на рынке варианты боди китов и отдельных аэродинамических элементов. К ним относится передний бампер, устанавливаемый вместо стокового, всевозможные накладки на бампер – от исключительно декоративных до вполне функциональных карбоновых передних спойлеров, стилистически выдержанных порогов, или как их еще называют, швеллеров, и много другого. Хотя это "многое другое" и выполняет второстепенную роль, но может выгодно подчеркивать характер автомобиля.</p>
 			</div>
 		</div>
@@ -351,7 +361,7 @@
 	<section class="popular">
 		<div class="container">
 			<div class="row">
-				<h2>популярные товары</h2>
+				<h3>популярные товары</h3>
 				<div class="popular__slider-wrap">
 					<div class="popularBlock">
 						<div class="ticket hit"></div>
@@ -369,7 +379,7 @@
 								<span>+</span><i class="fa fa-shopping-cart" aria-hidden="true"></i>
 							</div>
 							<div class="priceBox">
-								<div class="previous">65 000.00 <span>руб</span></div>
+								<!-- <div class="previous">65 000.00 <span>руб</span></div> -->
 								<div class="actual">59 580.00 <span>руб</span></div>
 							</div>
 						</div>
@@ -390,7 +400,7 @@
 								<span>+</span><i class="fa fa-shopping-cart" aria-hidden="true"></i>
 							</div>
 							<div class="priceBox">
-								<div class="previous">65 000.00 <span>руб</span></div>
+								<!-- <div class="previous">65 000.00 <span>руб</span></div> -->
 								<div class="actual">59 580.00 <span>руб</span></div>
 							</div>
 						</div>
@@ -411,7 +421,7 @@
 								<span>+</span><i class="fa fa-shopping-cart" aria-hidden="true"></i>
 							</div>
 							<div class="priceBox">
-								<div class="previous">65 000.00 <span>руб</span></div>
+								<!-- <div class="previous">65 000.00 <span>руб</span></div> -->
 								<div class="actual">59 580.00 <span>руб</span></div>
 							</div>
 						</div>
@@ -431,7 +441,7 @@
 								<span>+</span><i class="fa fa-shopping-cart" aria-hidden="true"></i>
 							</div>
 							<div class="priceBox">
-								<div class="previous">65 000.00 <span>руб</span></div>
+								<!-- <div class="previous">65 000.00 <span>руб</span></div> -->
 								<div class="actual">59 580.00 <span>руб</span></div>
 							</div>
 						</div>
@@ -451,7 +461,7 @@
 								<span>+</span><i class="fa fa-shopping-cart" aria-hidden="true"></i>
 							</div>
 							<div class="priceBox">
-								<div class="previous">65 000.00 <span>руб</span></div>
+								<!-- <div class="previous">65 000.00 <span>руб</span></div> -->
 								<div class="actual">59 580.00 <span>руб</span></div>
 							</div>
 						</div>
@@ -464,7 +474,7 @@
 	<section class="autoHouse">
 		<div class="container">
 			<div class="row">
-				<h2>авто ателье</h2>
+				<h3>Тюнинг ателье Audi</h3>
 				<div class="autoHouse__slider_wrap">
 					<div class="autoHouse__slide"><a href="autohouse.html"><img src="img/SLine-autoHouse.png" alt=""></a></div>
 					<div class="autoHouse__slide"><a href="autohouse.html"><img src="img/ABT-autoHouse.png" alt=""></a></div>
@@ -477,6 +487,7 @@
 					<div class="autoHouse__slide"><a href="autohouse.html"><img src="img/nothelle-autoHouse.png" alt=""></a></div>
 					<div class="autoHouse__slide"><a href="autohouse.html"><img src="img/JeDesign-autoHouse.png" alt=""></a></div>
 				</div>
+				<a href="autohouse.html" class="archive"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span> Посмотреть все тюнинг ателье Audi</a>
 			</div>
 		</div>
 	</section>
@@ -484,7 +495,7 @@
 	<section class="advantages">
 		<div class="container">
 			<div class="row">
-				<h2>наши преимущества</h2>
+				<div class="section_title">наши преимущества</div>
 				<div class="advantages_wrap">
 					<div class="advantage col-sm-6 original">
 						<p class="title">100% оригинал</p>
@@ -518,7 +529,7 @@
 	<section class="news">
 		<div class="container">
 			<div class="row">
-				<h2>новости</h2>
+				<div class="section_title">новости</div>
 				<div class="news__slider-wrap">
 					<div class="newsBlock">
 						<div class="date">29.07.2014</div>
@@ -699,6 +710,7 @@
 <script src="libs/jquery/jquery-3.2.1.min.js"></script>
 <script src="libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <script src="libs/slick/slick.js"></script>
+<script src="libs/chosen/chosen.jquery.min.js"></script>
 
 <script src="js/common.js"></script>
 <script src="js/main.js"></script>

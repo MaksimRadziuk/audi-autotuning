@@ -344,9 +344,15 @@ section.myorders .innerTable__head span {
 	font-size: 1.2rem;
 	color: #b7bbbf;
 }
+section.myorders .innerTable__head:hover span {
+	color: #cf1141;
+}
 section.myorders .innerTable__head span i{
 	font-size: 1.2rem;
 	color: #b7bbbf;
+}
+section.myorders .innerTable__head:hover span i{
+	color: #cf1141;
 }
 section.myorders .innerTable__head span.active i {
 	-webkit-transform: rotateZ(180deg);
@@ -393,12 +399,23 @@ section.myorders .innerTable__body table tbody td .img_wrap {
 	width: 17%;
 	margin-right: 25px;
 }
-section.myorders .innerTable__body  table tbody td.description .title {
+section.myorders .innerTable__body table tbody td .img_wrap>a {
+	width: 100%;
+}
+section.myorders .innerTable__body table tbody td .img_wrap>a>img {
+	width: 100%;
+}
+section.myorders .innerTable__body  table tbody td.description>a {
 	display: inline-block;
 	width: 69%;
 	vertical-align: top;
+}
+section.myorders .innerTable__body  table tbody td.description>a>.title {
 	font-size: 1.4rem;
 	color: #242424;
+}
+section.myorders .innerTable__body  table tbody td.description a .title:hover {
+	color: #cf1141;
 }
 section.myorders .innerTable__body  table tbody td.description {
 	vertical-align: top;
