@@ -395,11 +395,8 @@ section.model p{
 
 
 /* TUNING HOUSE */
-section.tuningHouse h2 {
-	text-align: left;
-	margin-top: 10px;
-}
 section.tuningHouse .tuningHouse__wrap {
+	display: block;
 	width: 100%;
 	border:1px solid #e8ecef;
 	padding: 20px;
@@ -414,7 +411,10 @@ section.tuningHouse .tuningHouse__wrap .top .imgPart {
 	display: inline-block;
 	float: left;
 }
-section.tuningHouse .tuningHouse__wrap .top .imgPart>img {
+section.tuningHouse .tuningHouse__wrap .top .imgPart>a> {
+	width: 100%;
+}
+section.tuningHouse .tuningHouse__wrap .top .imgPart>a>img {
 	width: 100%;
 }
 section.tuningHouse .tuningHouse__wrap .top .textPart {
@@ -429,7 +429,7 @@ section.tuningHouse .tuningHouse__wrap .top .textPart.caractere,
 section.tuningHouse .tuningHouse__wrap .top .textPart.je {
 	padding-top: 5px;
 }
-section.tuningHouse .tuningHouse__wrap .top .textPart .title {
+section.tuningHouse .tuningHouse__wrap .top .textPart .title a{
 	font-size: 1.2rem;
 	font-weight: 700;
 }
@@ -514,9 +514,75 @@ section.tuningHouse .tuningHouse__wrap .description span {
 
 
 
-
-
-
-
-
+/* AUTOHOUSE SINGLE */
+.slick-dotted.slick-slider {
+	margin-bottom: 70px;
+}
+section>.container>.row>h1 {
+	font-size: 2.7rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: left;
+	margin-bottom: 70px;
+	margin-top: 40px;
+	color: #242424;
+}
+section.autohouse_single>.container>.row {
+	border-bottom: 1px solid #e9ecee;
+	padding-bottom: 80px;
+}
+section.autohouse_single .autohouse_wrap>.img_wrap {
+	width: 300px;
+	height: 160px;
+	border-bottom: 1px solid #e9ecee;
+	overflow:hidden;
+	display: inline-block;
+	margin-right: 40px;
+	float: left;
+}
+section.autohouse_single .autohouse_wrap>.img_wrap>img {
+	width: 100%;
+}
+section.autohouse_single .autohouse_wrap .description_wrap {
+	width: calc(100% - 350px);
+	display: inline-block;
+	float: left;
+}
+section.autohouse_single .autohouse_wrap .description_wrap .autohouse_title {
+	font-size: 2rem;
+	text-transform:uppercase;
+	font-weight: 200;
+	margin-bottom: 20px;
+}
+section.autohouse_single .autohouse_wrap .description_wrap span.title {
+	color: #000;
+	font-size: 1.2rem;
+	margin-right: 8px;
+	font-weight: 700;
+}
+section.autohouse_single .autohouse_wrap .description_wrap span.link a {
+	color: #cf1141;
+	font-size: 1.4rem;
+}
+section.autohouse_single .autohouse_wrap .description_wrap .site_wrap {
+	margin-bottom: 20px;
+}
+section.autohouse_single .autohouse_wrap .description_wrap .adress_wrap {
+	margin-bottom: 20px;
+}
+section.autohouse_single .autohouse_wrap .description_wrap .foundation_wrap {
+	margin-bottom: 20px;
+}
+section.autohouse_single .autohouse_wrap .description_wrap .specialization_wrap>span.title{
+	margin-right: 15px;
+}
+section.autohouse_single .autohouse_wrap .description_wrap span.spec>span.item {
+	display: inline-block;
+	padding: 5px 15px;
+	border:1px solid #cf1141;
+	color: #cf1141;
+	margin-bottom: 10px;
+	margin-right: 7px;
+	font-size: 1.2rem;
+}
 
