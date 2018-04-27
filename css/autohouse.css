@@ -586,3 +586,35 @@ section.autohouse_single .autohouse_wrap .description_wrap span.spec>span.item {
 	font-size: 1.2rem;
 }
 
+@media all and (max-width: 1000px) {
+
+	section.autohouse_single .autohouse_wrap>.img_wrap {
+		margin-right: 20px;
+	}
+	section.autohouse_single .autohouse_wrap .description_wrap {
+		width: calc(100% - 330px);
+	}
+	section.autohouse_single>.container>.row {
+		padding-bottom: 60px;
+	}
+}
+@media all and (max-width: 700px) {
+	section.autohouse_single>.container>.row {
+		margin: 0;
+	}
+	section.autohouse_single .autohouse_wrap>.img_wrap {
+		display: block;
+		margin-left: 50%;
+		transform: translateX(-50%);
+		margin-bottom: 20px;
+	}
+	section.autohouse_single .autohouse_wrap .description_wrap {
+		width: 100%;
+	}
+}
+@media all and (max-width: 480px) {
+	section>.container>.row>h1 {
+		margin-bottom: 30px;
+		margin-top: 10px;
+	}
+}

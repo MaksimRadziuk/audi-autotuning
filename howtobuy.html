@@ -41,8 +41,8 @@
 		<div class="wrapper_row first">
 			<ul>
 				<li><a href="howtobuy.html">Как заказать</a></li>
-				<li><a href="howtobuy.html">Оплата</a></li>
-				<li><a href="howtobuy.html">Доставка</a></li>
+				<li><a href="pay.html">Оплата</a></li>
+				<li><a href="delivery.html">Доставка</a></li>
 				<li><a href="howtobuy.html">Установка</a></li>
 				<li><a href="#">Контакты</a></li>
 				<li><a href="news.html">Новости</a></li>
@@ -82,6 +82,7 @@
 	<div class="deleteBusketRow_wrap">
 		<div class="title">Этот товар можно добавить в избранное и вернуться к его покупке позднее</div>
 		<button class="addToFavoriate">Добавить в избранное</button>
+		<button class="doNotAdd">Не добавлять</button>
 		<div class="closePopup"><i class="fa fa-times" aria-hidden="true"></i></div>
 	</div>
 </div>
@@ -164,6 +165,30 @@
 	</div>
 </div>
 
+<div class="popup callbackOrder">
+	<div class="callback_wrap">
+		<div class="title">Заказать обратный звонок</div>
+		<p>Наши менеджеры свяжутся с вами в ближайшее время</p>
+		<form>
+			<input type="text" name="Name" placeholder="Имя" required>
+			<input type="number"  placeholder="Телефон" name="Phone" required>
+			<button type="submit">Отправить</button>
+			<p class="refinement">Нажимая на кнопку отправить я даю свое согласие на <a href="">обработку персональных данных</a></p>
+		</form>
+		<div class="closePopup"><i class="fa fa-times" aria-hidden="true"></i></div>
+	</div>
+</div>
+
+<div class="popup favoriateAdd">
+	<div class="favoriateAdd_wrap">
+		<div class="title">Товар добавлен в избранное</div>
+		<div class="closePopup"><i class="fa fa-times" aria-hidden="true"></i></div>
+	</div>
+</div>
+
+<div id="toTop">
+	<i class="fa fa-angle-up"></i>
+</div>
 
 
 
@@ -189,8 +214,8 @@
 							</div>
 							<ul class="menu_header_list">
 								<li><a href="howtobuy.html">Как заказать</a></li>
-								<li><a href="howtobuy.html">Оплата</a></li>
-								<li><a href="howtobuy.html">Доставка</a></li>
+								<li><a href="pay.html">Оплата</a></li>
+								<li><a href="delivery.html">Доставка</a></li>
 								<li><a href="howtobuy.html">Установка</a></li>
 								<li><a href="#contacts">Контакты</a></li>
 								<li><a href="news.html">Новости</a></li>
@@ -414,11 +439,12 @@
 							<div class="slogan">Оригинальные аксессуары, диски, <br>дооснащение и тюнинг</div>
 						</div>
 						<div class="phonePart">
-							<div class="callBackOrder"><p>Обратный звонок</p></div>
-							<div>
-								<div class="phoneNumber"><a href="tel:+74959737722" class="phone"><i class="fa fa-phone" aria-hidden="true"></i>+7(495)973-77-22</a></div>
-								<div class="timeWork"><p>Время работы: с 10:00 до 19:00</p></div>
+							<div class="phoneNumber">
+								<a href="tel:+74959737722" class="phone"><i class="fa fa-phone" aria-hidden="true"></i>+7(495)973-77-22</a>
+								<a href="tel:+78002002277" class="phone"><i class="fa fa-phone" aria-hidden="true"></i>8(800)200-22-77</a>
 							</div>
+							<div class="timeWork"><p>Время работы: с 10:00 до 19:00</p></div>
+							<div class="callBackOrder"><p>Обратный звонок</p></div>
 						</div>
 						<div class="adressPart">
 							<div class="adress">
@@ -429,28 +455,30 @@
 						</div>
 					</div>
 					<div class="rightPart">
-						<div class="rightPart__wrapper">
-							<div class="box vk_box"><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></div>
-							<div class="box insta_box"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
-							<div class="box fcb_box"><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></div>
-						</div>
-						<div class="payment_wrapper">
-							<div class="payment_block"><img src="img/qiwi.jpg" alt=""></div>
-							<div class="payment_block"><img src="img/webmoney.jpg" alt=""></div>
-							<div class="payment_block"><img src="img/jandex.jpg" alt=""></div>
-							<div class="payment_block"><img src="img/master.jpg" alt=""></div>
-							<div class="payment_block"><img src="img/visa.jpg" alt=""></div>
-							<div class="payment_block"><img src="img/mir.jpg" alt=""></div>
+						<div class="map_wrap">
+							<iframe id="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A22974c210539a52a16c7210a767a11b46a83b3983aff0916f3ad9b1d7b8df546&amp;source=constructor" width="100%" height="280px" frameborder="0"></iframe>
 						</div>
 					</div>
 				</div>
 				<div class="bottom">
 					<div class="bottom__wrapper">
-						<div class="stat_wrapper"><img src="img/stat-footer.png" alt=""></div>
 						<div class="copyright">
 							<p>&copy Autotuning-Audi.ru 2008 - 2017. Все права защищены.</p>
 							<a href="#">Карта сайта</a>
 						</div>
+						<div class="social_wrap">
+							<a href="" class="vk"><i class="fa fa-vk" aria-hidden="true"></i></a>
+							<a href="" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a href="" class="insta"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						</div>
+						<div class="payment qiwi"><img src="img/qiwi-footer.png" alt=""></div>
+						<div class="payment yandexMoney"><img src="img/yandexMaoney-footer.png" alt=""></div>
+						<div class="payment webMoney"><img src="img/webMoney-footer.png" alt=""></div>
+						<div class="payment visa"><img src="img/visa-footer.png" alt=""></div>
+						<div class="payment mastercard"><img src="img/masterCard-footer.png" alt=""></div>
+						<div class="payment mir"><img src="img/mir-footer.png" alt=""></div>
+						<div class="privacy"><a href="">Конфиденциальность</a></div>
+						<div class="stat_wrapper"><img src="img/stat-footer.png" alt=""></div>
 					</div>
 				</div>	
 			</div>

@@ -860,20 +860,14 @@ section.product .contentPart>.slider_wrap .description .addToBusket>a>i {
 	line-height: 40px;
 }
 section.product .contentPart>.slider_wrap .description .addToFavoriate {
+	display: block;
 	width: 175px;
 	height: 30px;
 	background-color: #242424;
-	float: left;
-	cursor: pointer;
-}
-section.product .contentPart>.slider_wrap .description .addToFavoriate>a {
-	text-align: center;
-	display: block;
-	width: 100%;
-	height: 100%;
-	line-height: 30px;
+	border:none;
 	font-size: 1.3rem;
 	color:#fff;
+	float: left;
 }
 @media all and (max-width: 1320px) {
 	section.product .contentPart>.slider_wrap .sliderPart {

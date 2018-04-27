@@ -52,6 +52,17 @@ $(document).ready(function(){
 		$('.deleteBusketRow').fadeIn();
 	});
 
+	$('.doNotAdd').click(function(){
+		$('.popup').hide();
+		$('#popup_background').fadeOut();
+	});
+
+	$('button.addToFavoriate').click(function(){
+		$('.popup').hide();
+		$('#favoriateAdd').show().delay(1500).fadeOut();
+		$('#popup_background').show().delay(1500).fadeOut();
+	});
+
 
 
 	$('.popup form input').click(function(){
@@ -98,10 +109,9 @@ $(document).ready(function(){
 		$('body,html').animate({scrollTop:0},800);
 	});
 
-	
 
-	
-	 
+
+		
 
 });
 
@@ -121,4 +131,4 @@ $(window).on("load",function(){
 		$('#popup_background').height(dHeight);
 		$('.mobile_menu').height(dHeight);
 	}
-})
+});
