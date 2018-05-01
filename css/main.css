@@ -756,8 +756,9 @@ section.autoHouse .autoHouse__slider_wrap .autoHouse__slide {
 	-webkit-transition: all .2s linear;
 	transition: all .2s linear;
 }
-section.autoHouse .autoHouse__slider_wrap .autoHouse__slide>img{
-	margin:0 auto;
+section.autoHouse .autoHouse__slider_wrap .autoHouse__slide img{
+	margin-left: 50%;
+	transform: translateX(-50%);
 }
 section.autoHouse .slick-prev {
 	left: -80px;

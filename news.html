@@ -47,14 +47,14 @@
 				<li><a href="pay.html">Оплата</a></li>
 				<li><a href="delivery.html">Доставка</a></li>
 				<li><a href="howtobuy.html">Установка</a></li>
-				<li><a href="#">Контакты</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
 				<li><a href="news.html">Новости</a></li>
 			</ul>
 		</div>
-		<div class="wrapper_row second">
-			<div class="phoneNumber"><a href="tel:+74959737722" class="phone"><i class="fa fa-phone" aria-hidden="true"></i>+7(495)973-77-22</a></div>
-			<a href="mailto:info@autotuning-audi.ru" class="mail"><i class="fa fa-envelope" aria-hidden="true"></i>info@autotuning-audi.ru</a>
-			<div class="adress">
+		<div class="wrapper_row second" itemscope itemtype="http://schema.org/Organization">
+			<div class="phoneNumber"><a href="tel:+74959737722" class="phone"><i class="fa fa-phone" aria-hidden="true"></i><span itemprop="telephone">+7(495)973-77-22</span></a></div>
+			<a href="mailto:info@autotuning-audi.ru" class="mail"><i class="fa fa-envelope" aria-hidden="true"></i><span itemprop="email">info@autotuning-audi.ru</span></a>
+			<div class="adress" itemprop="address">
 				<i class="fa fa-map-marker" aria-hidden="true"></i>
 				<p>Москва, Алтуфьевское шоссе, д.27, офис 229</p>
 			</div>
@@ -199,7 +199,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="logoBox">
-					<div class="logo"><a href="index.html"><img src="img/logo.jpg" alt="Audi-autotuning logo"></a></div>
+					<div class="logo" itemtype ="http://schema.org/ImageObject" itemscope><a href="index.html"><img src="img/logo.jpg" alt="Audi-autotuning logo" itemprop="logo"></a></div>
 					<div class="slogan">Оригинальные аксессуары, диски, дооснащение и тюнинг Audi</div>
 					<h1></h1>
 				</div>
@@ -220,14 +220,14 @@
 								<li><a href="pay.html">Оплата</a></li>
 								<li><a href="delivery.html">Доставка</a></li>
 								<li><a href="howtobuy.html">Установка</a></li>
-								<li><a href="#contacts">Контакты</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
 								<li><a href="news.html">Новости</a></li>
 							</ul>
 						</nav>
 					</div>
 					<div class="middle">
 						<div class="middle_row first">
-							<form action="">
+							<form>
 								<div class="input_wrap">
 									<input type="text" placeholder="Поиск"><button class="search"><i class="fa fa-search" aria-hidden="true"></i></button>
 								</div>
@@ -537,6 +537,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="top">
+					<noindex>
 					<ul>
 						<li><a href="model.html">A3</a></li>
 						<li><a href="model.html">A4</a></li>
@@ -553,17 +554,18 @@
 					</ul>
 					<ul>
 						<li><a href="howtobuy.html">Как заказать</a></li>
-						<li><a href="howtobuy.html">Оплата</a></li>
-						<li><a href="howtobuy.html">Доставка</a></li>
+						<li><a href="pay.html">Оплата</a></li>
+						<li><a href="delivery.html">Доставка</a></li>
 						<li><a href="howtobuy.html">Установка</a></li>
-						<li><a href="#contacts">Контакты</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
 						<li><a href="news.html">Новости</a></li>
 					</ul>
+					</noindex>
 				</div>
 				<div class="middle" id="contacts">
 					<div class="leftPart">
 						<div class="logoPart">
-							<div class="logo"><img src="img/logo-footer.png" alt="Audi-autotuning logo"></div>
+							<div class="logo" itemtype ="http://schema.org/ImageObject"><img src="img/logo-footer.png" alt="Audi-autotuning logo" itemprop="logo"></div>
 							<div class="slogan">Оригинальные аксессуары, диски, <br>дооснащение и тюнинг</div>
 						</div>
 						<div class="phonePart">

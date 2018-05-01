@@ -7,12 +7,14 @@ section.page404 .sidePart {
 	display: inline-block;
 	width: 50%;
 	float: left;
+	text-align: center;
 }
 section.page404 .sidePart:first-child {
 	max-width: 400px;
+	text-align: left;
 }
 section.page404 .sidePart>img {
-	width: 100%;
+	width: 70%;
 	height: auto;
 }
 section.page404 .sidePart p:first-child {

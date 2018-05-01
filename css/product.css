@@ -1135,7 +1135,7 @@ section.product .contentPart>.tabs_wrap #compatibility ul>li {
 	font-size: 1.3rem;
 	margin-bottom: 10px;
 }
-section.product .contentPart>.tabs_wrap #compatibility ul>li>span {
+section.product .contentPart>.tabs_wrap #compatibility ul>li>span.dot {
 	width: 4px;
 	height: 4px;
 	border-radius: 50%;

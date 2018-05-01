@@ -45,14 +45,14 @@
 				<li><a href="pay.html">Оплата</a></li>
 				<li><a href="delivery.html">Доставка</a></li>
 				<li><a href="howtobuy.html">Установка</a></li>
-				<li><a href="#">Контакты</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
 				<li><a href="news.html">Новости</a></li>
 			</ul>
 		</div>
-		<div class="wrapper_row second">
-			<div class="phoneNumber"><a href="tel:+74959737722" class="phone"><i class="fa fa-phone" aria-hidden="true"></i>+7(495)973-77-22</a></div>
-			<a href="mailto:info@autotuning-audi.ru" class="mail"><i class="fa fa-envelope" aria-hidden="true"></i>info@autotuning-audi.ru</a>
-			<div class="adress">
+		<div class="wrapper_row second" itemscope itemtype="http://schema.org/Organization">
+			<div class="phoneNumber"><a href="tel:+74959737722" class="phone"><i class="fa fa-phone" aria-hidden="true"></i><span itemprop="telephone">+7(495)973-77-22</span></a></div>
+			<a href="mailto:info@autotuning-audi.ru" class="mail"><i class="fa fa-envelope" aria-hidden="true"></i><span itemprop="email">info@autotuning-audi.ru</span></a>
+			<div class="adress" itemprop="address">
 				<i class="fa fa-map-marker" aria-hidden="true"></i>
 				<p>Москва, Алтуфьевское шоссе, д.27, офис 229</p>
 			</div>
@@ -197,7 +197,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="logoBox">
-					<div class="logo"><a href="index.html"><img src="img/logo.jpg" alt="Audi-autotuning logo"></a></div>
+					<div class="logo" itemtype ="http://schema.org/ImageObject" itemscope><a href="index.html"><img src="img/logo.jpg" alt="Audi-autotuning logo" itemprop="logo"></a></div>
 					<div class="slogan">Оригинальные аксессуары, диски, дооснащение и тюнинг Audi</div>
 					<h1></h1>
 				</div>
@@ -218,14 +218,14 @@
 								<li><a href="pay.html">Оплата</a></li>
 								<li><a href="delivery.html">Доставка</a></li>
 								<li><a href="howtobuy.html">Установка</a></li>
-								<li><a href="#contacts">Контакты</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
 								<li><a href="news.html">Новости</a></li>
 							</ul>
 						</nav>
 					</div>
 					<div class="middle">
 						<div class="middle_row first">
-							<form action="">
+							<form>
 								<div class="input_wrap">
 									<input type="text" placeholder="Поиск"><button class="search"><i class="fa fa-search" aria-hidden="true"></i></button>
 								</div>
@@ -291,9 +291,9 @@
 				<div class="wrapper">
 					<span><a href="index.html">Главная</a></span>
 					<span class="divider"> / </span>
-					<span><a href="">Тюнинг ателье Audi</a></span>
+					<span><a href="autohouse.html">Тюнинг ателье Audi</a></span>
 					<span class="divider"> / </span>
-					<span><a href="">ABT Sportsline</a></span>
+					<span><a href="#">ABT Sportsline</a></span>
 				</div>
 			</div>
 		</div>
@@ -304,15 +304,15 @@
 		<div class="container">
 			<div class="row">
 				<h1>тюнинг ателье Audi ABT Sportsline</h1>
-				<div class="autohouse_wrap">
-					<div class="img_wrap"><img src="img/ABT-autohouse-single.jpg" alt="" style=""></div>
+				<div class="autohouse_wrap" itemscope itemtype="Organization">
+					<div class="img_wrap"><img src="img/ABT-autohouse-single.jpg" alt="" style="" itemprop="image"></div>
 					<div class="description_wrap">
-						<div class="autohouse_title">ABT Sportsline</div>
+						<div class="autohouse_title" itemprop="name">ABT Sportsline</div>
 						<div class="site_wrap">
-							<span class="title">Официальный сайт:</span><span class="link"><a href="http://www.rieger-tuning.biz">www.rieger-tuning.biz</a></span>
+							<span class="title">Официальный сайт:</span><span class="link"><a href="http://www.rieger-tuning.biz" itemprop="url">www.rieger-tuning.biz</a></span>
 						</div>
 						<div class="adress_wrap">
-							<span class="title">Адрес:</span><span class="text">Weilbergstrasse 16 84307 Eggenfelden - Germany</span>
+							<span class="title">Адрес:</span><span class="text" itemprop="address">Weilbergstrasse 16 84307 Eggenfelden - Germany</span>
 						</div>
 						<div class="foundation_wrap">
 							<span class="title">Год открытия:</span><span class="text">1967 г.</span>
@@ -362,108 +362,108 @@
 	<section class="popular">
 		<div class="container">
 			<div class="row">
-				<div class="section_title">популярные товары</div>
+				<h3>популярные товары</h3>
 				<div class="popular__slider-wrap">
-					<div class="popularBlock">
+					<div class="popularBlock" itemscope itemtype="http://schema.org/Product">
 						<div class="ticket hit"></div>
 						<div class="img_wrap">
 							<a href="product.html"><img src="img/slide-1-popular.jpg" alt=""></a>
 						</div>
 						<div class="content_wrap">
-							<a href="product.html" class="title">Бампер передний Audi A4/S4 Limousine (8K/B8) 2012-н.в., A4/S4 Avant (8K/B8) 2012-н.в. для автомобилей с омывателями фар и без системы парктроник с подготовкой под решетку RS</a>
-							<div class="code">Артикул: <span>K 00055544</span></div>
-							<div class="warehouse">Со склада в <span>Москве</span></div>
-							<div class="producer">Производитель: <span>ABT Sportsline</span></div>
+							<a href="product.html" class="title" itemprop="name">Бампер передний Audi A4/S4 Limousine (8K/B8) 2012-н.в., A4/S4 Avant (8K/B8) 2012-н.в. для автомобилей с омывателями фар и без системы парктроник с подготовкой под решетку RS</a>
+							<div class="code">Артикул: <span itemprop="productID">K 00055544</span></div>
+							<div class="warehouse" itemprop="adress" itemscope itemtype="Place">Со склада в <span itemprop="City">Москве</span></div>
+							<div class="producer" itemprop="Organization" itemscope itemtype="Organization">Производитель: <span itemprop="manufacturer">ABT Sportsline</span></div>
 						</div>
 						<div class="bottomPart">
 							<div class="addToBusket">
 								<span>+</span><i class="fa fa-shopping-cart" aria-hidden="true"></i>
 							</div>
-							<div class="priceBox">
-								<div class="previous">65 000.00 <span>руб</span></div>
-								<div class="actual">59 580.00 <span>руб</span></div>
+							<div class="priceBox" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+								<!-- <div class="previous">65 000.00 <span>руб</span></div> -->
+								<div class="actual" itemprop="price">59 580.00 <span itemprop="priceCurrency">руб</span></div>
 							</div>
 						</div>
 					</div>
-					<div class="popularBlock">
+					<div class="popularBlock" itemtype="http://schema.org/Product" itemscope>
 						<div class="ticket new"></div>
 						<div class="img_wrap">
-							<a href="product.html"><img src="img/slide-2-popular.jpg" alt=""></a>
+							<a href="product.html""><img src="img/slide-2-popular.jpg" alt=""></a>
 						</div>
 						<div class="content_wrap">
-							<a href="product.html" class="title">Бампер передний и решетка радиатора для Audi Q5 (рестайлинг)</a>
-							<div class="code">Артикул: <span>K 00055544</span></div>
-							<div class="warehouse">Со склада в <span>Москве</span></div>
-							<div class="producer">Производитель: <span>ABT Sportsline</span></div>
+							<a href="product.html" class="title" itemprop="name">Бампер передний и решетка радиатора для Audi Q5 (рестайлинг)</a>
+							<div class="code">Артикул: <span itemprop="productID">K 00055544</span></div>
+							<div class="warehouse" itemprop="adress" itemscope itemtype="Place">Со склада в <span itemprop="City">Москве</span></div>
+							<div class="producer" itemprop="Organization" itemscope itemtype="Organization">Производитель: <span itemprop="manufacturer">ABT Sportsline</span></div>
 						</div>
 						<div class="bottomPart">
 							<div class="addToBusket">
 								<span>+</span><i class="fa fa-shopping-cart" aria-hidden="true"></i>
 							</div>
-							<div class="priceBox">
-								<div class="previous">65 000.00 <span>руб</span></div>
-								<div class="actual">59 580.00 <span>руб</span></div>
+							<div class="priceBox" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+								<!-- <div class="previous">65 000.00 <span>руб</span></div> -->
+								<div class="actual" itemprop="price">59 580.00 <span itemprop="priceCurrency">руб</span></div>
 							</div>
 						</div>
 					</div>
-					<div class="popularBlock">
+					<div class="popularBlock" itemtype="http://schema.org/Product" itemscope>
 						<div class="ticket action"></div>
 						<div class="img_wrap">
 							<a href="product.html"><img src="img/slide-3-popular.jpg" alt=""></a>
 						</div>
 						<div class="content_wrap">
-							<a href="product.html" class="title">Диффузор заднего бампера Audi A4 (B8) для автомобилей с одинарным глушителем слева и справа</a>
-							<div class="code">Артикул: <span>K 00055544</span></div>
-							<div class="warehouse">Со склада в <span>Москве</span></div>
-							<div class="producer">Производитель: <span>ABT Sportsline</span></div>
+							<a href="product.html" class="title" itemprop="name">Диффузор заднего бампера Audi A4 (B8) для автомобилей с одинарным глушителем слева и справа</a>
+							<div class="code">Артикул: <span itemprop="productID">K 00055544</span></div>
+							<div class="warehouse" itemprop="adress" itemscope itemtype="Place">Со склада в <span itemprop="City">Москве</span></div>
+							<div class="producer" itemprop="Organization" itemscope itemtype="Organization">Производитель: <span itemprop="manufacturer">ABT Sportsline</span></div>
 						</div>
 						<div class="bottomPart">
 							<div class="addToBusket">
 								<span>+</span><i class="fa fa-shopping-cart" aria-hidden="true"></i>
 							</div>
-							<div class="priceBox">
-								<div class="previous">65 000.00 <span>руб</span></div>
-								<div class="actual">59 580.00 <span>руб</span></div>
+							<div class="priceBox" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+								<!-- <div class="previous">65 000.00 <span>руб</span></div> -->
+								<div class="actual" itemprop="price">59 580.00 <span itemprop="priceCurrency">руб</span></div>
 							</div>
 						</div>
 					</div>
-					<div class="popularBlock">
+					<div class="popularBlock" itemtype="http://schema.org/Product" itemscope>
 						<div class="img_wrap">
 							<a href="product.html"><img src="img/slide-4-popular.jpg" alt=""></a>
 						</div>
 						<div class="content_wrap">
-							<a href="product.html" class="title">Бампер передний Audi Q3 для автомобилей с системой Einparkhilfe и без системы Parkassistent</a>
-							<div class="code">Артикул: <span>K 00055544</span></div>
-							<div class="warehouse">Со склада в <span>Москве</span></div>
-							<div class="producer">Производитель: <span>ABT Sportsline</span></div>
+							<a href="product.html" class="title" itemprop="name">Бампер передний Audi Q3 для автомобилей с системой Einparkhilfe и без системы Parkassistent</a>
+							<div class="code">Артикул: <span itemprop="productID">K 00055544</span></div>
+							<div class="warehouse" itemprop="adress" itemscope itemtype="Place">Со склада в <span itemprop="City">Москве</span></div>
+							<div class="producer" itemprop="Organization" itemscope itemtype="Organization">Производитель: <span itemprop="manufacturer">ABT Sportsline</span></div>
 						</div>
 						<div class="bottomPart">
 							<div class="addToBusket">
 								<span>+</span><i class="fa fa-shopping-cart" aria-hidden="true"></i>
 							</div>
-							<div class="priceBox">
-								<div class="previous">65 000.00 <span>руб</span></div>
-								<div class="actual">59 580.00 <span>руб</span></div>
+							<div class="priceBox" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+								<!-- <div class="previous">65 000.00 <span>руб</span></div> -->
+								<div class="actual" itemprop="price">59 580.00 <span itemprop="priceCurrency">руб</span></div>
 							</div>
 						</div>
 					</div>
-					<div class="popularBlock">
+					<div class="popularBlock" itemtype="http://schema.org/Product" itemscope>
 						<div class="img_wrap">
 							<a href="product.html"><img src="img/slide-2-popular.jpg" alt=""</a>>
 						</div>
 						<div class="content_wrap">
-							<a href="product.html" class="title">Бампер передний Audi Q3 для автомобилей с системой Einparkhilfe и без системы Parkassistent</a>
-							<div class="code">Артикул: <span>K 00055544</span></div>
-							<div class="warehouse">Со склада в <span>Москве</span></div>
-							<div class="producer">Производитель: <span>ABT Sportsline</span></div>
+							<a href="product.html" class="title" itemprop="name">Бампер передний Audi Q3 для автомобилей с системой Einparkhilfe и без системы Parkassistent</a>
+							<div class="code">Артикул: <span itemprop="productID">K 00055544</span></div>
+							<div class="warehouse" itemprop="adress" itemscope itemtype="Place">Со склада в <span itemprop="City">Москве</span></div>
+							<div class="producer" itemprop="Organization" itemscope itemtype="Organization">Производитель: <span itemprop="manufacturer">ABT Sportsline</span></div>
 						</div>
 						<div class="bottomPart">
 							<div class="addToBusket">
 								<span>+</span><i class="fa fa-shopping-cart" aria-hidden="true"></i>
 							</div>
-							<div class="priceBox">
-								<div class="previous">65 000.00 <span>руб</span></div>
-								<div class="actual">59 580.00 <span>руб</span></div>
+							<div class="priceBox" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+								<!-- <div class="previous">65 000.00 <span>руб</span></div> -->
+								<div class="actual" itemprop="price">59 580.00 <span itemprop="priceCurrency">руб</span></div>
 							</div>
 						</div>
 					</div>
@@ -478,6 +478,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="top">
+					<noindex>
 					<ul>
 						<li><a href="model.html">A3</a></li>
 						<li><a href="model.html">A4</a></li>
@@ -494,17 +495,18 @@
 					</ul>
 					<ul>
 						<li><a href="howtobuy.html">Как заказать</a></li>
-						<li><a href="howtobuy.html">Оплата</a></li>
-						<li><a href="howtobuy.html">Доставка</a></li>
+						<li><a href="pay.html">Оплата</a></li>
+						<li><a href="delivery.html">Доставка</a></li>
 						<li><a href="howtobuy.html">Установка</a></li>
-						<li><a href="#contacts">Контакты</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
 						<li><a href="news.html">Новости</a></li>
 					</ul>
+					</noindex>
 				</div>
 				<div class="middle" id="contacts">
 					<div class="leftPart">
 						<div class="logoPart">
-							<div class="logo"><img src="img/logo-footer.png" alt="Audi-autotuning logo"></div>
+							<div class="logo" itemtype ="http://schema.org/ImageObject"><img src="img/logo-footer.png" alt="Audi-autotuning logo" itemprop="logo"></div>
 							<div class="slogan">Оригинальные аксессуары, диски, <br>дооснащение и тюнинг</div>
 						</div>
 						<div class="phonePart">
