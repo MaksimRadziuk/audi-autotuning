@@ -27,8 +27,8 @@ section.model_tiles a.tile {
 	float: left;
 	position: relative;
 	margin-bottom: 30px;
-	-webkit-transition:all .1s ease;
-	transition:all .1s ease;
+	-webkit-transition:all 1s ease;
+	transition:all 1s ease;
 	cursor: pointer;
 }
 section.model_tiles .tile:hover .img_wrap img{
@@ -55,17 +55,20 @@ section.model_tiles .tile .model_name{
 	background-color: transparent;
 	text-align: center;
 	z-index: 1;
-	-webkit-transition: all .1s linear;
-	transition: all .1s linear;
+	-webkit-transition: all .5s linear;
+	transition: all .5s linear;
 	color: #242424;
 	font-size: 1.2rem;
 	line-height: 25px;
 	padding: 0 15px;
+	font-weight: 600;
 }
 section.model_tiles .tile:hover .model_name {
 	background-color: transparent;
 	color:#cf1141;
-
+	font-weight: 700;
+	-webkit-transition: all .5s linear;
+	transition: all .5s linear;
 }
 section.model_tiles .tile .img_wrap img {
 	width: 90%;
@@ -74,8 +77,8 @@ section.model_tiles .tile .img_wrap img {
 	left: 50%;
 	-webkit-transform: translate3d(-50%,-50%,0);
 	        transform: translate3d(-50%,-50%,0);
-	-webkit-transition:all .1s ease;
-	transition:all .1s ease;
+	-webkit-transition:all .5s ease;
+	transition:all .5s ease;
 }
 
 @media all and (max-width: 1000px) {
