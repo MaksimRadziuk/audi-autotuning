@@ -61,10 +61,8 @@ section.model_tiles .tile .model_name{
 	font-size: 1.2rem;
 	line-height: 25px;
 	padding: 0 15px;
-	opacity: 0.3;
 }
 section.model_tiles .tile:hover .model_name {
-	opacity: 1;
 	background-color: transparent;
 	color:#cf1141;
 }
