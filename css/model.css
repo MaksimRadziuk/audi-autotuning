@@ -65,6 +65,7 @@ section.model_tiles .tile .model_name{
 section.model_tiles .tile:hover .model_name {
 	background-color: transparent;
 	color:#cf1141;
+	font-weight: 600;
 }
 section.model_tiles .tile .img_wrap img {
 	width: 90%;
