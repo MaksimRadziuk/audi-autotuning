@@ -34,19 +34,6 @@ section.model_tiles a.tile {
 section.model_tiles .tile:hover .img_wrap img{
 	width: 100%;
 }
-section.model_tiles .tile:nth-child(2n):hover .img_wrap img{
-	width: 95%;
-}
-/* section.model_tiles .tile:nth-child(2n) .model_name {
-	background-color: #242424;
-	color: #fff;
-	opacity: 1;
-} */
-/* section.model_tiles .tile:nth-child(2n):hover .model_name {
-	background-color: #cf1141;
-	opacity: 1;
-	color: #fff;
-} */
 section.model_tiles .tile .model_name{
 	position: absolute;
 	top: 0;
@@ -66,7 +53,6 @@ section.model_tiles .tile .model_name{
 section.model_tiles .tile:hover .model_name {
 	background-color: transparent;
 	color:#cf1141;
-	font-weight: 700;
 	-webkit-transition: all .5s linear;
 	transition: all .5s linear;
 }

@@ -15,7 +15,7 @@ section.model_tiles a.tile {
 	position: relative;
 	margin-bottom: 30px;
 	-webkit-transition:all .1s ease;
-	transition:all .1s ease;
+	transition:all 1s ease;
 	cursor: pointer;
 }
 section.model_tiles .tile:hover .img_wrap img{

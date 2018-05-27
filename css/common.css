@@ -1840,11 +1840,11 @@ footer .bottom .social_wrap a.insta>i {
 		height: 40px;
 		background-color: transparent;
 	}
-	header .slick-prev:focus {
+	header .slick-prev:focus, header .slick-prev:hover {
 		background-image: url(../img/prev-arrow.jpg);
 	}
 
-	header .slick-next:focus {
+	header .slick-next:focus, header .slick-next:hover {
 		background-image: url(../img/next-arrow.jpg);
 	}
 	header .slick-prev {
@@ -1866,6 +1866,9 @@ footer .bottom .social_wrap a.insta>i {
 	}
 	.slick-next {
 		background-image: url(../img/next-arrow.jpg);
+	}
+	.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+		background:#242424;
 	}
 	header .slick-list {
 		padding: 0 2px;
